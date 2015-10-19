@@ -3,7 +3,7 @@ body{
 .model {
 	height: 730px;
 	width: 600px;
-	box-shadow: 0 0 30px grey;
+	box-shadow: 0 0 30px gray;
 	margin-left: 370px;
 	margin-bottom: 50px;
 	background: white;
@@ -17,7 +17,7 @@ body{
 	width: 420px;
 	text-align: left;
 	padding-left: 60px;
-	border-bottom: 2px groove grey;
+	border-bottom: 2px groove silver;
 	margin-left: 60px;
 	line-height: 25px;
 }
@@ -29,7 +29,7 @@ body{
     width: 420px;
 	text-align: left;
 	padding-left: 60px;
-	border-bottom: 2px groove grey;
+	border-bottom: 2px groove silver;
 	margin-left: 60px;
 	line-height: 10px;
 }
