@@ -1,22 +1,23 @@
 body{ 
 		background: #EEEEEE;}
-.menu {
-	height: 100%;
-	width: 50%;
-	border: 4px ridge;
-	margin-left: 25%;
-	margin-bottom: 5%;
+.model {
+	height: 730px;
+	width: 600px;
+	box-shadow: 0 0 30px grey;
+	margin-left: 370px;
+	margin-bottom: 50px;
 	background: white;
 }
 
-.block1 {
+.user_photo_information {
+	padding-top: 30px; 
 	text-align: center;	
 }
 .paragraph {
-	width: 70%;
+	width: 420px;
 	text-align: left;
-	padding-left: 10%;
-	border-bottom: 2px groove black;
+	padding-left: 60px;
+	border-bottom: 2px groove grey;
 	margin-left: 60px;
 	line-height: 25px;
 }
@@ -24,19 +25,19 @@ body{
 	margin-left: -25px;
 	
 }
-.block3	{
-    width: 70%;
+.user_contacts	{
+    width: 420px;
 	text-align: left;
-	padding-left: 10%;
-	border-bottom: 2px groove black;
+	padding-left: 60px;
+	border-bottom: 2px groove grey;
 	margin-left: 60px;
 	line-height: 10px;
 }
-.block4 {
-	width: 70%;
+.user_feedback {
+	width: 420px;
 	text-align: left;
-	padding-left: 10%;
-	padding-bottom: 5%;
+	padding-left: 60px;
+	padding-bottom: 30px;
 	margin-left: 60px;
 	line-height: 10px;
 }
