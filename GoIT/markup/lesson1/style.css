@@ -9,10 +9,10 @@ body{
 	background: white;
 }
 
-.b1 {
+.block1 {
 	text-align: center;	
 }
-.a1 {
+.paragraph {
 	width: 70%;
 	text-align: left;
 	padding-left: 10%;
@@ -20,11 +20,11 @@ body{
 	margin-left: 60px;
 	line-height: 25px;
 }
-.a2 {
+.list {
 	margin-left: -25px;
 	
 }
-.a3	{
+.block3	{
     width: 70%;
 	text-align: left;
 	padding-left: 10%;
@@ -32,7 +32,7 @@ body{
 	margin-left: 60px;
 	line-height: 10px;
 }
-.a4 {
+.block4 {
 	width: 70%;
 	text-align: left;
 	padding-left: 10%;
