@@ -1,10 +1,10 @@
 body{ 
 		background: #EEEEEE;}
 .model {
-	height: 730px;
+	height: 770px;
 	width: 600px;
-	box-shadow: 0 0 30px gray;
-	margin-left: 370px;
+	box-shadow: 0 0 5px gray;
+	margin: 0 auto;
 	margin-bottom: 50px;
 	background: white;
 }
@@ -14,9 +14,10 @@ body{
 	text-align: center;	
 }
 .paragraph {
-	width: 420px;
+	width: 470px;
 	text-align: left;
-	padding-left: 60px;
+	padding-left: 15px;
+	padding-bottom: 10px;
 	border-bottom: 2px groove silver;
 	margin-left: 60px;
 	line-height: 25px;
@@ -26,9 +27,9 @@ body{
 	
 }
 .user_contacts	{
-    width: 420px;
+    width: 470px;
 	text-align: left;
-	padding-left: 60px;
+	padding-left: 15px;
 	border-bottom: 2px groove silver;
 	margin-left: 60px;
 	line-height: 10px;
@@ -36,7 +37,7 @@ body{
 .user_feedback {
 	width: 420px;
 	text-align: left;
-	padding-left: 60px;
+	padding-left: 15px;
 	padding-bottom: 30px;
 	margin-left: 60px;
 	line-height: 10px;
