@@ -6,6 +6,7 @@ body {
 	padding-bottom: 40px;
 	margin-left: 52px; 
 	font-size: 40px;
+	font-family: tahoma;
 }
 .main {
 	margin: 0 auto;
@@ -16,112 +17,117 @@ body {
 }
 /*TOP  MENU*/
 .top_menu {
-	margin: 0 auto;
+	font-family: tahoma;
+    margin: 0 auto;
 	width: 960px;
 	height: 40px;
-    background-color: #585858;
-}
-.punkt_top_menu {
-	-moz-user-select: -moz-none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-	cursor: default;
-	display: inline-block;
-	padding-left: 45px;
-	padding-top: 10px;
-	width: 100px;
-	height: 30px;
-	color: white;
 	background-color: #585858;
 }
-.punkt_top_menu:hover {
-	width: 96px;
-	background-color: #464646;
-    border-left: solid;
-    border-right: solid;
-    border-left-width: 2px;
-    border-right-width: 2px;
+.punkt_top_menu li {
+	list-style: none;
+    float: left;
+}
+.punkt_top_menu a {
+	display: inline-block;
+	width: 144px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;	
+	color: white;
+}
+.punkt_top_menu a:hover {
+	width: 142px;
+	background-color: #383838;
+	border-right:#838383 solid 1px;
+	border-left:#838383 solid 1px;
 }
 /*LEFT MENU*/
 .left_menu {
-    cursor: default;
-	margin-top: 40px;
-	margin-left: 52px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 52px;
     width: 240px;
-    height: 240px;
+    height: 246px;
     border: 1px solid silver;
     border-bottom-width: 0px;
     background: white;
 }
-.punkt_left_menu {
-	-moz-user-select: -moz-none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-	display: inline-block;
-	padding-left: 20px;
-	padding-top: 12px;
-	width: 220px;
-	height: 27.2px;	
-	border-bottom: 1px solid silver;
+.punkt_left_menu li {     
+    list-style: none;
+    border-bottom: 1px solid silver;    
+}
+.punkt_left_menu a {
+    display: inline-block;
+    padding-left: 20px;
+    width: 220px;
+    line-height: 40px;
     background-color: white;
     font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: tahoma;
 }
-.punkt_left_menu:hover {
-	padding-left: 30px;
-	padding-top: 12px;
-	width: 210px;
-	height: 27.2px;	
-	border-bottom: 1px solid silver;
+.punkt_left_menu a:hover {
+    width: 200px;
+    padding-left: 40px;
     background-color: #f9f9f9;
 }
+
 /*CONTENT*/
-.image{
-	width: 580px;
-	margin-top: -241px;
-	margin-left: 340px;
-	padding-left: 90px;
-	border: 1px solid silver;
+.content {
+	float: right;
+	width: 678px;
+	margin-top: 40px;
+	margin-right: 52px;
+}
+.frame {
+border: 1px solid silver;
+background-color: white;
+}
+.image {
+	padding-left: 50px;
+	width: 580px;	
 }
 .description{
-	width: 625px;
-	margin-left: 370px;
+	font-family: tahoma;
+	width: 580px;
 	padding-top: 40px;
+	padding-left: 50px;
 }
 /*BOT MENU*/
 .bot_menu {
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-	cursor: default;
+	clear: both;
+	font-family: tahoma;
 	margin: 0 auto;
-	margin-top: 65px;
-	margin-bottom: 60px;
+	margin-top: 610px;
+	margin-bottom: 60px;    
 	width: 960px;
 	height: 40px;
-    background-color: #e1e1e1;
-}
-.punkt_bot_menu {
-	display: inline-block;
-	padding-left: 45px;
-	padding-top: 10px;
-	width: 100px;
-	height: 30px;
 	background-color: #e1e1e1;
+}
+.punkt_bot_menu li {
+	list-style: none;
+    float: left;
+}
+.punkt_bot_menu a {
+	display: inline-block;
+	width: 144px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: black;	
 }
 .punkt_bot_menu_copy {
 	display: inline-block;
-	margin-left: 150px;
-	padding-top: 10px;
 	width: 200px;
-	height: 30px;
-	background-color: #e1e1e1;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 170px;
+	text-decoration: none;
+	color: black;	
 }
-.punkt_bot_menu:hover {
-	text-decoration: underline; 
-
+.punkt_bot_menu a:hover {
+	text-decoration: underline;
+}
