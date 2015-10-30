@@ -1,0 +1,175 @@
+body{
+	background-image: url(../img/background.jpg);
+}
+/*HEADER*/
+.main{
+	width: 1000px;	
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.logo{
+	float: left;
+	margin-top: 10px;
+	padding-left: 28px;
+}
+.contacts{
+	margin-top: 10px;
+	margin-right: 30px;
+	float: right;
+	color: #7bb3c4;	
+	font-family: tahoma;
+	font-size: 14px;
+}
+.contacts p {
+	padding-left: 195px;
+}
+.country {
+	margin-top: 45px;
+}
+.country p{
+	padding-left: 0;
+}
+.country li{
+	list-style: none;
+    float: left;
+}
+.country a {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	margin-left: 2px;
+	text-align: center;	
+	font-family: tahoma;
+    color: #7bb3c4;
+	font-size: 11px;
+}
+.country a:hover {
+	color: blue;
+}
+.image {
+	clear: both;
+	border-top: 1px solid #7bb3c4;
+}
+/*MENU*/
+.menu {
+	position: relative;
+	margin-top: -3px;
+	height: 26px;
+	background-color: #333333;
+	box-shadow: 0 0 5px;
+	border-top: 1px solid #7bb3c4;
+}
+.menu li {
+	float: left;
+	position: relative;
+}.menu a {
+	display: inline-block;
+	width: 142px;
+	line-height: 28px;
+	text-decoration: none;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 15px;
+	color: white;
+}
+/*ВЫПАДАЮЩИЙ СПИСОК*/
+.menu ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+}
+.menu ul li{	
+	float:none;
+}
+.menu ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+}
+.menu li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+}
+.menu li ul {
+	margin-top: -2px;
+}
+.menu li ul li {
+	height: 28px;
+	width: 142px;
+	line-height: 28px;
+	background-color: #303030;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	color: white;
+}
+.menu li:hover ul li a:hover {
+	background-color: black;
+}
+/*BODY*/
+.fon {
+	width: 1000px;
+    overflow: hidden;
+}
+.left_block {
+	float: left;
+	width: 209px;
+	border-right: 1px solid silver;
+	background-color: #edeef0;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.left_block span {
+	display: block;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 20px;
+	padding-top: 10px;
+}
+.left_block p {
+	display: block;
+	padding: 10px;
+	line-height: 20px;
+	font-size: 15px;
+	font-family: tahoma;
+}
+.right_block {
+	float: right;
+	width: 209px;
+	border-left: 1px solid silver; 
+	background-color: #edeef0;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.right_block span {
+	display: block;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 20px;
+	padding-top: 10px;
+}
+.right_block p {
+	display: block;
+	padding: 10px;
+	line-height: 20px;
+	font-size: 15px;
+	font-family: tahoma;
+}
+.content {
+	float: left;
+	width: 580px;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;	
+}
+.content p {
+	display: block;
+    padding: 10px;
+    font-family: tahoma;
+}
+/*FOOTER*/
+.footer {
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+	font-family: tahoma;
+}
