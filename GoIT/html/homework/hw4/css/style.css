@@ -74,6 +74,9 @@ body{
 	font-size: 15px;
 	color: white;
 }
+.spec {
+	font-size: 12px;
+}
 /*ВЫПАДАЮЩИЙ СПИСОК*/
 .menu ul{
 	list-style:none;
@@ -89,6 +92,7 @@ body{
 	display:block;
 }
 .menu li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	margin-top: -3px;
 	left:0; /* Приносим его обратно на экран, когда нужно */
 	opacity:1; /* Делаем непрозрачным */
 }
