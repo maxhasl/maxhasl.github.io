@@ -104,7 +104,6 @@ body{
 	width: 142px;
 	line-height: 28px;
 	background-color: #303030;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	color: white;
 }
 .menu li:hover ul li a:hover {
