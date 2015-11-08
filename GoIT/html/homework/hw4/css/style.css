@@ -7,7 +7,7 @@ body{
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background: white;
-	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.87);
 }
 .logo{
 	float: left;
@@ -58,8 +58,9 @@ body{
 	margin-top: -3px;
 	height: 26px;
 	background-color: #333333;
-	box-shadow: 0 0 5px;
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 	border-top: 1px solid #7bb3c4;
+	border-bottom: 1px solid black;
 }
 .menu li {
 	float: left;
@@ -74,42 +75,44 @@ body{
 	font-size: 15px;
 	color: white;
 }
+.spec {
+	font-size: 12px;
+}
 /*ВЫПАДАЮЩИЙ СПИСОК*/
 .menu ul{
+	display: none;
 	list-style:none;
 	position:absolute;
-	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
-	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
 }
 .menu ul li{	
 	float:none;
 }
 .menu ul a{
-	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
-	display:block;
+	text-align: left;
 }
 .menu li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
-	left:0; /* Приносим его обратно на экран, когда нужно */
-	opacity:1; /* Делаем непрозрачным */
+	margin-top: -2.3px;
+	display: block;
 }
 .menu li ul {
 	margin-top: -2px;
 }
 .menu li ul li {
+	padding-left: 10px;
 	height: 28px;
-	width: 142px;
+	width: 150px;
 	line-height: 28px;
 	background-color: #303030;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	color: white;
 }
-.menu li:hover ul li a:hover {
+.menu li:hover ul li:hover {
 	background-color: black;
 }
 /*BODY*/
 .fon {
 	width: 1000px;
-    overflow: hidden;
+        overflow: hidden;
 }
 .left_block {
 	float: left;
@@ -117,9 +120,10 @@ body{
 	border-right: 1px solid silver;
 	background-color: #edeef0;
 	padding-bottom: 20000px;
-    margin-bottom: -20000px;
+        margin-bottom: -20000px;
 }
 .left_block span {
+	color:#424c43;
 	display: block;
 	text-align: center;
 	font-family: tahoma;
@@ -127,6 +131,7 @@ body{
 	padding-top: 10px;
 }
 .left_block p {
+	color: #626a64;
 	display: block;
 	padding: 10px;
 	line-height: 20px;
@@ -139,9 +144,10 @@ body{
 	border-left: 1px solid silver; 
 	background-color: #edeef0;
 	padding-bottom: 20000px;
-    margin-bottom: -20000px;
+        margin-bottom: -20000px;
 }
 .right_block span {
+	color:#424c43;
 	display: block;
 	text-align: center;
 	font-family: tahoma;
@@ -149,6 +155,7 @@ body{
 	padding-top: 10px;
 }
 .right_block p {
+	color: #626a64;
 	display: block;
 	padding: 10px;
 	line-height: 20px;
@@ -156,6 +163,7 @@ body{
 	font-family: tahoma;
 }
 .content {
+	color: #626a64;
 	float: left;
 	width: 580px;
 	padding-bottom: 20000px;
@@ -163,8 +171,8 @@ body{
 }
 .content p {
 	display: block;
-    padding: 10px;
-    font-family: tahoma;
+        padding: 10px;
+        font-family: tahoma;
 }
 /*FOOTER*/
 .footer {
