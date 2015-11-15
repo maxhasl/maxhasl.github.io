@@ -1,0 +1,66 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+table {	
+	border-spacing: 0;	
+	border-collapse: collapse;
+	margin: 150px auto;
+}
+td {
+	border-collapse: collapse;
+	border: 7px solid black;
+}
+.not_display_cell {
+    opacity: 0;
+    border:0;
+    font-size: 20px;
+}
+.red {
+	background-color: red;
+}
+.black {
+    background-color: black;
+}
+.blue {
+	background-color: blue;
+	border-right: 1px solid black;
+}
+.yellow {
+    background-color: yellow;
+}
+.yellow_2_line {
+	background-color: yellow;
+	border-right: 1px solid black;
+}
+.border_left_top {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+
+}
+.border_left {
+	border-left: 1px solid black;
+}
+.border_bottom {
+	border-bottom: 1px solid black;
+}
+.border_left_bottom {
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	background-color: yellow;
+}
+.border_right_bottom {
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+.border_right {
+	border-right: 1px solid black;
+}
+.border_top_right {
+	background-color: yellow;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+.border_top {
+	border-top: 1px solid black;
+}
