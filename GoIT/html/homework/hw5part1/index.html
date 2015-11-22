@@ -10,20 +10,18 @@
 	<link rel="stylesheet" href="css/style.css">
 <body>
 	<div class="top_menu">
-		 <ul>
-		 	<div class="first_part_menu">
+		 <ul class="first_part_menu">
 		 	   <li><a href="#">Meu YouBike</a></li>
 		 	   <li><a href="#">Vender</a></li>
 		 	   <li><a href="#">Forum</a></li>
 		 	   <li><a href="#">Contato</a></li>
 		 	   <li><a href="#">Ajuda</a></li>
 		 	   <li><img src="img/line.png" alt=""></li>
-		 	</div>
-		 	<div class="last_part_menu">
-		 	<li><a href="#"><img src="img/flag.png" alt="">Minhas Ofertas</a></li>
-		 	<li><a href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a></li>
-		 	</div>
 		 </ul>
+	      <ul class="last_part_menu">
+	      	<li><a href="#"><img src="img/flag.png" alt="">Minhas Ofertas</a></li>
+		 	<li><a href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a></li>
+	      </ul>		 
 	</div>
 	
 	<div class="body">
@@ -32,8 +30,16 @@
 		 		<p>Cadastre-se</p>
 		 	</div>
 		 	<div class="second_container">
-		 	    <a class="facebook" href=""><span class="f">f</span><span class="login">Log In with Facebook      &#62</span></a>
-		 		<img class="clearfix" src="img/OU.png">
+		 	    <a class="facebook" href="#">
+		 	        <span class="f">f</span>
+		 	        <span class="login">Log In with Facebook</span>
+		 	        <img class="arrow" src="img/arrow.png" alt="">
+		 	    </a>
+		 	    <div class="ou">
+		 		<div class="line"></div>
+		 		<span class="title">OU</span>
+		 		<div class="line"></div>
+		 		</div>
 		 	    <form action="#">
 		 		    <input class="form_punkt" type= "text" name= "firstname" placeholder="First Name">
 				    <input class="form_punkt" type= "text" name= "lastname" placeholder="Last Name">
@@ -41,7 +47,8 @@
 				    <input class="form_punkt" type= "text" name= "password" placeholder="Choose password"> 
 				    <input class="form_punkt" type= "text" name= "password" placeholder="Password Confirm">
 				    <label><input class="check" type="checkbox">Send me Youbike updates and tips</label>
-				    <button class="button"><a href="#">Create my account</a></button>
+				    <input class="button" type="submit" name="create" value="Create my account">
+				    <!-- <button class="button"><a href="#">Create my account</a></button> -->
 		 	    </form>
 		 	    <p>
 		 	    	By clicking the button above, you aggre to the Terms of Service Xiew our Privacy Policy.

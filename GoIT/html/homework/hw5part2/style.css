@@ -7,14 +7,13 @@ table {
 	border-collapse: collapse;
 	margin: 150px auto;
 }
+tr {
+	height: 22px;
+}
 td {
 	border-collapse: collapse;
 	border: 7px solid black;
-}
-.not_display_cell {
-    opacity: 0;
-    border:0;
-    font-size: 20px;
+	width: 65px;
 }
 .red {
 	background-color: red;
@@ -24,43 +23,42 @@ td {
 }
 .blue {
 	background-color: blue;
-	border-right: 1px solid black;
+	border-right: none;
 }
 .yellow {
     background-color: yellow;
 }
 .yellow_2_line {
 	background-color: yellow;
-	border-right: 1px solid black;
+	border-right: none;
 }
 .border_left_top {
-	border-top: 1px solid black;
-	border-left: 1px solid black;
-
+	border-top: none;
+	border-left: none;
 }
 .border_left {
-	border-left: 1px solid black;
+	border-left: none;
 }
 .border_bottom {
-	border-bottom: 1px solid black;
+	border-bottom: none;
 }
 .border_left_bottom {
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-bottom: none;
+	border-left: none;
 	background-color: yellow;
 }
 .border_right_bottom {
-	border-bottom: 1px solid black;
-	border-right: 1px solid black;
+	border-bottom: none;
+	border-right: none;
 }
 .border_right {
-	border-right: 1px solid black;
+	border-right: none;
 }
 .border_top_right {
 	background-color: yellow;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
+	border-top: none;
+	border-right: none;
 }
 .border_top {
-	border-top: 1px solid black;
+	border-top: none;
 }

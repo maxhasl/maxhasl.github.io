@@ -18,6 +18,7 @@ body {
 .container {
 	position: relative;
 	margin: 0 auto;
+	margin-top: -1px;
 	width: 1000px;
 	
 }
@@ -38,6 +39,7 @@ header {
  	padding-bottom: 1px;
  	margin-right: 3px;
  	letter-spacing: 1px;
+ 	color: #5e696d;
  	font-size: 17px;
  	font-weight: bold;
  }
@@ -132,7 +134,7 @@ nav a {
 	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .main_menu ul {
-	margin-top: 4px;
+	margin-top: 3px;
 	margin-left: 126px;
 }
 .main_menu li a {
@@ -140,8 +142,8 @@ nav a {
 	text-decoration: none;
 	font-size: 13px;
 	font-weight: bold;
-	height: 24px;
-	line-height: 24px;
+	height: 26px;
+	line-height: 26px;
 	border-radius: 13px;
 	color: #b1bcc0;
 	font-weight: bold;
@@ -181,7 +183,7 @@ nav a {
 }
 .main_menu span a {
 	display: inline-block;
-	margin-top: 3.2px;
+	margin-top: 4px;
 	margin-left: 59.5px;
 	font-size: 11px;
 	font-weight: bold;
@@ -284,7 +286,7 @@ nav a {
     margin-left: 2px;
     padding-top: 6.5px;
     border: 1px solid #79878d;
-    border-radius: 13px;
+    border-radius: 12px;
     color: #114165;
     text-decoration: none;
     font-size: 13.5px;
@@ -306,7 +308,7 @@ nav a {
     margin-bottom: -1px;
     padding-top: 5.5px;
     border: 1px solid #79878d;
-    border-radius: 13px;
+    border-radius: 12px;
     color: #114165;
     text-decoration: none;
     font-size: 13.5px;
@@ -559,7 +561,7 @@ nav a {
     margin-left: 15px;
     padding-top: 5.5px;
     border: 1px solid #79878d;
-    border-radius: 13px;
+    border-radius: 12px;
     color: #114165;
     text-decoration: none;
     font-size: 13.5px;
@@ -578,10 +580,10 @@ nav a {
     width: 135px;
     margin-top: 17.5px;
     margin-left: 14px;
-    margin-bottom: 5.5px;
+    margin-bottom: 6px;
     padding-top: 5.5px;
     border: 1px solid #79878d;
-    border-radius: 13px;
+    border-radius: 12px;
     text-decoration: none;
     color: #114165;
     font-size: 13.5px;
@@ -596,21 +598,48 @@ nav a {
 	margin-bottom: 10px;
 }
 
-.sidebar_right label {
-	display: inline-block;
-	vertical-align: middle;
-	margin-top: -6px;
-	font-size: 13px;
+/*CHECKBOX*/
+
+.checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;    
+	margin-top: 5.2px;
+	font-size: 12.5px;
 	font-weight: bold;
-	letter-spacing: 0.3px;
+	letter-spacing: 0.65px;
 	color: #465961;
 }
-.checkbox {
-	width: 11px;
-	height: 11.7px;
-	margin-right: 13px;
-	margin-top: 6.7px;
+
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-left: 5px;
+    position: absolute;
+    left: 0;       
+    border: 1px solid #164161;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgba(129,154,173,1);
 }
+
+.checkbox input[type=checkbox] {
+    display: none;
+}
+
+.checkbox input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 7px;
+    color: #164161;
+    text-align: center;
+    line-height: 7px;
+}
+
 .ul_header_right:last-child {
 	margin-top: -90px;
 }
@@ -687,10 +716,10 @@ footer {
 .bottom_menu span {
 	display: inline-block;
 	float: left;
-	margin-top: 10px;	
+	margin-top: 8px;	
 }
 .bottom_menu span:last-child {
-	margin-top: 11px;
+	margin-top: 8px;
 	margin-left: 3px;
 }
 .bottom_menu a {
