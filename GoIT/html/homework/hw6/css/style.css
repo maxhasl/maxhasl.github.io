@@ -18,11 +18,7 @@ body {
 .container {
 	position: relative;
 	margin: 0 auto;
-<<<<<<< HEAD
-	margin-top: -1px;
-=======
 	margin-top: 1px;
->>>>>>> aa51eb42aba9e2e55f1848190cbabefcb5c65a0c
 	width: 1000px;
 	
 }
