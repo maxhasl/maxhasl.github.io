@@ -166,6 +166,7 @@ input[type=radio]:checked + label:before {
     color: #f3f3f3;
     font-size: 40px;
     text-align: center;
+    vertical-align: middle;
     line-height: 16px;
 }
 /*PURPLE*/
@@ -361,6 +362,9 @@ input[type=radio]:checked + label:before {
 	color: black;
 	text-shadow: none;
 }
+.about__link--blog__link:hover {
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
 .radio--main label:before {
 	margin-left: 158px;
 	margin-top: -6px;
@@ -376,13 +380,18 @@ input[type=radio]:checked + label:before {
     line-height: 14px;
     text-align: center;    
 }
-.brends {
-	clear: both;
-	height: 120px;
-	width: 100%;
+.brends__background {
 	margin-top: 80px;
+	clear: both;
 	border-top: 1px groove #e6e6e6;
 	border-bottom: 1px groove #e6e6e6;
+	height: 120px;
+	width: 100%;
+}
+.brends {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;	
 }
 .brend {
 	float: left;
@@ -678,14 +687,6 @@ label:before {
 	margin-left: 101px;
 	margin-top: 10px;
 }
-.brends {
-	clear: both;
-	height: 120px;
-	width: 100%;
-	margin-top: 80px;
-	border-top: 1px groove #e6e6e6;
-	border-bottom: 1px groove #e6e6e6;
-}
 .brend {
 	margin-left: 9.3%;
 }
@@ -938,11 +939,9 @@ label:before {
 	margin-left: 340px;
 	margin-top: 10px;
 }
-.brends {
-	height: 230px;
-	width: 100%;
-	margin: 0 auto;
+.brends__background {
 	margin-top: 88px;
+	height: 230px;
 }
 .brend {
 	margin-top: 35px;
@@ -1025,7 +1024,7 @@ label:before {
 }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 479px){
 .logo{
 	margin-left: 36%;
 }
@@ -1135,11 +1134,11 @@ label:before {
 	margin-left: 205px;
 	margin-top: 10px;
 }
-.brends {	
-	height: 423px;
-	width: 100%;
-	margin: 0 auto;
+
+
+.brends__background {
 	margin-top: 88px;
+    height: 423px;
 }
 .brend {
 	margin-top: 53px;
