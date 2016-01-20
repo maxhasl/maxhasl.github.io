@@ -42,8 +42,7 @@ body {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
-.tab__text {
-	display: none;
+.tab__text {	
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -51,6 +50,9 @@ body {
 	text-align: justify;
 	border-radius: 10px;
 	border: 2px solid #444851;
+}
+.tab__text--none {
+	display: none;
 }
 .tab__item--checked {
 	color: red;
