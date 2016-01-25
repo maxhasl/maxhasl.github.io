@@ -1,0 +1,203 @@
+/*CLEARFIX*/
+.clearfix{
+  *zoom: 1;
+}
+.clearfix:before{
+  content: '';
+  display: table;
+}
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+body {
+    background-color: #210a16;
+}
+.jcarousel {  
+  position: relative;
+  overflow: hidden;
+  border: 10px solid black;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+  box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+}
+.jcarousel__ul{
+    width: 20000em;
+    position: relative;
+}
+.jcarousel__li{
+      float: left;
+      height: 350px;
+}
+.jcarousel img{
+    width: 490px;
+    height: 350px;
+    
+}
+.wrap_jcarousel{
+  width: 600px;
+  margin: 100px 350px 0;
+  position: relative;
+}
+.jcarousel-prev{
+    float: left;
+    margin-top: 143px;
+    margin-right: 20px;
+    height: 70px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    }
+.jcarousel-next {
+    height: 70px;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 620px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+}
+.page {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+}
+.jcarousel-pagination {
+    margin-left: 265px;
+    margin-top: 10px;
+}
+.inactive {
+   box-shadow: none;
+}
+.active {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+.sol__select {
+  display: block;
+  margin: 40px auto 0;
+  width: 200px;
+}
+.checkbox__js {
+  margin-top: 20px;
+  margin-left: 585px;  
+}
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox-sprite.png);
+}
+.niceCheck input {
+  display: none;
+}
+.checkbox__js label {
+  color: yellow;
+  font-size: 15px;
+}
+
+/*CHECKBOX*/
+.checkbox__css {
+  margin-bottom: 100px;
+}
+.checkbox__css label {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 606px;    
+    color: yellow;
+}
+
+.checkbox__css label:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-left: 586px;
+    position: absolute;
+    left: 0;       
+    border: 1px solid #164161;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgba(129,154,173,1);
+}
+
+.checkbox__css input[type=checkbox] {
+    display: none;
+}
+
+.checkbox__css input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 17px;
+    color: #164161;
+    text-align: center;
+    line-height: 14px;
+}
+.menu {
+  width: 800px;
+  margin-left: 305px;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+.menu__item {
+  float: left;
+}
+.menu__item a {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: black;  
+}
+.menu__item a:hover {
+  width: 156px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  background-color: #302704;
+}
+.menu--1 {
+  z-index: 1;
+  margin-left: 0px;
+  width: 156px;
+  position: absolute;
+  border: none;
+  display: none;
+}
+.menu__item--1 {
+  float: none;  
+}
+.menu__item--1 a{
+  
+}
+/*.menu__item:hover ul {
+  display: block;
+}*/
+.menu--2 {
+  z-index: 1;
+  width: 156px;
+  position: absolute;
+  border: none;
+  display: none;
+  margin-top: -40px;
+  margin-left: 160px;
+}
+.spec{
+  font-size: 25px;
+  vertical-align: middle;
+}

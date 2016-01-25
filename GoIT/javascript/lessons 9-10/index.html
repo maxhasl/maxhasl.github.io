@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LESSONS 9-10</title>
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sol.css">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel-core.js"></script>
+    <script src="js/jquery.jcarousel-control.js"></script>
+    <script src="js/jquery.jcarousel-pagination.js"></script>
+    <script src="js/jquery.jcarousel-autoscroll.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/custom_checkbox.js"></script>
+    <script src="js/jquery.color.js"></script>    
+    <script src="js/script.js"></script>
+</head>
+<body>
+<ul class="menu clearfix">
+  <li class="menu__item menu__js__2">
+    <a href="#">NAV 1<span>&#9660</span></a>
+    <ul class="menu menu--1 clearfix">
+       <li class="menu__item menu__item--1"><a href="#">NAV 1</a></li>
+       <li class="menu__item menu__item--1 menu__js__3">
+         <a href="#">NAV 2<span class="spec">&#9654</span></a>
+         <ul class="menu menu--2 clearfix">
+            <li class="menu__item menu__item--2"><a href="#">NAV 1</a></li>
+            <li class="menu__item menu__item--2"><a href="#">NAV 2</a></li>
+            <li class="menu__item menu__item--2"><a href="#">NAV 3</a></li>
+            <li class="menu__item menu__item--2"><a href="#">NAV 4</a></li>
+            <li class="menu__item menu__item--2"><a href="#">NAV 5</a></li>
+         </ul>    
+       </li>
+       <li class="menu__item menu__item--1"><a href="#">NAV 3</a></li>
+       <li class="menu__item menu__item--1"><a href="#">NAV 4</a></li>
+       <li class="menu__item menu__item--1"><a href="#">NAV 5</a></li>
+    </ul>
+  </li>
+  <li class="menu__item"><a href="#">NAV 2</a></li>
+  <li class="menu__item"><a href="#">NAV 3</a></li>
+  <li class="menu__item"><a href="#">NAV 4</a></li>
+  <li class="menu__item"><a href="#">NAV 5</a></li>
+</ul>
+<div class="wrap_jcarousel">
+  <a class="jcarousel-prev" href="#"><img src="img/arrow_left.jpg" alt=""></a>
+  <div class="jcarousel">
+    <ul class="jcarousel__ul">
+      <li class="jcarousel__li"><img src="img/1.jpg" alt="" /></li>
+      <li class="jcarousel__li"><img src="img/2.jpg" alt="" /></li>
+      <li class="jcarousel__li"><img src="img/3.jpg" alt="" /></li>
+      <li class="jcarousel__li"><img src="img/4.jpg" alt="" /></li>
+      <li class="jcarousel__li"><img src="img/5.jpg" alt="" /></li>
+      <li class="jcarousel__li"><img src="img/6.jpg" alt="" /></li>
+    </ul>
+  </div>
+  <a class="jcarousel-next" href="#"><img src="img/arrow_right.jpg" alt=""></a>
+  <p class="jcarousel-pagination"></p>
+</div>
+<div class="sol__select">
+  <select id="my-select" name="character">
+       <option value="Luna">Luna</option>
+       <option value="Jugger">Jugger</option>
+       <option value="Lich">Lich</option>
+       <option value="Windranger">Windranger</option>
+       <option value="Enigma">Enigma</option>
+       <option value="Slark">Slark</option>    
+       <option value="DOOM">DOOM</option>    
+       <option value="Invoker">Invoker</option>    
+       <option value="Troll Warlord">Troll Warlord</option>
+       <option value="Ember Spirit">Ember Spirit</option>    
+  </select>
+</div>
+<div class="checkbox__js">
+<span class="niceCheck">
+  <input type="checkbox" name="ch1" />
+</span>
+  <label for="ch1">by js</label>
+</div>
+<div class="checkbox__css">  
+  <input id="ch2" type="checkbox" name="ch2">
+  <label for="ch2">by css</label>                               
+</div>
+</body>
+</html>

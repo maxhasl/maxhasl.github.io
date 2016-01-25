@@ -12,7 +12,7 @@ $(function () {
    	  $('.hint').remove();
    }
 
-   var $submit = $('.submit');
+   var $submit = $('.button');
    $submit.click(submitIn);
    function submitIn() {
       $('.hint').remove();
