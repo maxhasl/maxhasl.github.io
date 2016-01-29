@@ -1,0 +1,48 @@
+body{ 
+		background: #EEEEEE;}
+.model {
+	height: 770px;
+	width: 600px;
+	box-shadow: 0 0 5px gray;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background: white;
+}
+
+.user_photo_information {
+	padding-top: 30px; 
+	text-align: center;	
+}
+.paragraph {
+	width: 470px;
+	text-align: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px groove silver;
+	margin-left: 60px;
+	line-height: 25px;
+}
+.list {
+	margin-left: -25px;
+	
+}
+.user_contacts	{
+    width: 470px;
+	text-align: left;
+	padding-left: 15px;
+	border-bottom: 2px groove silver;
+	margin-left: 60px;
+	line-height: 10px;
+}
+.user_feedback {
+	width: 420px;
+	text-align: left;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	margin-left: 60px;
+	line-height: 10px;
+}
+img {
+	border-radius: 15px;
+	height: 170px;
+}

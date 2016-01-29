@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lessons 11-12</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <script type="text/html" id='template'>
+     <div class="model">
+     <div class="user_photo_information">
+       <h1><%= name %></h1>
+       <img  src=<%= photo %>>
+       <p class="paragraph"><%= status %></p>
+     </div>
+     <div class="paragraph">
+       <span>Бажаю вчити Фронтенд тому, що :</span>
+       <ul class="list">
+         <li><%= cause_1 %></li>
+         <li><%= cause_2 %></li>
+         <li><%= cause_3 %></li>
+       </ul>
+      </div>
+     <div class="user_contacts">
+       <p>Мій номер телефону:</p>
+       <p><%= phone %></p>
+       <p>Мій профіль Вконтакте:</p>
+       <p><a target="_blanc" href=<%= link %>><%= name %></a></p>
+     </div>
+     <div class="user_feedback">
+       <p>Мій фідбек:</p>
+       <p><%= feedback %></p>
+     </div>
+  </div>
+ </script>
+</body>
+</html>
