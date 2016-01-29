@@ -1,15 +1,19 @@
 $(function () {
+   var globTitle;
    var $takeHint = $('.text');
    $takeHint.hover(hintIn, hintOut);
    function	hintIn() {
       $('.hint').remove();
       var index = $(this).parent().index();
-      var title = $(this).attr('title');      
+      var title = $(this).attr('title');
+      globTitle = title;      
       $('.field').eq(index).append('<span class="hint">'+title+'</span>');
       $(this).focusin(hintOut);
+      $(this).removeAttr('title');
    }
    function hintOut() {
-   	  $('.hint').remove();
+      $(this).attr('title', globTitle);
+   	$('.hint').remove();
    }
 
    var $submit = $('.button');
