@@ -1,45 +1,53 @@
+body {
+    background-color: #210a16;
+}
 .carousel-hider {
+    margin-left: 0px;
+    margin-top: 185px;
     width: 600px;
     overflow: hidden;
     float: left;
+    border: 10px solid black;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
 }
- 
 .carousel-list {    
     list-style: none;
     width: 10000px;
     padding: 0px;
     position: relative;
 }
- 
 .carousel-element {
     display: block;
     margin-right: 25px;
     float: left;
 }
- 
 .carousel-element img {
 	height: 60px;
-    max-width: 100px;
+    width: 100px;
 }
- 
 .carousel-arrow-left, .carousel-arrow-right {
     float: left;
     display: block;
-    border: 1px solid grey;
-    background-color: lightgrey;
-    padding: 5px;
-    margin-top: 50px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
 }
- 
-.carousel-arrow-left:hover, .carousel-arrow-right:hover {
-    cursor: pointer;
-    background-color: grey;
-}
- 
 .carousel-arrow-left {
+    cursor: pointer;
+    height: 70px;
     margin-right: 25px;
+    margin-left: 300px;
+    margin-top: 200px;
 }
- 
 .carousel-arrow-right {
+    cursor: pointer;
     margin-left: 25px;
+    margin-top: 200px;
+}
+.text {
+    color: black;
+    background-color: white;
+    text-align: center;
 }
