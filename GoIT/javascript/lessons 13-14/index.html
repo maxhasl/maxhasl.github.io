@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lessons 13-14</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <script type="text/html" id='template'>   
+    <div class="main">
+    <p class="header">Тест по программированию</p>
+    <form class="form">
+      <% for (var i = 0; i<questions.length; i++){ %>
+            <p class="question"><%= questions[i].question %></p>
+            <div class="container">
+                <div>
+                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answerOne %></label>                  
+                </div>
+                <div>
+                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answerTwo %></label>                  
+                </div>
+                <div>
+                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answerThree %></label>                  
+                </div>
+            </div>
+      <% } %>
+      <input type="button" class="submit" value="Проверить мои результаты">
+    </form>
+    <div>
+  </script>
+</body>
+</html>
