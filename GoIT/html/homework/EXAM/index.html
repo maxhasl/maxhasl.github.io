@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Exam</title>
+	<title>EXAM</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel-core.js"></script>
+    <script src="js/jquery.jcarousel-control.js"></script>
+    <script src="js/jquery.jcarousel-pagination.js"></script>
+    <script src="js/jquery.jcarousel-autoscroll.js"></script>    
+    <script src="js/script.js"></script>
 </head>
 <body>
-	<div class="header__backgound">
-		<header class="clearfix">
-			<!-- LOGO -->
-			<div class="logo">
-		       <a href="#" class="logo__1">PINGBULL<span class="logo__2">ER</span></a>
-		    </div>
-		    <!-- NAVIGATION TOP MENU -->
+	<div class="header__background">
+	  <header>
+		<!-- LOGO -->
+	    <div class="logo">
+		    <a href="#" class="logo__1">PINGBULL<span class="logo__2">ER</span></a>
+		</div>
+		<!-- NAVIGATION TOP MENU -->
 		    <nav class="nav nav--checked">
 			  <ul class="menu">
 			    <li class="menu__item">
@@ -38,34 +44,54 @@
 			    </li>
 		      </ul>
 		  </nav>
-		</header>
-           <!-- SLIDER -->
-          <div class="background__spoiler">
-          <div class="content__spoiler">
-          <section class="spoiler">
-		  	  <img class="arrow__left" src="img/arrow_left.png">
-		  	  <section class="spoiler__text">
-		  	     <p class="spoiler__header__1">Lorem Ipsum Dolor</p>
-		  	     <p class="spoiler__header__2">IT WILL MAKE ALL OF YOUR DREAMS COME</p>
-		  	     <p class="description">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
-		  	  </section>
-		  	  <img class="phone" src="img/phone.png">
-		  	  <img class="arrow__right" src="img/arrow_right.png">
-		  </section>
+	  </header>
+	      <!-- SLIDER -->
+          <div class="background__slider clearfix">
+             <!-- CAROUSEL -->
+             <div class="wrap_jcarousel">
+                 <a class="jcarousel-prev" href="#"><img src="img/arrow_left.png" alt=""></a>
+                 <div class="jcarousel">
+                    <ul class="jcarousel__ul">
+                      <li class="jcarousel__li clearfix">
+                        <section class="spoiler__text">
+		  	              <p class="spoiler__header__1">Lorem Ipsum Dolor</p>
+		  	              <p class="spoiler__header__2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+		  	              <p class="description">Semper sollicitudin gravida eget, vestibulum sit           amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam           venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id           semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla           interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+		  	            </section>
+		  	            <img class="phone" src="img/phone.png">
+                      </li>
+                      <li class="jcarousel__li">
+                        <section class="spoiler__text">
+		  	              <p class="spoiler__header__1">Lorem Ipsum Dolor</p>
+		  	              <p class="spoiler__header__2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+		  	              <p class="description">Semper sollicitudin gravida eget, vestibulum sit           amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam           venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id           semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla           interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+		  	            </section>
+		  	            <img class="phone" src="img/phone.png">
+                      </li>
+                      <li class="jcarousel__li">
+                        <section class="spoiler__text">
+		  	              <p class="spoiler__header__1">Lorem Ipsum Dolor</p>
+		  	              <p class="spoiler__header__2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+		  	              <p class="description">Semper sollicitudin gravida eget, vestibulum sit           amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam           venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id           semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla           interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+		  	            </section>
+		  	            <img class="phone" src="img/phone.png">
+                      </li>
+                      <li class="jcarousel__li">
+                        <section class="spoiler__text">
+		  	              <p class="spoiler__header__1">Lorem Ipsum Dolor</p>
+		  	              <p class="spoiler__header__2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+		  	              <p class="description">Semper sollicitudin gravida eget, vestibulum sit           amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam           venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id           semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla           interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+		  	            </section>
+		  	            <img class="phone" src="img/phone.png">
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="jcarousel-next" href="#"><img src="img/arrow_right.png" alt=""></a>
+                  <p class="jcarousel-pagination"></p>
+             </div>
           </div>
-		  </div>
-		   <!-- RADIO -->
-		  <div class="radio clearfix">
-                 <input id="1" type="radio" name="slider" value="1">
-                 <label for="1"></label>
-                 <input id="2" type="radio" name="slider" value="2">
-                 <label for="2"></label>
-                 <input id="3" type="radio" name="slider" value="3">
-                 <label for="3"></label>
-                 <input id="4" type="radio" name="slider" value="4">
-                 <label for="4"></label>
-		  </div>	
 	</div>
+	<!-- PURPLE BLOCK -->
 	<div class="purple__block__background">
 	<section class="purple__block clearfix">
 		<section class="about">
@@ -88,24 +114,34 @@
 		</section>
 	</section>
     </div>
+    <!-- MAIN BLOCK -->
     <div  class="main_background">
     <section class="main clearfix">
 	     <div class="main__1">
-		   <section class="main__information clearfix">
-		      <img class="main__icon" src="img/man.png" alt="">
-		      <p class="main__header">PINGBULLER <span class="purple">STARTS HERE</span></p>
-		 	  <p class="main__description">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po- suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
-		   </section>
-		   <div class="radio radio--main clearfix">
-                 <input id="5" type="radio" name="slider" value="1">
-                 <label for="5"></label>
-                 <input id="6" type="radio" name="slider" value="2">
-                 <label for="6"></label>
-                 <input id="7" type="radio" name="slider" value="3">
-                 <label for="7"></label>
-                 <input id="8" type="radio" name="slider" value="4">
-                 <label for="8"></label>
-           </div>
+		   <div class="wrap_jcarousel wrap_jcarousel--2">
+              <img class="main__icon" src="img/man.png" alt="">
+              <div class="jcarousel jcarousel--2">
+                 <ul class="jcarousel__ul">
+                    <li class="jcarousel__li jcarousel__li--2">
+                        <p class="main__header">PINGBULLER <span class="purple">STARTS HERE</span></p>
+		                <p class="main__description">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po- suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+                    </li>
+                    <li class="jcarousel__li jcarousel__li--2">
+                        <p class="main__header">PINGBULLER <span class="purple">STARTS HERE</span></p>
+		                <p class="main__description">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po- suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+                    </li>
+                    <li class="jcarousel__li jcarousel__li--2">
+                        <p class="main__header">PINGBULLER <span class="purple">STARTS HERE</span></p>
+		                <p class="main__description">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po- suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+                    </li>
+                    <li class="jcarousel__li jcarousel__li--2">
+                        <p class="main__header">PINGBULLER <span class="purple">STARTS HERE</span></p>
+		                <p class="main__description">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po- suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+                    </li>
+                 </ul>
+             </div>
+             <p class="jcarousel-pagination jcarousel-pagination--2"></p>
+           </div>  
 		 </div>
 		 <section class="updates clearfix">
 		 	<p class="main__header main__header--updates">RECENT UPDATES</p>
@@ -124,7 +160,7 @@
 			   <p class="blog__header">Nunc turpis neque feugiat eget</p>
 			   <p class="blog__description">Posted by Admin on March 13 2012 in Recent News</p>
 			</div>
-			<a class="about__link about__link--blog__link" href="#">READ MORE HERE</a>				
+			<a class="about__link about__link--blog__link" href="#">READ MORE HERE</a>		
 		 </section>
 	</section>
 	</div>
