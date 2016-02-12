@@ -39,10 +39,10 @@ $('.jcarousel-pagination--2')
       }
   });
 
-  // $('.jcarousel').jcarouselAutoscroll({
-  //     interval: 3000,
-  //     target: '+=1',
-  //     autostart: true
-  // });
+  $('.jcarousel').jcarouselAutoscroll({
+      interval: 3000,
+      target: '+=1',
+      autostart: true
+  });
 
 });
