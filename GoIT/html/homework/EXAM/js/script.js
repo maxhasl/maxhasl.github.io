@@ -22,7 +22,7 @@ $(function() {
   })
   .jcarouselPagination({
       item: function(page) {
-          return '<a class="page" href="#' + page + '"><span class="checked">&#183</span></a>';
+          return '<a class="page" href="#' + page + '"><span class="checked">&#9899</span></a>';
       }
   });
 
@@ -35,7 +35,7 @@ $('.jcarousel-pagination--2')
   })
   .jcarouselPagination({
       item: function(page) {
-          return '<a class="page--2" href="#' + page + '"><span class="checked--2">&#183</span></a>';
+          return '<a class="page--2" href="#' + page + '"><span class="checked--2">&#9899</span></a>';
       }
   });
 

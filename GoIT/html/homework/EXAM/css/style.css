@@ -26,7 +26,6 @@ body {
 	background-size: cover;
 }
 header {
-	width: 960px;
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -49,8 +48,7 @@ header {
 /*TOP MENU*/
 .nav {  
 	float: right;
-    margin-top: 73.5px;
-    margin-left: 0;    
+    margin-top: 73.5px;   
 }
 .menu__item {
 	float: left;
@@ -61,8 +59,7 @@ header {
 	text-decoration: none;
 	color: white;
 	text-shadow: 1px 2px 2px rgba(0,0,0,.4);
-	margin-right: 0px;
-	margin-left:52px;
+	margin-right: 52px;
 }
 .menu__link:hover {
 	border-bottom: 2px	solid #edbfff;
@@ -112,9 +109,6 @@ header {
     margin-left: 5px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    font-size: 16px;
-    vertical-align: middle;
-    text-align: center;
     text-decoration: none;
 }
 .jcarousel-pagination {
@@ -155,11 +149,12 @@ header {
 	margin-left: 10.2%;
 }
 .checked {
+	display: block;
 	opacity: 0;
-	margin-left: -7px;
+	text-align: center;
+	line-height: 17px;
 	color: #f3f3f3;
-    font-size: 90px;
-    line-height: 18px;
+    font-size: 16px;
 }
 .active{
 	opacity: 1;
@@ -295,18 +290,19 @@ header {
     text-decoration: none;
 }
 .checked--2 {
+	display: block;
 	opacity: 0;
-	margin-left: -9px;
+	text-align: center;
+	line-height: 15px;
 	color: black;
-    font-size: 100px;
-    line-height: 16px;
+    font-size: 16px;
 }
 .active {
 	opacity: 1;
 }
 .main__1 {
 	float: left;
-	width: 428px;
+	width: 45%;
 	margin-left: 2.5%;
 }
 .main__information {
@@ -557,20 +553,16 @@ footer {
 	height: 798px;
 }
 header {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
+	max-width: 768px;
 }
 /*LOGO*/
 .logo {
 	float: none;
-    margin-left: 10.3%;
 }
 /*TOP MENU*/
 .nav {  
 	float: none;
     margin-top: 29px;
-    margin-left: 4.7%;    
 }
 /*SLIDER*/
 .background__slider {
@@ -618,9 +610,13 @@ header {
 	margin-left: 12.5%;
 }
 /*PURPLE*/
+.purple__block{
+	max-width: 768px;
+	/*background-color: green;*/
+}
 .about {
-	width: 25%;
-	margin-left: 11.5%;
+	width: 26%;
+	margin-left: 1.5%;
 	margin-top: 72px;
 }
 .about__header {
@@ -629,34 +625,33 @@ header {
     font-size: 24px;
 }
 .about__description {
-	width: 150px;
+	width: 75%;
 	overflow: hidden;
     height: 145px;
 	margin-top: 4px;
 }
 .about__link{
+	float: right;
 	margin-top: 6px;
-	margin-left: 62%;
+	margin-left: 0;
 }
 .about--2 {
-	margin-left: 2.5%;
+	margin-left: 7.5%;
 }
 .about__link--2 {
 	margin-top: 6px;
-	margin-left: 62%;
 }
 .about--3 {
-	margin-left: 3.3%;
+	margin-left: 9%;
 }
 .about__link--3 {
 	margin-top: 6px;
-	margin-left: 62%;
 }
 /*MAIN*/
 .main_background{
      width: 100%;
      height: 405px;
-     max-width: 960px;
+     max-width: 768px;
 }
 .jcarousel__li--2{
     height: 250px;
@@ -665,7 +660,7 @@ header {
 .wrap_jcarousel--2{
   width: 313px;
   height: 272px;
-  margin-left: 22.5%;
+  margin-left: 1%;
   margin-top: 100px;  
   background-image: none;
   background-color: white;
@@ -691,12 +686,9 @@ header {
 	height: 148px;
 	overflow: hidden;
 }
-.checked--2 {	
-	margin-left: -10px;
-}
 .updates {
-	width: 35%;
-	margin-left: 52%;
+	width: 47%;
+	margin-left: 53%;
 	margin-top: 100px;
 }
 .main__header--updates {	
@@ -708,31 +700,35 @@ header {
     overflow: hidden;
 }
 .about__link--blog__link {
-	margin-left: 72%;
+	float: right;
 	margin-top: -2px;
 }
 /*BRENDS*/
 .brends__background {
 	margin-top: 83px;
 }
+.brends {
+    max-width: 768px;
+    margin: 0 auto;
+}
 .brend {
-	margin-left: 10.5%;
+	margin-left: 0.5%;
 }
 
 .brend--2 {
-	margin-left: 5.8%;
+	margin-left: 7.2%;
 }
 .brend--3 {
-	margin-left: 5.8%;
+	margin-left: 7.2%;
 }
 .brend--4 {
-	margin-left: 5.3%;
+	margin-left: 7%;
 }
 .brend--5 {
-	margin-left: 4.5%;
+	margin-left: 5%;
 }
 .brend--6 {
-	margin-left: 5.3%;
+	margin-left: 6.8%;
 }
 /*FOOTER*/
 .footer__information__content  {
@@ -742,7 +738,6 @@ header {
 	overflow: hidden;
 	height: 208px;
 	margin-top: 96px;
-	margin-left: 1%;
 }
 .footer__block--2 {
 	margin-left: 4.5%;
@@ -751,7 +746,8 @@ header {
 	height: 200px;
 }
 .nav--bottom {
-	margin-left: 10.1%;
+	max-width: 767px;
+	margin: 0 auto;
 	margin-top: 45px;
 }
 .menu__link--bottom {
@@ -905,6 +901,7 @@ header {
 }
 /*MAIN*/
 .main__1 {
+	width: 100%;
 	float: none;
     margin: 0 auto;
 }
@@ -919,8 +916,8 @@ header {
 .wrap_jcarousel--2{
   width: 415px;
   height: 272px;
+  margin: 0 auto;
   margin-top: 70px; 
-  margin-left: 4.5%;
 }
 .jcarousel-pagination--2 {
   margin-left: 38%;
@@ -937,7 +934,8 @@ header {
 	margin-top: 12px;
 }
 .updates {
-	width: 42%;
+	width: 75%;
+	max-width: 480px;
 	margin: 0 auto;
 	margin-top: 60px;
 }
@@ -946,28 +944,32 @@ header {
 	margin-top: 88px;
 	height: 230px;
 }
+.brends {
+	max-width: 480px;
+	margin: 0 auto;
+}
 .brend {
 	margin-top: 35px;
-	margin-left: 29%;
+	margin-left: 17%;
 }
 .brend--2 {
-	margin-left: 7.5%;
+	margin-left: 11%;
 }
 .brend--3 {
-	margin-left: 7.5%;
+	margin-left: 12%;
 	
 }
 .brend--4 {
 	margin-top: 26px;
-	margin-left: 26%;
+	margin-left: 11%;
 }
 .brend--5 {
 	margin-top: 26px;
-	margin-left: 5.1%;
+	margin-left: 8%;
 }
 .brend--6 {
 	margin-top: 26px;
-	margin-left: 7%;
+	margin-left: 12%;
 }
 /*FOOTER*/
 .footer__information__background{
@@ -1020,9 +1022,9 @@ header {
 }
 .designed {
 	float: none;
-	width: 140px;	
 	margin: 0 auto;
 	margin-top: 102px;
+	text-align: center;
 }
 }
 @media screen and (max-width: 479px){
@@ -1105,9 +1107,6 @@ header {
 	height: 170px;
 	margin-top: 5px;	
 }
-.checked--2 {
-	margin-left: -9px;
-}
 .updates {
 	margin-left: 19.5%;
 	margin-top: 60px;
@@ -1135,6 +1134,9 @@ header {
 /*BRENDS*/
 .brends__background {
     height: 423px;
+}
+.brends {
+	max-width: 320px;
 }
 .brend {
 	margin-top: 51px;
