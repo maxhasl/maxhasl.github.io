@@ -14,16 +14,16 @@
     <p class="header">Тест по программированию</p>
     <form class="form">
       <% for (var i = 0; i<questions.length; i++){ %>
-            <p class="question"><%= questions[i].question %></p>
+            <p class="question"><%= questions[i].title %></p>
             <div class="container">
                 <div>
-                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answerOne %></label>                  
+                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answers[0] %></label>                  
                 </div>
                 <div>
-                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answerTwo %></label>                  
+                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answers[1] %></label>                  
                 </div>
                 <div>
-                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answerThree %></label>                  
+                  <label><input type="radio" name="<%= [i] %>" class="checkbox"><%= questions[i].answers[2] %></label>                  
                 </div>
             </div>
       <% } %>
