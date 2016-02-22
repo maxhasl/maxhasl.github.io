@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lessons 15-16</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+	<div class="main">
+		<img class="logo" src="img/google.png" alt="its google">
+		<form action="">
+			<input class="text" type="text" id="query">
+			<input class="submit" type="button" value="Пошук" id="f">
+		</form>
+		<script type="text/html" id = "template">
+        <% for (var i =0; i<object.length; i++) { %>
+        <div class="result">
+            <a href="<%=object[i].url%>" title="<%=object[i].url%>" target="_blank">
+            <%=object[i].title%></a>
+            <a href="<%=object[i].url%>" title="<%=object[i].url%>" target="_blank" style = "color: #006621"><%=object[i].visibleUrl%></a>
+            <p><%=object[i].content%></p> 
+        </div>
+        <%}; %>  
+        </script>
+        <div class="results"></div>
+        <div class="pages">
+          <a href="#" class="page__link active">1</a>
+          <a href="#" class="page__link">2</a>
+          <a href="#" class="page__link">3</a>
+          <a href="#" class="page__link">4</a>
+          <a href="#" class="page__link">5</a>
+        </div>      
+	</div>
+</body>
+</html>
