@@ -18,9 +18,14 @@ $(function () {
         $('.pages').css('display', 'block');
     });
 };
-    $('.submit').click(search);
+    $('.submit').click(function(){
+            $('.result').remove();
+            search();
+        });
     $(document).bind('keydown', function() {
         if (event.keyCode == 13) {
+            $('.result').remove();
+            event.preventDefault();
             search();
         };
 });
