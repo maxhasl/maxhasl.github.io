@@ -1411,7 +1411,7 @@
             return this;
         }
     });
-}(jQuery, document));'use strick'
+}(jQuery, document));'use strict'
 $(function() {
   $('.jcarousel').jcarousel({
      
