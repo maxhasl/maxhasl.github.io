@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*$primary-color: #333;*/
+/*CLEARFIX*/
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.clear_both {
+  clear: both; }
+
+body {
+  background-color: blue; }
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto; }
+
+.item__remove {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 30px;
+  cursor: pointer; }
+
+.list__item {
+  height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: yellow;
+  border-radius: 10px;
+  border: 2px solid black; }
+
+.list__item__text {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 10px; }
+
+.controlls {
+  width: 40%;
+  margin: 0 auto; }
+
+.item__value {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  background-color: orange;
+  border: 2px solid black; }
+
+.item__add {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: purple;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.item__edit {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.buttons {
+  width: 205px;
+  margin: 0 auto; }
+
+.hint {
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 18px;
+  width: 350px;
+  background: yellow;
+  border: 1px solid black;
+  text-align: justify; }
+
+.hint--2 {
+  margin-top: 10px;
+  width: 500px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

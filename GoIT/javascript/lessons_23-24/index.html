@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lessons 23-24</title>
+  <link rel="stylesheet" href="styles/css/dist/style.main.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script data-main="js/src/app.js" src="js/src/require.js"></script>
+  <script src="js/dist/script.main.min.js"></script>
+  
+</head>
+<body>
+  <script type="text/teplate" id="wrapper-template">
+    <div class="wrapper clearfix">
+     <ul class="item__list">
+       
+     </ul>
+     <div class="">
+       <input type="text" class="item__value">
+       <div class="buttons">
+          <button class="item__add">ADD</button>
+          <button class="item__edit">EDIT</button>
+       </div>
+     </div>
+     <p class="hint">P.S. Для редактирования, жмакай по надписи</p>
+     <p class="hint hint--2">Для редактирования нескольких записей одновременно, жмакай по нескольким надписям</p>
+  </div>
+  </script>
+  <script type="text/template" id="list-template">
+      <% for(var i = 0; i < data.length; i++) { %>
+        <li class="list__item">
+          <p class="list__item__text"><%= data[i] %></p> 
+          <img src="img/cross.png" class="item__remove" data-value="<%= data[i] %>">
+        </li>
+      <% } %>
+       
+       
+  </script>
+</body>
+</html>
