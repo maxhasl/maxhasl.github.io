@@ -58,10 +58,10 @@ table {
   clear: both; }
 
 body {
-  background-color: blue; }
+  background-color: #7aedc7; }
 
 .wrapper {
-  width: 800px;
+  width: 700px;
   margin: 0 auto; }
 
 .item__remove {
@@ -73,11 +73,11 @@ body {
 
 .list__item {
   height: 50px;
-  width: 80%;
-  margin: 0 auto;
+  width: 500px;
+  margin-left: 50px;
   margin-top: 20px;
-  background-color: yellow;
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 0 10px;
   border: 2px solid black; }
 
 .list__item__text {
@@ -92,19 +92,20 @@ body {
 
 .item__value {
   display: block;
-  margin: 0 auto;
+  float: left;
+  margin-left: 50px;
   margin-top: 10px;
   width: 300px;
   height: 30px;
-  background-color: orange;
+  background-color: white;
   border: 2px solid black; }
 
 .item__add {
   display: inline-block;
   margin-top: 10px;
-  width: 100px;
+  width: 70px;
   height: 50px;
-  background-color: purple;
+  background-color: #baa135;
   border: 2px solid black;
   border-radius: 5px;
   cursor: pointer; }
@@ -112,29 +113,26 @@ body {
 .item__edit {
   display: inline-block;
   margin-top: 10px;
-  width: 100px;
+  width: 70px;
   height: 50px;
-  background-color: red;
+  background-color: #a10000;
   border: 2px solid black;
   border-radius: 5px;
   cursor: pointer; }
 
 .buttons {
   width: 205px;
-  margin: 0 auto; }
+  margin-left: 410px; }
 
 .hint {
-  margin: 0 auto;
-  margin-top: 50px;
+  margin-left: 50px;
+  margin-top: 10px;
   font-size: 18px;
   width: 350px;
-  background: yellow;
-  border: 1px solid black;
   text-align: justify; }
 
 .hint--2 {
-  margin-top: 10px;
-  width: 500px;
-  text-align: center; }
+  margin-left: 50px;
+  width: 500px; }
 
 /*# sourceMappingURL=style.css.map */
