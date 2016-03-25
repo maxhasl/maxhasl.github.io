@@ -231,16 +231,14 @@ header {
   width: 100%;
   height: 540px;
   margin: 0 auto;
-  /*background-position: center;   */
+  background-position: center;
   background: url("../img/header_background.jpg");
 }
 
 .header__background {
   width: 100%;
   height: 540px;
-  /*  background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20); */
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000', endColorstr='#000');
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .log {
@@ -653,7 +651,7 @@ footer {
 
 /*TABLET*/
 
-@media screen\0, screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   header {
     height: 700px;
   }
@@ -926,7 +924,7 @@ footer {
 
 /*DESKTOP*/
 
-@media screen\0, screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
   header {
     height: 665px;
   }
