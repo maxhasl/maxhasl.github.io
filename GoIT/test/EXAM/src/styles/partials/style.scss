@@ -168,7 +168,7 @@ header {
   background: -o-linear-gradient(top, rgba(48,48,48,0.13) 0%, rgba(48,48,48,0.13) 0%, rgba(13,12,13,0.7) 100%);
   background: -ms-linear-gradient(top, rgba(48,48,48,0.13) 0%, rgba(48,48,48,0.13) 0%, rgba(13,12,13,0.7) 100%);
   background: linear-gradient(to bottom, rgba(48,48,48,0.13) 0%, rgba(48,48,48,0.13) 0%, rgba(13,12,13,0.7) 100%);
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /*ie8*/
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=13); /*ie8*/
   border-radius: 5px;
 }
 .step__link {
