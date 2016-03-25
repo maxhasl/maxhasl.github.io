@@ -53,7 +53,7 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 .menu__item:last-child{margin-right:0}.menu__link{text-decoration:none;font-family:"Roboto-Light";font-size:14px;color:#989898}
 .menu__link:hover{border-bottom:2px solid #ff4e50}.designed{margin-top:16px;font-family:"Montserrat-Bold";font-size:10px;text-align:center;letter-spacing:1px;color:#ccc}
 .designed__logo{display:block;width:110px;margin:0 auto;margin-top:8px;margin-bottom:20px}
-@media screen and (min-width:768px){header{height:700px}.header__background{height:700px}
+@media screen\0,screen and (min-width:768px){header{height:700px}.header__background{height:700px}
 .log{float:right;margin-right:4%;margin-top:18px}.header__caption{margin-top:48px;margin-left:6%}
 .header__caption__2{width:66%;margin:0 auto;margin-top:148px;font-size:52px;line-height:62px;letter-spacing:0}
 .header__caption__3{margin-top:28px;font-size:24px}.find__link{width:224px;height:40px;margin-top:38px;line-height:40px}
@@ -75,7 +75,7 @@ footer{height:200px;margin:0 auto;margin-top:100px;max-width:none}.footer__conta
 .footer__title{float:left;margin-top:38px;margin-left:40px}.menu__caption{width:70px;margin-top:38px;margin-left:0}
 .footer__menu{float:left;width:70px;margin-left:80px}nav{margin-top:10px}.menu__item{float:none;margin-bottom:8px}
 .menu__caption--2{margin-left:432px}address{float:right;width:120px;margin-top:-13px;margin-right:40px}
-.designed{float:right;margin-top:0}.designed__logo{float:right}}@media screen and (min-width:960px){header{height:665px}
+.designed{float:right;margin-top:0}.designed__logo{float:right}}@media screen\0,screen and (min-width:960px){header{height:665px}
 .header__background{height:665px}.log{margin-right:0;margin-top:16px}.header__caption{margin-top:46px;margin-left:2.5%;letter-spacing:0}
 .header__caption__2{width:60%;margin-top:137px;letter-spacing:-1px}.header__caption__3{margin-top:22px;letter-spacing:-0.8px}
 .find__link{margin-top:36px;width:220px;letter-spacing:0}.title{margin-top:90px;font-size:22px;letter-spacing:-0.7px}

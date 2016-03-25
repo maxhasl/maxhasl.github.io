@@ -389,7 +389,7 @@ footer{
 }
 
 /*TABLET*/
-@media  screen and (min-width: 768px){
+@media screen\0, screen and (min-width: 768px){
 header {
   height: 700px; 
 }
@@ -612,7 +612,7 @@ address{
 }
 }
 /*DESKTOP*/
-@media  screen and (min-width: 960px){
+@media screen\0, screen and (min-width: 960px){
 header {
   height: 665px; 
 }
