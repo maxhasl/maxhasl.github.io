@@ -268,9 +268,18 @@ header {
   margin-left: 0.5%;
   width: 85px;
   border: 2px solid white;
+  /* Для хороших браузеров */
+  -moz-border-radius: 20px;
+  /* Firefox */
+  -webkit-border-radius: 20px;
+  /* Safari, Chrome */
+  -khtml-border-radius: 20px;
+  /* KHTML */
   border-radius: 20px;
+  /* CSS3 */
+  /* Для плохих IE */
   behavior: url("border-radius.htc");
-  /*учим IE border-radius */
+  /* учим IE border-radius */
 }
 
 .header__caption {
