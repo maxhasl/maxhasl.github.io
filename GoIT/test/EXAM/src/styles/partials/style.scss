@@ -102,7 +102,6 @@ header {
   margin-top: 18px;
   text-align: center;
   line-height: 40px;
-  background-color: #ff4e50;
   text-decoration: none;
   color: white;
   font-family: $montBold; 
@@ -116,6 +115,7 @@ header {
   behavior: url(border-radius.htc); /* учим IE border-radius */
   letter-spacing: 0.5px;
   border: none; 
+  background-color: #ff4e50;
 }
 .title{
   width: 90%;
