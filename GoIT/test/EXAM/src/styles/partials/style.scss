@@ -33,7 +33,8 @@ header {
 .header__background {
   width: 100%;
   height: 540px;
-  background-color: rgba(0, 0, 0, 0.2);  
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000000', endColorstr='#000000');
 }
 .log{
   width: 190px ;
