@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*CLEARFIX*/
 .clearfix {
   *zoom: 1; }
@@ -53,7 +54,9 @@ header {
   margin-left: 0.5%;
   width: 85px;
   border: 2px solid white;
-  border-radius: 20px; }
+  border-radius: 20px;
+  behavior: url(border-radius.htc);
+  /*учим IE border-radius */ }
 
 .header__caption {
   width: 180px;

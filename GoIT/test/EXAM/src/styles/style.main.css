@@ -198,6 +198,8 @@ table {
   font-family: 'Roboto-ThinItalic';
   src: url("../fonts/Roboto-ThinItalic.ttf") format('truetype');
 }
+@charset "UTF-8";
+
 /*CLEARFIX*/
 
 .clearfix {
@@ -267,6 +269,8 @@ header {
   width: 85px;
   border: 2px solid white;
   border-radius: 20px;
+  behavior: url("border-radius.htc");
+  /*учим IE border-radius */
 }
 
 .header__caption {
