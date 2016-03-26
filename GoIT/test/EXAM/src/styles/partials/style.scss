@@ -107,7 +107,13 @@ header {
   color: white;
   font-family: $montBold; 
   font-size: 13px;
-  border-radius: 20px;
+      /* Для хороших браузеров */
+  -moz-border-radius: 20px; /* Firefox */
+  -webkit-border-radius: 20px; /* Safari, Chrome */
+  -khtml-border-radius: 20px; /* KHTML */
+  border-radius: 20px; /* CSS3 */
+  /* Для плохих IE */
+  behavior: url(border-radius.htc); /* учим IE border-radius */
   letter-spacing: 0.5px;
   border: none; 
 }
