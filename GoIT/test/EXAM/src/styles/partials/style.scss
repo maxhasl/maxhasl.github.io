@@ -115,7 +115,7 @@ header {
   behavior: url(border-radius.htc); /* учим IE border-radius */
   letter-spacing: 0.5px;
   border: none; 
-  background-color: #ff4e50;
+  z-index: 5;
 }
 .title{
   width: 90%;
