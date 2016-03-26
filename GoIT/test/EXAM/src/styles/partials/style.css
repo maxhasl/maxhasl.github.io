@@ -29,7 +29,7 @@ header {
   width: 100%;
   height: 540px;
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000000', endColorstr='#000000');
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
   background-color: rgba(0, 0, 0, 0.2); }
 
 .log {
