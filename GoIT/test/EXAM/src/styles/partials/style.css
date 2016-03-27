@@ -171,8 +171,7 @@ header {
   height: 240px;
   background-image: url(../img/step_1.jpg);
   background-position: center;
-  border-radius: 5px;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 5px; }
 
 .step--2 {
   background-image: url(../img/step_2.jpg); }
@@ -193,8 +192,7 @@ header {
   /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#303030', endColorstr='#0D0C0D')";*/
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#21303030,endColorstr=#B20D0C0D);
   /* IE8 */
-  border-radius: 5px;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 5px; }
 
 .step__link {
   display: block;
@@ -210,8 +208,7 @@ header {
   line-height: 22px;
   font-size: 10px;
   letter-spacing: 1.7px;
-  border-radius: 20px;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 20px; }
 
 .step__title {
   margin-top: 16px;
@@ -238,8 +235,7 @@ header {
   height: 120px;
   width: 120px;
   background-image: url(../img/parthner_1.jpg);
-  border-radius: 50%;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 50%; }
 
 .parthner__icon {
   display: block;
@@ -299,7 +295,6 @@ header {
   margin-top: 30px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
-  behavior: url(PIE/PIE.htc);
   font-family: "Montserrat-Bold";
   font-size: 14px;
   letter-spacing: -0.5px;
@@ -320,8 +315,7 @@ header {
   width: 300px;
   margin: 0 auto;
   margin-top: 10px;
-  border-radius: 5px;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 5px; }
   .masonry__item:first-child {
     position: relative;
     margin-top: 14px; }
@@ -329,8 +323,7 @@ header {
 .masonry__image {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 5px; }
 
 .title--image {
   position: absolute;
@@ -354,7 +347,6 @@ header {
   width: 264px;
   height: 36px;
   border-radius: 5px;
-  behavior: url(PIE/PIE.htc);
   border: 1px solid #dcdcdc;
   padding-left: 15px;
   font-family: "Roboto-Light";
@@ -468,8 +460,7 @@ footer {
     height: 400px;
     background-image: url(../img/step_1.jpg);
     background-position: center;
-    border-radius: 5px;
-    behavior: url(PIE/PIE.htc); }
+    border-radius: 5px; }
   .step--2 {
     background-image: url(../img/step_2.jpg); }
   .step--3 {
