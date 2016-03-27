@@ -9,6 +9,7 @@
     behavior: url(PIE/PIE.htc);
 }
 .cont{
+    position: relative;
     background-image: url(../img/step_3.jpg);
     height: 400px;
     width: 100%;
