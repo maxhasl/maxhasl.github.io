@@ -1,6 +1,7 @@
 'use strict'
 //CAROUSEL
 $(function() {
+  $.support.cors = true;
   $('.jcarousel').jcarousel({
       wrap: 'circular'
   });
@@ -38,7 +39,7 @@ $(function() {
    var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=mb";
 
   function search(link) {
-    $.support.cors = true;
+    
     $.ajax({ 
         type: 'GET',
         url: link,
