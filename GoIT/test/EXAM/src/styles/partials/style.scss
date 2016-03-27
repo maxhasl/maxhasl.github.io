@@ -64,7 +64,7 @@ header {
   -khtml-border-radius: 20px; /* KHTML */
   border-radius: 20px; /* CSS3 */
   /* Для плохих IE */
-  behavior: url(border-radius.htc); /* учим IE border-radius */
+  behavior: url(PIE.htc); /* учим IE border-radius */
 }
 .header__caption {
   width: 180px;
@@ -112,10 +112,9 @@ header {
   -khtml-border-radius: 20px; /* KHTML */
   border-radius: 20px; /* CSS3 */
   /* Для плохих IE */
-  behavior: url(border-radius.htc); /* учим IE border-radius */
+  behavior: url(PIE.htc); /* учим IE border-radius */
   letter-spacing: 0.5px;
   border: none; 
-  z-index: 5;
 }
 .title{
   width: 90%;

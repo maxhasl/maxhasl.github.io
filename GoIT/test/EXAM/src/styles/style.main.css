@@ -278,7 +278,7 @@ header {
   border-radius: 20px;
   /* CSS3 */
   /* Для плохих IE */
-  behavior: url("border-radius.htc");
+  behavior: url("PIE.htc");
   /* учим IE border-radius */
 }
 
@@ -335,11 +335,10 @@ header {
   border-radius: 20px;
   /* CSS3 */
   /* Для плохих IE */
-  behavior: url("border-radius.htc");
+  behavior: url("PIE.htc");
   /* учим IE border-radius */
   letter-spacing: 0.5px;
   border: none;
-  z-index: 5;
 }
 
 .title {

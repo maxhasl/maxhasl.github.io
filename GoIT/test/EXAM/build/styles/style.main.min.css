@@ -20,11 +20,11 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 .header__wrapper{width:100%;max-width:940px;margin:0 auto}header{width:100%;height:540px;margin:0 auto;background-image:url("../img/header_background.jpg");background-position:center}
 .header__background{width:100%;height:540px;background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);background-color:rgba(0,0,0,0.2)}
 .log{width:190px;margin:0 auto}.log__button{display:inline-block;margin-top:20px;width:75px;height:32px;font-family:"Montserrat-Bold";text-decoration:none;font-size:14px;color:white;text-align:center;line-height:32px}
-.log__button--up{margin-left:.5%;width:85px;border:2px solid white;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("border-radius.htc")}
+.log__button--up{margin-left:.5%;width:85px;border:2px solid white;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("PIE.htc")}
 .header__caption{width:180px;margin:0 auto;margin-top:118px;font-family:"Montserrat-Bold";color:white;font-size:20px;letter-spacing:1px}
 .header__caption__2{margin-top:30px;font-size:28px;line-height:35px;letter-spacing:1.5px;text-align:center;font-family:"Montserrat-Bold";color:white}
 .header__caption__3{text-align:center;color:white;width:70%;margin:0 auto;margin-top:10px;font-size:18px;font-family:"Roboto-Light";line-height:20px}
-.find__link{display:block;width:280px;height:40px;margin:0 auto;margin-top:18px;text-align:center;line-height:40px;text-decoration:none;color:white;font-family:"Montserrat-Bold";font-size:13px;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("border-radius.htc");letter-spacing:.5px;border:0;z-index:5}
+.find__link{display:block;width:280px;height:40px;margin:0 auto;margin-top:18px;text-align:center;line-height:40px;text-decoration:none;color:white;font-family:"Montserrat-Bold";font-size:13px;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("PIE.htc");letter-spacing:.5px;border:0}
 .title{width:90%;margin:0 auto;margin-top:35px;font-family:"Montserrat-Bold";font-size:22px;line-height:26px;text-align:center;color:#333}
 .jcarousel{position:relative;overflow:hidden}.jcarousel__ul{width:20000em;position:relative}
 .jcarousel__li{float:left;height:240px;max-width:300px}.jcarousel__wrap{margin:0 auto;margin-top:10px;width:100%;max-width:300px;position:relative}
