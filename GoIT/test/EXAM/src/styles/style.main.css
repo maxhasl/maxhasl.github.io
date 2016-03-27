@@ -235,7 +235,7 @@ header {
   margin: 0 auto;
   background-image: url("../img/header_background.jpg");
   background-position: center;
-  z-index: -2;
+  z-index: -4;
 }
 
 .header__background {
@@ -244,7 +244,7 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
   /*ie8+*/
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
+  z-index: -3;
 }
 
 .log {
@@ -282,7 +282,6 @@ header {
   /* Для плохих IE */
   behavior: url("PIE/PIE.htc");
   /* учим IE border-radius */
-  z-index: 8;
 }
 
 .header__caption {
@@ -341,6 +340,7 @@ header {
   behavior: url("PIE/PIE.htc");
   /* учим IE border-radius */
   letter-spacing: 0.5px;
+  background-color: #ff4e50;
 }
 
 .title {
