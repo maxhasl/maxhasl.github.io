@@ -106,6 +106,7 @@ $(function() {
 
 //AJAX
 // MASONRY
+  $.support.cors = true;
   function masonry() {
     var $container = $('#masonry-container');
        $container.isotope({
@@ -118,11 +119,17 @@ $(function() {
 
    var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7";
 
-   function search (link) {
-    $.getJSON(link,
-        function(data){
+   function search(link) {
+    
+    $.ajax({ 
+        type: 'GET',
+        url: link,
+        dataType: 'json',
+        cache: false,
+    })
+    .success( function(data){ 
         var obj = {
-           data: data
+          data: data
         };
         $('#start__container').after('<section id="masonry-container" class="clearfix"></section>');
         var html = $('#images-template').html();
@@ -131,9 +138,9 @@ $(function() {
         $('#masonry-container').append(content);
         masonry();
         }, 300);
-        
+        console.log(data);
     });
-   };
+  };
 
   
    $('.find__link--2').on('click', function (e){
