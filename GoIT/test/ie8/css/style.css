@@ -1,6 +1,7 @@
 .rounded {
     height: 200px;
     width: 200px;
+    background: red;
     border: 1px solid #000;
     border-radius: 20px;
     -moz-border-radius: 20px;
