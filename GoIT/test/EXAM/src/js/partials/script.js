@@ -24,17 +24,17 @@ $(function() {
 
 //AJAX
 // MASONRY
-  function masonry() {
-    var $container = $('#masonry-container');
-    // Инициализация Масонри, после загрузки изображений
-    $container.imagesLoaded( function() {
-       $container.masonry({
-       itemSelector: '.masonry__item',
-       gutter: 20
-       });
+  // function masonry() {
+  //   var $container = $('#masonry-container');
+  //   // Инициализация Масонри, после загрузки изображений
+  //   $container.imagesLoaded( function() {
+  //      $container.masonry({
+  //      itemSelector: '.masonry__item',
+  //      gutter: 20
+  //      });
 
-    });
-  };
+  //   });
+  // };
 
    var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=mb";
 
@@ -55,7 +55,7 @@ $(function() {
         var content = tmpl(html, obj);
         setTimeout(function(){
         $('#masonry-container').append(content);
-        masonry();
+        // masonry();
         }, 300);
         console.log(data);
     });
