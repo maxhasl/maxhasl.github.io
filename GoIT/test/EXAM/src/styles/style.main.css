@@ -171,6 +171,10 @@ table {
   clear: both;
 }
 
+body {
+  z-index: -2;
+}
+
 /*MOBILE*/
 
 .header__wrapper {
