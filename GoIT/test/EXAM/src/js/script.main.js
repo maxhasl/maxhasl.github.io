@@ -38,6 +38,7 @@ $(function() {
    var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7";
 
   function search(link) {
+    $.support.cors = true;
     $.ajax({ 
       url : link,
       dataType : "json",
