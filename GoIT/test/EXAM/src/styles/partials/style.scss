@@ -33,7 +33,6 @@ header {
   margin: 0 auto;
   background-image: url(../img/header_background.jpg);
   background-position: center;   
-  z-index: 0;
 }
 .header__background {
   position: relative;
@@ -41,7 +40,6 @@ header {
   height: 540px;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000); /*ie8+*/
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 0;
 }
 .log{
   position: relative;
