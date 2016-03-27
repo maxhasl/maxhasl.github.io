@@ -40,7 +40,9 @@ $(function() {
   function search(link) {
     $.ajax({ 
       url : link,
-      dataType : 'json'
+      dataType : 'json',
+      type: 'GET',
+      cache: false
     })
     .success( function(data){ 
         var obj = {
