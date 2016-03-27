@@ -1,0 +1,9 @@
+.rounded {
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    behavior: url(PIE/PIE.htc);
+}
