@@ -186,7 +186,6 @@
 		  <!-- DISCOVER HOLIDAY -->
 		  <section class="holiday">
 		  	<p class="title" id="start__container">Discover holiday activity ideas</p>
-		  	<!-- <section id="masonry-container" class="clearfix"> -->
                <script type="text/template" id="images-template">
                   <% for(var i = 0; i < data.images.length; i++) { 
                      if (i==4||i==5){ %>
@@ -195,16 +194,13 @@
                        <p class="title title--image"><%= data.images[i].word %></p>
                     </div>
                     <% } else { %>
-
                      <div class="masonry__item">
                        <img class="masonry__image" src="<%= data.images[i].imageurl %>">
                        <p class="title title--image"><%= data.images[i].word %></p>
                     </div> 
                     <%};
-                    
                    } %>
-               </script>            
-        <!-- </section>             -->
+               </script>
             <p class="title title--2">Discover holiday activity ideas</p>
             <p class="holiday__question">Hi! What are your holiday interests?</p>
             <form class="holiday__form clearfix">
