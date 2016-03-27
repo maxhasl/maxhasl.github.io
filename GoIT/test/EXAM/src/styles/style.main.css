@@ -131,14 +131,22 @@ table {
 }
 @font-face {
   font-family: 'Montserrat-Bold';
-  src: url("../fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype'),
-         url("../fonts/Montserrat-Bold.ttf") format('truetype');
+  src: url("../fonts/Montserrat-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold-ie8';
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype');
 }
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url("../fonts/Roboto-Light.eot?#iefix") format('embedded-opentype'),
-         url("../fonts/Roboto-Light.ttf") format('truetype');
+  src: url("../fonts/Roboto-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Light-ie8';
+  src: url("../fonts/Roboto-Light.eot?#iefix") format('embedded-opentype');
 }
 @charset "UTF-8";
 
@@ -202,7 +210,7 @@ header {
   margin-top: 20px;
   width: 75px;
   height: 32px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   text-decoration: none;
   font-size: 14px;
   color: white;
@@ -232,7 +240,7 @@ header {
   width: 180px;
   margin: 0 auto;
   margin-top: 118px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white;
   font-size: 20px;
   letter-spacing: 1px;
@@ -244,7 +252,7 @@ header {
   line-height: 35px;
   letter-spacing: 1.5px;
   text-align: center;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white;
 }
 
@@ -255,7 +263,7 @@ header {
   margin: 0 auto;
   margin-top: 10px;
   font-size: 18px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   line-height: 20px;
 }
 
@@ -269,7 +277,7 @@ header {
   line-height: 40px;
   text-decoration: none;
   color: white;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 13px;
   /* Для хороших браузеров */
   -moz-border-radius: 20px;
@@ -291,7 +299,7 @@ header {
   width: 90%;
   margin: 0 auto;
   margin-top: 35px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -392,7 +400,7 @@ header {
   margin-top: 16px;
   margin-left: 7%;
   font-size: 24px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white;
   line-height: 28px;
 }
@@ -402,7 +410,7 @@ header {
   margin-top: 12px;
   margin-left: 7%;
   color: white;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 14px;
   line-height: 17px;
 }
@@ -437,7 +445,7 @@ header {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
 }
 
 .parthner__feedback {
@@ -446,7 +454,7 @@ header {
   margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   text-align: center;
   color: #989898;
 }
@@ -488,7 +496,7 @@ header {
   border: 2px solid #ff4e50;
   border-radius: 20px;
   behavior: url("PIE/PIE.htc");
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 14px;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -538,7 +546,7 @@ header {
   margin: 0 auto;
   margin-top: 12px;
   text-align: center;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 18px;
 }
 
@@ -551,7 +559,7 @@ header {
   border-radius: 5px;
   border: 1px solid #dcdcdc;
   padding-left: 15px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 14px;
 }
 
@@ -570,7 +578,7 @@ footer {
   margin-top: 18px;
   text-align: center;
   font-size: 16px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: #ff4e50;
   letter-spacing: 1px;
 }
@@ -578,7 +586,7 @@ footer {
 .menu__caption {
   margin-top: 15px;
   text-align: center;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 14px;
 }
 
@@ -599,7 +607,7 @@ footer {
 
 .menu__link {
   text-decoration: none;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 14px;
   color: #989898;
 }
@@ -610,7 +618,7 @@ footer {
 
 .designed {
   margin-top: 16px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 10px;
   text-align: center;
   letter-spacing: 1px;

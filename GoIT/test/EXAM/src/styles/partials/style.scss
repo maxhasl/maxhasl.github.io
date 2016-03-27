@@ -1,5 +1,7 @@
-$montBold: 'Montserrat-Bold';
-$robLigt:  'Roboto-Light';
+$montBold:     'Montserrat-Bold';
+$robLigt:      'Roboto-Light';
+$montBold-ie8: 'Montserrat-Bold-ie8';
+$robLigt-ie8:  'Roboto-Light-ie8';
 
 /*CLEARFIX*/
 .clearfix{
@@ -50,7 +52,7 @@ header {
   margin-top: 20px;
   width: 75px;
   height: 32px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   text-decoration: none;
   font-size: 14px;
   color: white;
@@ -74,7 +76,7 @@ header {
   width: 180px;
   margin: 0 auto;
   margin-top: 118px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   color: white;
   font-size: 20px;
   letter-spacing: 1px;
@@ -85,7 +87,7 @@ header {
   line-height: 35px;
   letter-spacing: 1.5px;
   text-align: center;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   color: white;
 }
 .header__caption__3{
@@ -95,7 +97,7 @@ header {
   margin: 0 auto;
   margin-top: 10px;
   font-size: 18px;
-  font-family: $robLigt;  
+  font-family: $robLigt, $robLigt-ie8;  
   line-height: 20px;
 }
 .find__link{
@@ -108,7 +110,7 @@ header {
   line-height: 40px;
   text-decoration: none;
   color: white;
-  font-family: $montBold; 
+  font-family: $montBold, $montBold-ie8; 
   font-size: 13px;
       /* Для хороших браузеров */
   -moz-border-radius: 20px; /* Firefox */
@@ -124,7 +126,7 @@ header {
   width: 90%;
   margin: 0 auto;
   margin-top: 35px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -211,7 +213,7 @@ header {
   margin-top: 16px;
   margin-left: 7%;
   font-size: 24px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   color: white;
   line-height: 28px;
 }
@@ -220,7 +222,7 @@ header {
   margin-top: 12px;
   margin-left: 7%;
   color: white;
-  font-family: $robLigt;
+  font-family: $robLigt, $robLigt-ie8;
   font-size: 14px;
   line-height: 17px;
 }
@@ -251,7 +253,7 @@ header {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
 }
 .parthner__feedback{
   width: 220px;
@@ -259,7 +261,7 @@ header {
   margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
-  font-family: $robLigt;
+  font-family: $robLigt, $robLigt-ie8;
   text-align: center;
   color: #989898;
 }
@@ -293,7 +295,7 @@ header {
   border: 2px solid #ff4e50;
   border-radius: 20px;
   behavior: url(PIE/PIE.htc);
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   font-size: 14px;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -338,7 +340,7 @@ header {
   margin: 0 auto;
   margin-top: 12px;
   text-align: center; 
-  font-family: $robLigt;
+  font-family: $robLigt, $robLigt-ie8;
   font-size: 18px;
 }
 .holiday__input__text{
@@ -351,7 +353,7 @@ header {
 
   border: 1px solid #dcdcdc; 
   padding-left: 15px;
-  font-family: $robLigt;
+  font-family: $robLigt, $robLigt-ie8;
   font-size: 14px;
 }
 .find__link--2{
@@ -366,14 +368,14 @@ footer{
   margin-top: 18px;
   text-align: center;
   font-size: 16px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   color: #ff4e50;
   letter-spacing: 1px;
 }
 .menu__caption{
   margin-top: 15px;
   text-align: center;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   font-size: 14px;
 }
 .menu{
@@ -390,7 +392,7 @@ footer{
 }
 .menu__link{
   text-decoration:none;
-  font-family: $robLigt;
+  font-family: $robLigt, $robLigt-ie8;
   font-size: 14px;
   color: #989898;
   &:hover{
@@ -399,7 +401,7 @@ footer{
 }
 .designed{
   margin-top: 16px;
-  font-family: $montBold;
+  font-family: $montBold, $montBold-ie8;
   font-size: 10px;
   text-align: center;
   letter-spacing: 1px;
