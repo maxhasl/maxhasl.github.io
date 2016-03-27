@@ -24,6 +24,7 @@ $robLigt:  'Roboto-Light';
   margin: 0 auto;
 }
 header {
+  position: relative;
   width: 100%;
   height: 540px;  
   margin: 0 auto;
@@ -32,6 +33,7 @@ header {
   z-index: -6;
 }
 .header__background {
+  position: relative;
   width: 100%;
   height: 540px;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000); /*ie8+*/
