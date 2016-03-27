@@ -67,7 +67,7 @@ header {
   behavior: url(PIE/PIE.htc);
   /* учим IE border-radius */ }
 
-.header__caption {
+h1 {
   width: 180px;
   margin: 0 auto;
   margin-top: 118px;
@@ -76,7 +76,7 @@ header {
   font-size: 20px;
   letter-spacing: 1px; }
 
-.header__caption__2 {
+h2 {
   margin-top: 30px;
   font-size: 28px;
   line-height: 35px;
@@ -85,7 +85,7 @@ header {
   font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white; }
 
-.header__caption__3 {
+h3 {
   text-align: center;
   color: white;
   width: 70%;
@@ -417,17 +417,17 @@ footer {
     float: right;
     margin-right: 4%;
     margin-top: 18px; }
-  .header__caption {
+  h1 {
     margin-top: 48px;
     margin-left: 6%; }
-  .header__caption__2 {
+  h2 {
     width: 66%;
     margin: 0 auto;
     margin-top: 148px;
     font-size: 52px;
     line-height: 62px;
     letter-spacing: 0px; }
-  .header__caption__3 {
+  h3 {
     margin-top: 28px;
     font-size: 24px; }
   .find__link {
@@ -590,15 +590,15 @@ footer {
   .log {
     margin-right: 0%;
     margin-top: 16px; }
-  .header__caption {
+  h1 {
     margin-top: 46px;
     margin-left: 2.5%;
     letter-spacing: 0; }
-  .header__caption__2 {
+  h2 {
     width: 60%;
     margin-top: 137px;
     letter-spacing: -1px; }
-  .header__caption__3 {
+  h3 {
     margin-top: 22px;
     letter-spacing: -0.8px; }
   .find__link {

@@ -11,9 +11,9 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 .header__background{position:relative;width:100%;height:540px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);background-color:rgba(0,0,0,0.2)}
 .log{position:relative;width:190px;margin:0 auto}.log__button{display:inline-block;margin-top:20px;width:75px;height:32px;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";text-decoration:none;font-size:14px;color:white;text-align:center;line-height:32px}
 .log__button--up{margin-left:.5%;width:85px;border:2px solid white;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("PIE/PIE.htc")}
-.header__caption{width:180px;margin:0 auto;margin-top:118px;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";color:white;font-size:20px;letter-spacing:1px}
-.header__caption__2{margin-top:30px;font-size:28px;line-height:35px;letter-spacing:1.5px;text-align:center;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";color:white}
-.header__caption__3{text-align:center;color:white;width:70%;margin:0 auto;margin-top:10px;font-size:18px;font-family:"Roboto-Light","Roboto-Light-ie8";line-height:20px}
+h1{width:180px;margin:0 auto;margin-top:118px;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";color:white;font-size:20px;letter-spacing:1px}
+h2{margin-top:30px;font-size:28px;line-height:35px;letter-spacing:1.5px;text-align:center;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";color:white}
+h3{text-align:center;color:white;width:70%;margin:0 auto;margin-top:10px;font-size:18px;font-family:"Roboto-Light","Roboto-Light-ie8";line-height:20px}
 .find__link{display:block;width:280px;height:40px;margin:0 auto;margin-top:18px;text-align:center;line-height:40px;text-decoration:none;color:white;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";font-size:13px;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("PIE/PIE.htc");letter-spacing:.5px;background-color:#ff4e50}
 .title{width:90%;margin:0 auto;margin-top:35px;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";font-size:22px;line-height:26px;text-align:center;color:#333}
 .jcarousel{position:relative;overflow:hidden}.jcarousel__ul{width:20000em;position:relative}
@@ -46,9 +46,9 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 .menu__link:hover{border-bottom:2px solid #ff4e50}.designed{margin-top:16px;font-family:"Montserrat-Bold","Montserrat-Bold-ie8";font-size:10px;text-align:center;letter-spacing:1px;color:#ccc}
 .designed__logo{display:block;width:110px;margin:0 auto;margin-top:8px;margin-bottom:20px}
 @media screen and (min-width:768px){header{height:700px}.header__background{height:700px}
-.log{float:right;margin-right:4%;margin-top:18px}.header__caption{margin-top:48px;margin-left:6%}
-.header__caption__2{width:66%;margin:0 auto;margin-top:148px;font-size:52px;line-height:62px;letter-spacing:0}
-.header__caption__3{margin-top:28px;font-size:24px}.find__link{width:224px;height:40px;margin-top:38px;line-height:40px}
+.log{float:right;margin-right:4%;margin-top:18px}h1{margin-top:48px;margin-left:6%}
+h2{width:66%;margin:0 auto;margin-top:148px;font-size:52px;line-height:62px;letter-spacing:0}
+h3{margin-top:28px;font-size:24px}.find__link{width:224px;height:40px;margin-top:38px;line-height:40px}
 .title{margin-top:95px}.carousels{max-width:768px;margin:0 auto}.jcarousel__li{float:left;height:400px;max-width:235px}
 .jcarousel__wrap{float:left;height:400px;margin-left:2.5%;margin-top:34px;max-width:235px}
 .jcarousel__wrap__1{margin-left:1%;margin-top:34px}.step{width:235px;height:400px;background-image:url("../img/step_1.jpg");background-position:center;border-radius:5px}
@@ -68,8 +68,8 @@ footer{height:200px;margin:0 auto;margin-top:100px;max-width:none}.footer__conta
 .footer__menu{float:left;width:70px;margin-left:80px}nav{margin-top:10px}.menu__item{float:none;margin-bottom:8px}
 .menu__caption--2{margin-left:432px}address{float:right;width:120px;margin-top:-13px;margin-right:40px}
 .designed{float:right;margin-top:0}.designed__logo{float:right}}@media screen and (min-width:960px){header{height:665px}
-.header__background{height:665px}.log{margin-right:0;margin-top:16px}.header__caption{margin-top:46px;margin-left:2.5%;letter-spacing:0}
-.header__caption__2{width:60%;margin-top:137px;letter-spacing:-1px}.header__caption__3{margin-top:22px;letter-spacing:-0.8px}
+.header__background{height:665px}.log{margin-right:0;margin-top:16px}h1{margin-top:46px;margin-left:2.5%;letter-spacing:0}
+h2{width:60%;margin-top:137px;letter-spacing:-1px}h3{margin-top:22px;letter-spacing:-0.8px}
 .find__link{margin-top:36px;width:220px;letter-spacing:0}.title{margin-top:90px;font-size:22px;letter-spacing:-0.7px}
 .carousels{max-width:940px;margin:0 auto}.jcarousel__li{height:380px;max-width:285px}
 .jcarousel__wrap{height:380px;margin-left:2%;margin-top:32px;max-width:285px}.jcarousel__wrap__1{margin-left:2.5%;margin-top:32px}
