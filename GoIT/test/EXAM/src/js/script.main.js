@@ -35,15 +35,15 @@ $(function() {
     });
   };
 
-   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7";
+   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=mb";
 
   function search(link) {
     $.support.cors = true;
     $.ajax({ 
-      url : link,
-      dataType : "json",
-      type: "GET",
-      cache: false
+        type: 'GET',
+        url: link,
+        dataType: 'json',
+        cache: false,
     })
     .success( function(data){ 
         var obj = {
@@ -67,7 +67,7 @@ $(function() {
        oldItems.remove();
        var word = $('.holiday__input__text').val();
        $('.holiday__input__text').val("");
-       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=tb"
+       var link = 'http://api.pixplorer.co.uk/image?word='+word+'&amount=7&size=mb';
        search(link);
     });
 
