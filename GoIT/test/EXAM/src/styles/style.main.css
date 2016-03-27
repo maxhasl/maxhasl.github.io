@@ -132,21 +132,25 @@ table {
 @font-face {
   font-family: 'Montserrat-Bold';
   src: url("../fonts/Montserrat-Bold.ttf") format('truetype');
+  font-weight: bold;
 }
 
 @font-face {
   font-family: 'Montserrat-Bold-ie8';
   src: url("../fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype');
+  font-weight: bold;
 }
 
 @font-face {
   font-family: 'Roboto-Light';
   src: url("../fonts/Roboto-Light.ttf") format('truetype');
+  font-weight: bold;
 }
 
 @font-face {
   font-family: 'Roboto-Light-ie8';
   src: url("../fonts/Roboto-Light.eot?#iefix") format('embedded-opentype');
+  font-weight: bold;
 }
 @charset "UTF-8";
 
@@ -588,7 +592,7 @@ footer {
 }
 
 .menu {
-  width: 205px;
+  width: 210px;
   margin: 0 auto;
   margin-top: 5px;
 }
