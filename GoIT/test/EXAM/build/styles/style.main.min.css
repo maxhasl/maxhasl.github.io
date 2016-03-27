@@ -17,8 +17,8 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 @font-face{font-family:'Roboto-ThinItalic';src:url("../fonts/Roboto-ThinItalic.ttf") format('truetype')}
 .clearfix{*zoom:1}.clearfix:before{content:'';display:table}
 .clearfix:after{content:'';display:table;clear:both}.clear__both{clear:both}
-.header__wrapper{width:100%;max-width:940px;margin:0 auto}header{position:relative;width:100%;height:540px;margin:0 auto;background-image:url("../img/header_background.jpg");background-position:center;z-index:-6}
-.header__background{position:relative;width:100%;height:540px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);background-color:rgba(0,0,0,0.2);z-index:-3}
+.header__wrapper{width:100%;max-width:940px;margin:0 auto}header{position:relative;width:100%;height:540px;margin:0 auto;background-position:center;z-index:-1}
+.header__background{position:relative;width:100%;height:540px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);background-color:rgba(0,0,0,0.2);z-index:-1}
 .log{position:relative;width:190px;margin:0 auto}.log__button{display:inline-block;margin-top:20px;width:75px;height:32px;font-family:"Montserrat-Bold";text-decoration:none;font-size:14px;color:white;text-align:center;line-height:32px}
 .log__button--up{margin-left:.5%;width:85px;border:2px solid white;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("PIE/PIE.htc")}
 .header__caption{width:180px;margin:0 auto;margin-top:118px;font-family:"Montserrat-Bold";color:white;font-size:20px;letter-spacing:1px}
@@ -29,25 +29,25 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 .jcarousel{position:relative;overflow:hidden}.jcarousel__ul{width:20000em;position:relative}
 .jcarousel__li{float:left;height:240px;max-width:300px}.jcarousel__wrap{margin:0 auto;margin-top:10px;width:100%;max-width:300px;position:relative}
 .jcarousel__wrap__1{margin-top:15px}.jcarousel__left{display:none}.jcarousel__right{display:none}
-.step{width:300px;height:240px;background-image:url("../img/step_1.jpg");background-position:center;border-radius:5px}
+.step{width:300px;height:240px;background-image:url("../img/step_1.jpg");background-position:center;border-radius:5px;behavior:url("PIE/PIE.htc")}
 .step--2{background-image:url("../img/step_2.jpg")}.step--3{background-image:url("../img/step_3.jpg")}
-.step__gradient{width:300px;height:240px;background:rgba(48,48,48,0.13);background:-moz-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0,rgba(48,48,48,0.13)),color-stop(0,rgba(48,48,48,0.13)),color-stop(100%,rgba(13,12,13,0.7)));background:-webkit-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:-o-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:-ms-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:linear-gradient(to bottom,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#21303030,endColorstr=#B20D0C0D);border-radius:5px}
-.step__link{display:block;width:70px;height:20px;margin-top:70px;margin-left:7%;text-decoration:none;background-color:#ff4e50;color:white;text-align:center;font-family:'Montserrat-Regular';line-height:22px;font-size:10px;letter-spacing:1.7px;border-radius:20px}
+.step__gradient{width:300px;height:240px;background:rgba(48,48,48,0.13);background:-moz-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0,rgba(48,48,48,0.13)),color-stop(0,rgba(48,48,48,0.13)),color-stop(100%,rgba(13,12,13,0.7)));background:-webkit-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:-o-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:-ms-linear-gradient(top,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);background:linear-gradient(to bottom,rgba(48,48,48,0.13) 0,rgba(48,48,48,0.13) 0,rgba(13,12,13,0.7) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#21303030,endColorstr=#B20D0C0D);border-radius:5px;behavior:url("PIE/PIE.htc")}
+.step__link{display:block;width:70px;height:20px;margin-top:70px;margin-left:7%;text-decoration:none;background-color:#ff4e50;color:white;text-align:center;font-family:'Montserrat-Regular';line-height:22px;font-size:10px;letter-spacing:1.7px;border-radius:20px;behavior:url("PIE/PIE.htc")}
 .step__title{margin-top:16px;margin-left:7%;font-size:24px;font-family:"Montserrat-Bold";color:white;line-height:28px}
 .step__text{width:90%;margin-top:12px;margin-left:7%;color:white;font-family:"Roboto-Light";font-size:14px;line-height:17px}
-.parthner__photo{display:block;margin:0 auto;margin-top:12px;height:120px;width:120px;background-image:url("../img/parthner_1.jpg");border-radius:50%}
+.parthner__photo{display:block;margin:0 auto;margin-top:12px;height:120px;width:120px;background-image:url("../img/parthner_1.jpg");border-radius:50%;behavior:url("PIE/PIE.htc")}
 .parthner__icon{display:block;float:right;margin-right:-5px;margin-top:85px;height:41px;width:41px;background-image:url("../img/icon_1.png")}
 .parthner__name{display:block;margin-top:20px;text-align:center;text-decoration:none;color:black;font-size:14px;font-family:"Montserrat-Bold"}
 .parthner__feedback{width:220px;margin:0 auto;margin-top:16px;font-size:14px;line-height:16px;font-family:"Roboto-Light";text-align:center;color:#989898}
 .parthner__photo--2{margin-top:27px;background-image:url("../img/parthner_2.jpg")}
 .parthner__icon--2{background-image:url("../img/icon_2.png")}.parthner__photo--3{margin-top:27px;background-image:url("../img/parthner_3.jpg")}
 .parthner__icon--3{background-image:url("../img/icon_3.png")}.parthner__photo--4{margin-top:27px;background-image:url("../img/parthner_4.jpg")}
-.parthner__icon--4{background-image:url("../img/icon_4.png")}.parthners__link{clear:both;display:block;width:276px;height:35px;margin:0 auto;margin-top:30px;border:2px solid #ff4e50;border-radius:20px;font-family:"Montserrat-Bold";font-size:14px;letter-spacing:-0.5px;text-decoration:none;line-height:35px;text-align:center;color:#ff4e50}
-#masonry-container{width:100%;margin:0 auto;max-width:300px}.masonry__item{height:120px;width:300px;margin:0 auto;margin-top:10px;border-radius:5px}
-.masonry__item:first-child{position:relative;margin-top:14px}.masonry__image{width:100%;height:100%;border-radius:5px}
+.parthner__icon--4{background-image:url("../img/icon_4.png")}.parthners__link{clear:both;display:block;width:276px;height:35px;margin:0 auto;margin-top:30px;border:2px solid #ff4e50;border-radius:20px;behavior:url("PIE/PIE.htc");font-family:"Montserrat-Bold";font-size:14px;letter-spacing:-0.5px;text-decoration:none;line-height:35px;text-align:center;color:#ff4e50}
+#masonry-container{width:100%;margin:0 auto;max-width:300px}.masonry__item{height:120px;width:300px;margin:0 auto;margin-top:10px;border-radius:5px;behavior:url("PIE/PIE.htc")}
+.masonry__item:first-child{position:relative;margin-top:14px}.masonry__image{width:100%;height:100%;border-radius:5px;behavior:url("PIE/PIE.htc")}
 .title--image{position:absolute;width:100%;top:50%;margin-top:-13px;color:white;z-index:1}
 .holiday__question{margin:0 auto;margin-top:12px;text-align:center;font-family:"Roboto-Light";font-size:18px}
-.holiday__input__text{display:block;margin:0 auto;margin-top:18px;width:264px;height:36px;border-radius:5px;border:1px solid #dcdcdc;padding-left:15px;font-family:"Roboto-Light";font-size:14px}
+.holiday__input__text{display:block;margin:0 auto;margin-top:18px;width:264px;height:36px;border-radius:5px;behavior:url("PIE/PIE.htc");border:1px solid #dcdcdc;padding-left:15px;font-family:"Roboto-Light";font-size:14px}
 .find__link--2{margin-top:10px}footer{margin-top:40px;border-top:4px solid #ff4e50}
 .footer__title{margin-top:18px;text-align:center;font-size:16px;font-family:"Montserrat-Bold";color:#ff4e50;letter-spacing:1px}
 .menu__caption{margin-top:15px;text-align:center;font-family:"Montserrat-Bold";font-size:14px}
@@ -61,7 +61,7 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 .header__caption__3{margin-top:28px;font-size:24px}.find__link{width:224px;height:40px;margin-top:38px;line-height:40px}
 .title{margin-top:95px}.carousels{max-width:768px;margin:0 auto}.jcarousel__li{float:left;height:400px;max-width:235px}
 .jcarousel__wrap{float:left;height:400px;margin-left:2.5%;margin-top:34px;max-width:235px}
-.jcarousel__wrap__1{margin-left:1%;margin-top:34px}.step{width:235px;height:400px;background-image:url("../img/step_1.jpg");background-position:center;border-radius:5px}
+.jcarousel__wrap__1{margin-left:1%;margin-top:34px}.step{width:235px;height:400px;background-image:url("../img/step_1.jpg");background-position:center;border-radius:5px;behavior:url("PIE/PIE.htc")}
 .step--2{background-image:url("../img/step_2.jpg")}.step--3{background-image:url("../img/step_3.jpg")}
 .step__gradient{width:235px;height:400px}.step__link{margin-top:212px}.jcarousel__left{display:inline-block;position:absolute;margin-top:40px;margin-left:20px;cursor:pointer;z-index:1}
 .jcarousel__right{display:inline-block;position:absolute;margin-top:40px;margin-left:185px;cursor:pointer;z-index:1}
