@@ -108,13 +108,11 @@ $(function() {
 // MASONRY
   function masonry() {
     var $container = $('#masonry-container');
-    // Инициализация Масонри, после загрузки изображений
-    $container.imagesLoaded( function() {
-       $container.masonry({
+       $container.isotope({
        itemSelector: '.masonry__item',
-       gutter: 20
-       });
-
+       masonry: {
+                 gutter: 20
+                }
     });
   };
 
