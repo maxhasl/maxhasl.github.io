@@ -1,6 +1,6 @@
 .rounded {
     height: 200px;
-    width: 200px;
+    width:300px;
     background: red;
     border: 1px solid #000;
     border-radius: 20px;
@@ -15,4 +15,5 @@
     background-image: url(../img/step_3.jpg);
     height: 400px;
     width: 100%;
+    z-index: -2;
 }
