@@ -43,20 +43,20 @@ $(function() {
         url: link,
         dataType: 'json',
         cache: false,
+        success: function(data){ 
+                                var obj = {
+                                  data: data
+                                };
+                                $('#start__container').after('<section id="masonry-container" class="clearfix"></section>');
+                                var html = $('#images-template').html();
+                                var content = tmpl(html, obj);
+                                setTimeout(function(){
+                                $('#masonry-container').append(content);
+                                masonry();
+                                }, 300);
+                                console.log(data);
+                               }
     })
-    .success( function(data){ 
-        var obj = {
-          data: data
-        };
-        $('#start__container').after('<section id="masonry-container" class="clearfix"></section>');
-        var html = $('#images-template').html();
-        var content = tmpl(html, obj);
-        setTimeout(function(){
-        $('#masonry-container').append(content);
-        masonry();
-        }, 300);
-        console.log(data);
-    });
   };
 
   
