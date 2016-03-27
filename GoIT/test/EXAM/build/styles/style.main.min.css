@@ -17,7 +17,7 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Montserr
 @font-face{font-family:'Roboto-ThinItalic';src:url("../fonts/Roboto-ThinItalic.ttf") format('truetype')}
 .clearfix{*zoom:1}.clearfix:before{content:'';display:table}
 .clearfix:after{content:'';display:table;clear:both}.clear__both{clear:both}
-.header__wrapper{width:100%;max-width:940px;margin:0 auto}header{position:relative;width:100%;height:540px;margin:0 auto;background-position:center;z-index:-1}
+.header__wrapper{width:100%;max-width:940px;margin:0 auto}header{position:relative;width:100%;height:540px;margin:0 auto;background-image:url("../img/header_background.jpg");background-position:center;z-index:-1}
 .header__background{position:relative;width:100%;height:540px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);background-color:rgba(0,0,0,0.2);z-index:-1}
 .log{position:relative;width:190px;margin:0 auto}.log__button{display:inline-block;margin-top:20px;width:75px;height:32px;font-family:"Montserrat-Bold";text-decoration:none;font-size:14px;color:white;text-align:center;line-height:32px}
 .log__button--up{margin-left:.5%;width:85px;border:2px solid white;-moz-border-radius:20px;-webkit-border-radius:20px;-khtml-border-radius:20px;border-radius:20px;behavior:url("PIE/PIE.htc")}
