@@ -146,9 +146,12 @@ header {
   position: relative; }
 
 .jcarousel__li {
+  overflow: hidden;
   float: left;
   height: 240px;
-  max-width: 300px; }
+  max-width: 300px;
+  border-radius: 10px;
+  behavior: url(PIE/PIE.htc); }
 
 .jcarousel__wrap {
   margin: 0 auto;
@@ -171,9 +174,7 @@ header {
   width: 300px;
   height: 240px;
   background-image: url(../img/step_1.jpg);
-  background-position: center;
-  border-radius: 10px;
-  behavior: url(PIE/PIE.htc); }
+  background-position: center; }
 
 .step--2 {
   background-image: url(../img/step_2.jpg); }
@@ -192,8 +193,7 @@ header {
   background: -ms-linear-gradient(top, rgba(48, 48, 48, 0.13) 0%, rgba(48, 48, 48, 0.13) 0%, rgba(13, 12, 13, 0.7) 100%);
   background: linear-gradient(to bottom, rgba(48, 48, 48, 0.13) 0%, rgba(48, 48, 48, 0.13) 0%, rgba(13, 12, 13, 0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#21303030,endColorstr=#B20D0C0D);
-  border-radius: 10px;
-  behavior: url(PIE/PIE.htc); }
+  border-radius: 10px; }
 
 .step__link {
   display: block;
@@ -228,66 +228,66 @@ header {
   font-size: 14px;
   line-height: 17px; }
 
-/*PARTHNERS
-.parthner__photo{
+PARTHNERS
+.parthner__photo {
   display: block;
   margin: 0 auto;
   margin-top: 12px;
   height: 120px;
   width: 120px;
   background-image: url(../img/parthner_1.jpg);
-  border-radius: 50%;
+  border-radius: 50%; }
 
-}
-.parthner__icon{
+.parthner__icon {
   display: block;
   float: right;
   margin-right: -5px;
-  margin-top: 85px;  
+  margin-top: 85px;
   height: 41px;
   width: 41px;
-  background-image: url(../img/icon_1.png); 
-}
-.parthner__name{
+  background-image: url(../img/icon_1.png); }
+
+.parthner__name {
   display: block;
   margin-top: 20px;
   text-align: center;
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-family: $montBold;
-}
-.parthner__feedback{
+  font-family: "Montserrat-Bold"; }
+
+.parthner__feedback {
   width: 220px;
   margin: 0 auto;
   margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
-  font-family: $robLigt;
+  font-family: "Roboto-Light";
   text-align: center;
-  color: #989898;
-}
-.parthner__photo--2{
+  color: #989898; }
+
+.parthner__photo--2 {
   margin-top: 27px;
-  background-image: url(../img/parthner_2.jpg);
-}
-.parthner__icon--2{
-  background-image: url(../img/icon_2.png); 
-}
-.parthner__photo--3{
+  background-image: url(../img/parthner_2.jpg); }
+
+.parthner__icon--2 {
+  background-image: url(../img/icon_2.png); }
+
+.parthner__photo--3 {
   margin-top: 27px;
-  background-image: url(../img/parthner_3.jpg);
-}
-.parthner__icon--3{
-  background-image: url(../img/icon_3.png); 
-}.parthner__photo--4{
+  background-image: url(../img/parthner_3.jpg); }
+
+.parthner__icon--3 {
+  background-image: url(../img/icon_3.png); }
+
+.parthner__photo--4 {
   margin-top: 27px;
-  background-image: url(../img/parthner_4.jpg);
-}
-.parthner__icon--4{
-  background-image: url(../img/icon_4.png); 
-}
-.parthners__link{
+  background-image: url(../img/parthner_4.jpg); }
+
+.parthner__icon--4 {
+  background-image: url(../img/icon_4.png); }
+
+.parthners__link {
   clear: both;
   display: block;
   width: 276px;
@@ -296,16 +296,15 @@ header {
   margin-top: 30px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
-
-  font-family: $montBold;
+  font-family: "Montserrat-Bold";
   font-size: 14px;
   letter-spacing: -0.5px;
   text-decoration: none;
   line-height: 35px;
   text-align: center;
-  color: #ff4e50;
-}
-/*DISCOVER HOLIDAY*/
+  color: #ff4e50; }
+
+/*DISCOVER HOLIDAY
 /*MASONRY*/
 #masonry-container {
   width: 100%;

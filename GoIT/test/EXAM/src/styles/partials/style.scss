@@ -140,9 +140,12 @@ header {
     position: relative;
 }
 .jcarousel__li{
+    overflow: hidden;
     float: left;
     height: 240px;
     max-width: 300px;
+    border-radius: 10px;
+    behavior: url(PIE/PIE.htc);
 
 }
 .jcarousel__wrap{
@@ -167,8 +170,7 @@ header {
   height: 240px;
   background-image: url(../img/step_1.jpg);
   background-position: center;
-  border-radius: 10px;
-  behavior: url(PIE/PIE.htc);
+
 }
 .step--2{  
   background-image: url(../img/step_2.jpg);
@@ -188,7 +190,6 @@ header {
   background: linear-gradient(to bottom, rgba(48,48,48,0.13) 0%, rgba(48,48,48,0.13) 0%, rgba(13,12,13,0.7) 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#21303030,endColorstr=#B20D0C0D);
   border-radius: 10px;
-  behavior: url(PIE/PIE.htc);
 }
 .step__link {
   display: block;
@@ -224,7 +225,7 @@ header {
   font-size: 14px;
   line-height: 17px;
 }
-/*PARTHNERS
+PARTHNERS
 .parthner__photo{
   display: block;
   margin: 0 auto;
@@ -301,7 +302,7 @@ header {
   text-align: center;
   color: #ff4e50;
 }
-/*DISCOVER HOLIDAY*/
+/*DISCOVER HOLIDAY
 /*MASONRY*/
 #masonry-container {
     width: 100%;
