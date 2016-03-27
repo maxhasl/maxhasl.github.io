@@ -35,7 +35,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('plagins', function() {
-  return gulp.src(['js/partials/jcarousel.js','js/partials/template.js','js/partials/isotope.pkgd.min.js'])
+  return gulp.src(['js/partials/jquery1.9.1.min.js','js/partials/jcarousel.js','js/partials/template.js','js/partials/isotope.pkgd.min.js'])
     .pipe(concat('plagins.js'))
     .pipe(gulp.dest('js/'));
 });
