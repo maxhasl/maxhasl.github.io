@@ -56,7 +56,6 @@ header {
   margin-left: 0.5%;
   width: 85px;
   border: 2px solid white;
-  /* Для хороших браузеров */
   -moz-border-radius: 20px;
   /* Firefox */
   -webkit-border-radius: 20px;
@@ -65,7 +64,6 @@ header {
   /* KHTML */
   border-radius: 20px;
   /* CSS3 */
-  /* Для плохих IE */
   behavior: url(PIE/PIE.htc);
   /* учим IE border-radius */ }
 
@@ -109,7 +107,6 @@ header {
   color: white;
   font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 13px;
-  /* Для хороших браузеров */
   -moz-border-radius: 20px;
   /* Firefox */
   -webkit-border-radius: 20px;
@@ -118,7 +115,6 @@ header {
   /* KHTML */
   border-radius: 20px;
   /* CSS3 */
-  /* Для плохих IE */
   behavior: url(PIE/PIE.htc);
   /* учим IE border-radius */
   letter-spacing: 0.5px;
