@@ -247,6 +247,7 @@ header {
 }
 
 .log {
+  position: relative;
   width: 190px;
   margin: 0 auto;
 }
