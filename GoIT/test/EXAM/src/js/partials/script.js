@@ -50,7 +50,7 @@ $(function() {
         var obj = {
           data: data
         };
-        $('.test2').after('<section id="masonry-container" class="clearfix"></section>');
+        $('#start__container').after('<section id="masonry-container" class="clearfix"></section>');
         var html = $('#images-template').html();
         var content = tmpl(html, obj);
         setTimeout(function(){
