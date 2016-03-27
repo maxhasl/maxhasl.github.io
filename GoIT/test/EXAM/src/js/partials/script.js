@@ -55,6 +55,7 @@ $(function() {
         $('#masonry-container').append(content);
         masonry();
         }, 300);
+        console.log(data);
     });
   };
 
