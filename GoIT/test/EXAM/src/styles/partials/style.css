@@ -65,8 +65,9 @@ header {
   border-radius: 20px;
   /* CSS3 */
   /* Для плохих IE */
-  behavior: url(PIE.htc);
-  /* учим IE border-radius */ }
+  behavior: url(PIE/PIE.htc);
+  /* учим IE border-radius */
+  z-index: 8; }
 
 .header__caption {
   width: 180px;
@@ -118,10 +119,9 @@ header {
   border-radius: 20px;
   /* CSS3 */
   /* Для плохих IE */
-  behavior: url(PIE.htc);
+  behavior: url(PIE/PIE.htc);
   /* учим IE border-radius */
-  letter-spacing: 0.5px;
-  border: none; }
+  letter-spacing: 0.5px; }
 
 .title {
   width: 90%;
