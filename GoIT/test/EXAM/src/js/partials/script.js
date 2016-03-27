@@ -34,7 +34,7 @@ $(function() {
     });
   };
 
-   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7";
+   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=mb";
 
    function search(link) {
     
@@ -66,7 +66,7 @@ $(function() {
        oldItems.remove();
        var word = $('.holiday__input__text').val();
        $('.holiday__input__text').val("");
-       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=tb"
+       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=mb"
        search(link);
     });
 
