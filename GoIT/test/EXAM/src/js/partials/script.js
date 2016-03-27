@@ -37,11 +37,14 @@ $(function() {
 
    var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7";
 
-   function search (link) {
-   	$.getJSON(link,
-        function(data){
+  function search(link) {
+    $.ajax({ 
+      url : link,
+      dataType : 'json'
+    })
+    .success( function(data){ 
         var obj = {
-           data: data
+          data: data
         };
         $('.test2').after('<section id="masonry-container" class="clearfix"></section>');
         var html = $('#images-template').html();
@@ -50,11 +53,10 @@ $(function() {
         $('#masonry-container').append(content);
         masonry();
         }, 300);
-        
     });
-   };
+  };
 
-  
+
    $('.find__link--2').on('click', function (e){
        e.preventDefault();
        var oldItems = $('#masonry-container');
@@ -65,6 +67,6 @@ $(function() {
        search(link);
     });
 
-   search(queryDefault);   
+  search(queryDefault);   
 
 });
