@@ -40,8 +40,8 @@ $(function() {
   function search(link) {
     $.ajax({ 
       url : link,
-      dataType : 'json',
-      type: 'GET',
+      dataType : "json",
+      type: "GET",
       cache: false
     })
     .success( function(data){ 
