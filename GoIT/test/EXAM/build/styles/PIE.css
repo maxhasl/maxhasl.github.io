@@ -4,6 +4,3 @@ header {
 .header__background {
   z-index: -1;
 }
-.step{
-  z-index: -1;
-}
