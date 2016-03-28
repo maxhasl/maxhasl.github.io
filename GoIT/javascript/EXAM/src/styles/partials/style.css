@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*CLEARFIX*/
 .clearfix {
   *zoom: 1; }
@@ -19,18 +20,23 @@
   margin: 0 auto; }
 
 header {
+  position: relative;
   width: 100%;
   height: 540px;
   margin: 0 auto;
-  background-position: center;
-  background-image: url(../img/header_background.jpg); }
+  background-image: url(../img/header_background.jpg);
+  background-position: center; }
 
 .header__background {
+  position: relative;
   width: 100%;
   height: 540px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+  /*ie8+*/
   background-color: rgba(0, 0, 0, 0.2); }
 
 .log {
+  position: relative;
   width: 190px;
   margin: 0 auto; }
 
@@ -39,7 +45,7 @@ header {
   margin-top: 20px;
   width: 75px;
   height: 32px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   text-decoration: none;
   font-size: 14px;
   color: white;
@@ -50,34 +56,43 @@ header {
   margin-left: 0.5%;
   width: 85px;
   border: 2px solid white;
-  border-radius: 20px; }
+  -moz-border-radius: 20px;
+  /* Firefox */
+  -webkit-border-radius: 20px;
+  /* Safari, Chrome */
+  -khtml-border-radius: 20px;
+  /* KHTML */
+  border-radius: 20px;
+  /* CSS3 */
+  behavior: url(PIE/PIE.htc);
+  /* учим IE border-radius */ }
 
-.header__caption {
+h1 {
   width: 180px;
   margin: 0 auto;
   margin-top: 118px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white;
   font-size: 20px;
   letter-spacing: 1px; }
 
-.header__caption__2 {
+h2 {
   margin-top: 30px;
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 1.5px;
   text-align: center;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white; }
 
-.header__caption__3 {
+h3 {
   text-align: center;
   color: white;
   width: 70%;
   margin: 0 auto;
   margin-top: 10px;
   font-size: 18px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   line-height: 20px; }
 
 .find__link {
@@ -88,20 +103,28 @@ header {
   margin-top: 18px;
   text-align: center;
   line-height: 40px;
-  background-color: #ff4e50;
   text-decoration: none;
   color: white;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 13px;
+  -moz-border-radius: 20px;
+  /* Firefox */
+  -webkit-border-radius: 20px;
+  /* Safari, Chrome */
+  -khtml-border-radius: 20px;
+  /* KHTML */
   border-radius: 20px;
+  /* CSS3 */
+  behavior: url(PIE/PIE.htc);
+  /* учим IE border-radius */
   letter-spacing: 0.5px;
-  border: none; }
+  background-color: #ff4e50; }
 
 .title {
   width: 90%;
   margin: 0 auto;
   margin-top: 35px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -138,6 +161,7 @@ header {
   display: none; }
 
 .step {
+  position: relative;
   width: 300px;
   height: 240px;
   background-image: url(../img/step_1.jpg);
@@ -151,6 +175,7 @@ header {
   background-image: url(../img/step_3.jpg); }
 
 .step__gradient {
+  position: relative;
   width: 300px;
   height: 240px;
   background: rgba(48, 48, 48, 0.13);
@@ -160,7 +185,7 @@ header {
   background: -o-linear-gradient(top, rgba(48, 48, 48, 0.13) 0%, rgba(48, 48, 48, 0.13) 0%, rgba(13, 12, 13, 0.7) 100%);
   background: -ms-linear-gradient(top, rgba(48, 48, 48, 0.13) 0%, rgba(48, 48, 48, 0.13) 0%, rgba(13, 12, 13, 0.7) 100%);
   background: linear-gradient(to bottom, rgba(48, 48, 48, 0.13) 0%, rgba(48, 48, 48, 0.13) 0%, rgba(13, 12, 13, 0.7) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#0d0c0d', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#21303030,endColorstr=#B20D0C0D);
   border-radius: 5px; }
 
 .step__link {
@@ -177,13 +202,14 @@ header {
   line-height: 22px;
   font-size: 10px;
   letter-spacing: 1.7px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  behavior: url(PIE/PIE.htc); }
 
 .step__title {
   margin-top: 16px;
   margin-left: 7%;
   font-size: 24px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: white;
   line-height: 28px; }
 
@@ -192,7 +218,7 @@ header {
   margin-top: 12px;
   margin-left: 7%;
   color: white;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 14px;
   line-height: 17px; }
 
@@ -204,7 +230,8 @@ header {
   height: 120px;
   width: 120px;
   background-image: url(../img/parthner_1.jpg);
-  border-radius: 50%; }
+  border-radius: 50%;
+  behavior: url(PIE/PIE.htc); }
 
 .parthner__icon {
   display: block;
@@ -222,7 +249,7 @@ header {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-family: "Montserrat-Bold"; }
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8"; }
 
 .parthner__feedback {
   width: 220px;
@@ -230,7 +257,7 @@ header {
   margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   text-align: center;
   color: #989898; }
 
@@ -264,7 +291,8 @@ header {
   margin-top: 30px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
-  font-family: "Montserrat-Bold";
+  behavior: url(PIE/PIE.htc);
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 14px;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -272,7 +300,7 @@ header {
   text-align: center;
   color: #ff4e50; }
 
-/*DISCOVER HOLIDAY*/
+/*DISCOVER HOLIDAY
 /*MASONRY*/
 #masonry-container {
   width: 100%;
@@ -284,7 +312,8 @@ header {
   width: 300px;
   margin: 0 auto;
   margin-top: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  behavior: url(PIE/PIE.htc); }
   .masonry__item:first-child {
     position: relative;
     margin-top: 14px; }
@@ -292,7 +321,8 @@ header {
 .masonry__image {
   width: 100%;
   height: 100%;
-  border-radius: 5px; }
+  border-radius: 5px;
+  behavior: url(PIE/PIE.htc); }
 
 .title--image {
   position: absolute;
@@ -306,7 +336,7 @@ header {
   margin: 0 auto;
   margin-top: 12px;
   text-align: center;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 18px; }
 
 .holiday__input__text {
@@ -318,7 +348,7 @@ header {
   border-radius: 5px;
   border: 1px solid #dcdcdc;
   padding-left: 15px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 14px; }
 
 .find__link--2 {
@@ -333,18 +363,18 @@ footer {
   margin-top: 18px;
   text-align: center;
   font-size: 16px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   color: #ff4e50;
   letter-spacing: 1px; }
 
 .menu__caption {
   margin-top: 15px;
   text-align: center;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 14px; }
 
 .menu {
-  width: 200px;
+  width: 220px;
   margin: 0 auto;
   margin-top: 5px; }
 
@@ -356,7 +386,7 @@ footer {
 
 .menu__link {
   text-decoration: none;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", "Roboto-Light-ie8";
   font-size: 14px;
   color: #989898; }
   .menu__link:hover {
@@ -364,7 +394,7 @@ footer {
 
 .designed {
   margin-top: 16px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", "Montserrat-Bold-ie8";
   font-size: 10px;
   text-align: center;
   letter-spacing: 1px;
@@ -387,17 +417,17 @@ footer {
     float: right;
     margin-right: 4%;
     margin-top: 18px; }
-  .header__caption {
+  h1 {
     margin-top: 48px;
     margin-left: 6%; }
-  .header__caption__2 {
+  h2 {
     width: 66%;
     margin: 0 auto;
     margin-top: 148px;
     font-size: 52px;
     line-height: 62px;
     letter-spacing: 0px; }
-  .header__caption__3 {
+  h3 {
     margin-top: 28px;
     font-size: 24px; }
   .find__link {
@@ -560,15 +590,15 @@ footer {
   .log {
     margin-right: 0%;
     margin-top: 16px; }
-  .header__caption {
+  h1 {
     margin-top: 46px;
     margin-left: 2.5%;
     letter-spacing: 0; }
-  .header__caption__2 {
+  h2 {
     width: 60%;
     margin-top: 137px;
     letter-spacing: -1px; }
-  .header__caption__3 {
+  h3 {
     margin-top: 22px;
     letter-spacing: -0.8px; }
   .find__link {

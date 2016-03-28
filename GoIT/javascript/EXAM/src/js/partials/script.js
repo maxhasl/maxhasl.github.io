@@ -23,36 +23,41 @@ $(function() {
 
 //AJAX
 // MASONRY
+  $.support.cors = true;
   function masonry() {
     var $container = $('#masonry-container');
-    // Инициализация Масонри, после загрузки изображений
-    $container.imagesLoaded( function() {
-       $container.masonry({
+       $container.isotope({
        itemSelector: '.masonry__item',
-       gutter: 20
-       });
-
+       masonry: {
+                 gutter: 20
+                }
     });
   };
 
-   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7";
+   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=mb";
 
-   function search (link) {
-   	$.getJSON(link,
-        function(data){
-        var obj = {
-           data: data
-        };
-        $('.test2').after('<section id="masonry-container" class="clearfix"></section>');
-        var html = $('#images-template').html();
-        var content = tmpl(html, obj);
-        setTimeout(function(){
-        $('#masonry-container').append(content);
-        masonry();
-        }, 300);
-        
-    });
-   };
+   function search(link) {
+    
+    $.ajax({ 
+        type: 'GET',
+        url: link,
+        dataType: 'json',
+        cache: false,
+        success: function(data){ 
+                                var obj = {
+                                  data: data
+                                };
+                                $('#start__container').after('<section id="masonry-container" class="clearfix"></section>');
+                                var html = $('#images-template').html();
+                                var content = tmpl(html, obj);
+                                setTimeout(function(){
+                                $('#masonry-container').append(content);
+                                masonry();
+                                }, 300);
+                                console.log(data);
+                               }
+    })
+  };
 
   
    $('.find__link--2').on('click', function (e){
@@ -61,7 +66,7 @@ $(function() {
        oldItems.remove();
        var word = $('.holiday__input__text').val();
        $('.holiday__input__text').val("");
-       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=tb"
+       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=mb"
        search(link);
     });
 
