@@ -7,3 +7,6 @@ header {
 .step{
   z-index: -1;
 }
+.step__gradient{
+  z-index: -1;
+}
