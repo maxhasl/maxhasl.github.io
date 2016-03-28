@@ -1,24 +1,33 @@
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
 }
 
 @font-face {
     font-family: 'Montserrat-Bold-ie8';
+    src: url('../fonts/Montserrat-Bold.eot'); 
     src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype');
-    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');         
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular-ie8';
+    src: url('../fonts/Montserrat-Regular.eot'); 
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'Roboto-Light';
     src: url('../fonts/Roboto-Light.ttf') format('truetype');
-    font-weight: bold;
-         
 }
 
 @font-face {
     font-family: 'Roboto-Light-ie8';
+    src: url('../fonts/Roboto-Light.eot'); 
     src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype');
-    font-weight: bold;
 }
+
