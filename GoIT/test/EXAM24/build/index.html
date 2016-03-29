@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<meta charset="UTF-8 name="viewport" content="width=device-width, initial-scale=1.0"">
 	<title>Exam GoIT</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/style.main.min.css">
-  <!--[if IE 8]>
-  <link rel="stylesheet" href="styles/PIE.css">
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script type="text/javascript" src="js/respond.src.js"></script>
-  <![endif]-->
-  <script src="js/plagins.min"></script>
-	<script src="js/script.main.min"></script>
+	<link rel="stylesheet" href="../build/styles/style.main.min.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+  <script src="../build/js/plagins.min"></script>
+	<script src="../build/js/script.main.min"></script>
 </head>
 <body>
 		<header>
 		  <section class="header__background clearfix">
-        <div class="header__wrapper clearfix">
-		      <section class="log">
+        <section class="header__wrapper clearfix">
+		      <hgroup class="log">
 		  	    <a class="log__button" href="#">Log in</a>
 			      <a class="log__button log__button--up" href="#">Sign up</a>
-			    </section >
+			    </hgroup>
 			    <hgroup>
-			      <h1>URLAUBSGLÜCK</h1>
-			      <h2>SHARE YOUR HOLIDAY DREAMS</h2>
-			      <h3>And find the perfect parthner to fullfill it</h3>
+			      <p class="header__caption">URLAUBSGLÜCK</p>
+			      <p class="header__caption__2">SHARE YOUR HOLIDAY DREAMS</p>
+			      <p class="header__caption__3">And find the perfect parthner to fullfill it</p>
 			    </hgroup>
 			      <a class="find__link" href="#">Find your holiday parthner</a>
-        </div>
+        </section>
 		  </section>
 		</header>
 		<!-- MAIN -->
@@ -84,6 +78,8 @@
                       <li class="jcarousel__li">
                        <section class="step step--2">
                        	 <section class="step__gradient clearfix">
+                       	    <img class="jcarousel__left" src="img/arrow__left.png">
+                       	    <img class="jcarousel__right" src="img/arrow__right.png">
                        	 	<a class="step__link" href="#">STEP 2</a>
                        	 	<p class="step__title">Morbi velit risus</p>
                        	 	<p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
@@ -122,6 +118,8 @@
                       <li class="jcarousel__li">
                        <section class="step step--3">
                        	 <section class="step__gradient clearfix">
+                       	    <img class="jcarousel__left" src="img/arrow__left.png">
+                       	    <img class="jcarousel__right" src="img/arrow__right.png">
                        	 	<a class="step__link" href="#">STEP 3</a>
                        	 	<p class="step__title">Sed Ieo enim, condimentum</p>
                        	 	<p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
@@ -156,30 +154,30 @@
 		  <section class="parthners__background clearfix">
 		  	<p class="title">Meet a parthner for your best holiday</p>
 		  	<figure class="parthner">
-		  		  <a class="parthner__photo" href="#">
-		  		    <span class="parthner__icon"></span>
-		  		  </a>
+		  		<a class="parthner__photo" href="#">
+		  		   <span class="parthner__icon"></span>
+		  		</a>
 		  	    <a class="parthner__name" href="#">Bradley Hunter</a>
 		  	    <p class="parthner__feedback">Based in Chicago. I love playing tennis and loud music.</p>
 		  	</figure>
 		  	<figure class="parthner parthner--right">
-		  		  <a class="parthner__photo parthner__photo--2" href="#">
-		  		    <span class="parthner__icon parthner__icon--2"></span>
-		  		  </a>
+		  		<a class="parthner__photo parthner__photo--2" href="#">
+		  		   <span class="parthner__icon parthner__icon--2"></span>
+		  		</a>
 		  	    <a class="parthner__name" href="#">Lucas Marsha</a>
 		  	    <p class="parthner__feedback">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
 		  	</figure>
 		  	<figure class="parthner">
-		  		  <a class="parthner__photo parthner__photo--3" href="#">
+		  		<a class="parthner__photo parthner__photo--3" href="#">
 		  		   <span class="parthner__icon parthner__icon--3"></span>
-		  		  </a>
+		  		</a>
 		  	    <a class="parthner__name" href="#">Heather Walker</a>
 		  	    <p class="parthner__feedback">I'm a happy person that loves cats and climbing on mountains.</p>
 		  	</figure>
 		  	<figure class="parthner parthner--right">
-		  		  <a class="parthner__photo parthner__photo--4" href="#">
+		  		<a class="parthner__photo parthner__photo--4" href="#">
 		  		   <span class="parthner__icon parthner__icon--4"></span>
-		  		  </a>
+		  		</a>
 		  	    <a class="parthner__name" href="#">Bradley Hunter</a>
 		  	    <p class="parthner__feedback">Based in Chicago. I love playing tennis and loud music.</p>
 		  	</figure>
@@ -187,7 +185,8 @@
 		  </section>
 		  <!-- DISCOVER HOLIDAY -->
 		  <section class="holiday">
-		  	<p class="title" id="start__container">Discover holiday activity ideas</p>
+		  	<p class="title test2">Discover holiday activity ideas</p>
+		  	<!-- <section id="masonry-container" class="clearfix"> -->
                <script type="text/template" id="images-template">
                   <% for(var i = 0; i < data.images.length; i++) { 
                      if (i==4||i==5){ %>
@@ -196,13 +195,16 @@
                        <p class="title title--image"><%= data.images[i].word %></p>
                     </div>
                     <% } else { %>
+
                      <div class="masonry__item">
                        <img class="masonry__image" src="<%= data.images[i].imageurl %>">
                        <p class="title title--image"><%= data.images[i].word %></p>
                     </div> 
                     <%};
+                    
                    } %>
-               </script>
+               </script>            
+        <!-- </section>             -->
             <p class="title title--2">Discover holiday activity ideas</p>
             <p class="holiday__question">Hi! What are your holiday interests?</p>
             <form class="holiday__form clearfix">
