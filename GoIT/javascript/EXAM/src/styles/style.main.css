@@ -129,25 +129,59 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url("../fonts/Montserrat-Bold.eot");
-  src: url("../fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype'),
-         url("../fonts/Montserrat-Bold.ttf") format('truetype');
+/*@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.eot'); 
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.eot'); 
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.eot'); 
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+*/
+
+@font-face {
   font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.ttf") format('truetype');
   src: url("../fonts/Montserrat-Regular.eot");
-  src: url("../fonts/Montserrat-Regular.eot?#iefix") format('embedded-opentype'),
-         url("../fonts/Montserrat-Regular.ttf") format('truetype');
+  src: url("../fonts/Montserrat-Regular.woff") format('woff'),
+         url("../fonts/Montserrat-Regular.ttf") format('truetype'),
+         url("../fonts/Montserrat-Regular.svg") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.ttf") format('truetype');
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.woff") format('woff'),
+         url("../fonts/Montserrat-Bold.ttf") format('truetype'),
+         url("../fonts/Montserrat-Bold.svg") format('svg');
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: 'Roboto-Light';
+  src: url("../fonts/Roboto-Light.ttf") format('truetype');
   src: url("../fonts/Roboto-Light.eot");
-  src: url("../fonts/Roboto-Light.eot?#iefix") format('embedded-opentype'),
-         url("../fonts/Roboto-Light.ttf") format('truetype');
+  src: url("../fonts/Roboto-Light.woff") format('woff'),
+         url("../fonts/Roboto-Light.ttf") format('truetype'),
+         url("../fonts/Roboto-Light.svg") format('svg');
+  font-style: normal;
+  font-weight: normal;
 }
 @charset "UTF-8";
 
@@ -217,6 +251,10 @@ header {
   line-height: 32px;
 }
 
+.log__button:hover {
+  color: #ff4e50;
+}
+
 .log__button--up {
   margin-left: 0.5%;
   width: 85px;
@@ -231,6 +269,11 @@ header {
   /* CSS3 */
   behavior: url("PIE/PIE.htc");
   /* учим IE border-radius */
+}
+
+.log__button--up:hover {
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
 }
 
 h1 {
@@ -288,6 +331,15 @@ h3 {
   /* учим IE border-radius */
   letter-spacing: 0.5px;
   background-color: #ff4e50;
+}
+
+.find__link:hover {
+  height: 36px;
+  width: 276px;
+  background-color: white;
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  line-height: 36px;
 }
 
 .title {
@@ -388,6 +440,15 @@ h3 {
   letter-spacing: 1.7px;
   border-radius: 20px;
   behavior: url("PIE/PIE.htc");
+}
+
+.step__link:hover {
+  width: 66px;
+  height: 16px;
+  border: 2px solid #ff4e50;
+  background-color: white;
+  color: #ff4e50;
+  line-height: 18px;
 }
 
 .step__title {
@@ -497,6 +558,15 @@ h3 {
   line-height: 35px;
   text-align: center;
   color: #ff4e50;
+}
+
+.parthners__link:hover {
+  width: 280px;
+  height: 39px;
+  line-height: 39px;
+  background-color: #ff4e50;
+  color: white;
+  border: none;
 }
 
 /*DISCOVER HOLIDAY
@@ -672,6 +742,11 @@ footer {
     line-height: 40px;
   }
 
+  .find__link:hover {
+    height: 36px;
+    width: 220px;
+  }
+
   .title {
     margin-top: 95px;
   }
@@ -784,6 +859,10 @@ footer {
     width: 190px;
   }
 
+  .parthners__link:hover {
+    width: 194px;
+  }
+
   .holiday {
     clear: both;
     margin-top: 120px;
@@ -840,6 +919,10 @@ footer {
     float: right;
     margin-top: 0;
     width: 160px;
+  }
+
+  .find__link--2:hover {
+    width: 156px;
   }
 
   footer {
@@ -941,6 +1024,10 @@ footer {
     letter-spacing: 0;
   }
 
+  .find__link:hover {
+    width: 216px;
+  }
+
   .title {
     margin-top: 90px;
     font-size: 22px;
@@ -1038,6 +1125,10 @@ footer {
     width: 180px;
   }
 
+  .parthners__link:hover {
+    width: 184px;
+  }
+
   .holiday {
     margin-top: 135px;
   }
@@ -1085,6 +1176,10 @@ footer {
     float: right;
     margin-top: 0;
     width: 150px;
+  }
+
+  .find__link--2:hover {
+    width: 146px;
   }
 
   footer {

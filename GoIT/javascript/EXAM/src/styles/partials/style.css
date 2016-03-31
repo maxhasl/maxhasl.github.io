@@ -51,6 +51,8 @@ header {
   color: white;
   text-align: center;
   line-height: 32px; }
+  .log__button:hover {
+    color: #ff4e50; }
 
 .log__button--up {
   margin-left: 0.5%;
@@ -66,6 +68,9 @@ header {
   /* CSS3 */
   behavior: url(PIE/PIE.htc);
   /* учим IE border-radius */ }
+  .log__button--up:hover {
+    color: #ff4e50;
+    border: 2px solid #ff4e50; }
 
 h1 {
   width: 180px;
@@ -119,6 +124,13 @@ h3 {
   /* учим IE border-radius */
   letter-spacing: 0.5px;
   background-color: #ff4e50; }
+  .find__link:hover {
+    height: 36px;
+    width: 276px;
+    background-color: white;
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+    line-height: 36px; }
 
 .title {
   width: 90%;
@@ -205,6 +217,13 @@ h3 {
   letter-spacing: 1.7px;
   border-radius: 20px;
   behavior: url(PIE/PIE.htc); }
+  .step__link:hover {
+    width: 66px;
+    height: 16px;
+    border: 2px solid #ff4e50;
+    background-color: white;
+    color: #ff4e50;
+    line-height: 18px; }
 
 .step__title {
   margin-top: 16px;
@@ -300,6 +319,13 @@ h3 {
   line-height: 35px;
   text-align: center;
   color: #ff4e50; }
+  .parthners__link:hover {
+    width: 280px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #ff4e50;
+    color: white;
+    border: none; }
 
 /*DISCOVER HOLIDAY
 /*MASONRY*/
@@ -436,6 +462,9 @@ footer {
     height: 40px;
     margin-top: 38px;
     line-height: 40px; }
+    .find__link:hover {
+      height: 36px;
+      width: 220px; }
   .title {
     margin-top: 95px; }
   /*CAROUSEL*/
@@ -508,6 +537,8 @@ footer {
   .parthners__link {
     margin-top: 565px;
     width: 190px; }
+    .parthners__link:hover {
+      width: 194px; }
   .holiday {
     clear: both;
     margin-top: 120px; }
@@ -544,6 +575,8 @@ footer {
     float: right;
     margin-top: 0;
     width: 160px; }
+    .find__link--2:hover {
+      width: 156px; }
   footer {
     height: 200px;
     margin: 0 auto;
@@ -606,6 +639,8 @@ footer {
     margin-top: 36px;
     width: 220px;
     letter-spacing: 0; }
+    .find__link:hover {
+      width: 216px; }
   .title {
     margin-top: 90px;
     font-size: 22px;
@@ -667,6 +702,8 @@ footer {
   .parthners__link {
     margin-top: 290px;
     width: 180px; }
+    .parthners__link:hover {
+      width: 184px; }
   .holiday {
     margin-top: 135px; }
   #masonry-container {
@@ -696,6 +733,8 @@ footer {
     float: right;
     margin-top: 0;
     width: 150px; }
+    .find__link--2:hover {
+      width: 146px; }
   footer {
     height: 200px;
     margin: 0 auto;
