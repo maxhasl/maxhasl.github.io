@@ -620,7 +620,7 @@ h3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
-  z-index: 2;
+  z-index: 3;
 }
 
 .holiday__question {
