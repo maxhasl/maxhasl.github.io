@@ -90,8 +90,6 @@ $(function() {
   function take(){
     $('.masonry__image').on('click', function(){
           var image = $(this);
-          console.log(image[0]);
-          console.log(image[0].currentSrc);
           var link = image[0].currentSrc;
           createModal(link);
     })
