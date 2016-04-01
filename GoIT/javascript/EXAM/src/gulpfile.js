@@ -49,7 +49,9 @@ gulp.task('plagins', function() {
 });
 
 gulp.task('style', ['sass'], function () {
-  return gulp.src(['styles/partials/reset.css', 'styles/partials/font.css', 'styles/partials/*.css'])
+  return gulp.src(['styles/partials/reset.css',
+                   'styles/partials/font.css',
+                   'styles/partials/*.css'])
     .pipe(concatCss('style.main.css'))
     .pipe(gulp.dest('styles/'));
 });
