@@ -34,7 +34,7 @@ $(function() {
     });
   };
 
-   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=m";
+   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=7&size=s";
 
    function search(link) {
     
@@ -65,7 +65,7 @@ $(function() {
        oldItems.remove();
        var word = $('.holiday__input__text').val();
        $('.holiday__input__text').val("");
-       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=m"
+       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=s"
        search(link);
        setTimeout(take, 2000);
     });
