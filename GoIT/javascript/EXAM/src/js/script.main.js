@@ -78,7 +78,7 @@ $(function() {
     var $backModal = $('<div class="modal--back"></div>');
     $body.append($backModal);
     $body.append($modal);
-    $backModal.one('click', hideModal);
+    $backModal.on('click', hideModal);
   };
 
   function hideModal(){
