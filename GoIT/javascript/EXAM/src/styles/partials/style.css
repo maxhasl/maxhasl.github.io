@@ -363,7 +363,7 @@ h3 {
 
 .modal {
   position: absolute;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 90%;
   top: 320%;
