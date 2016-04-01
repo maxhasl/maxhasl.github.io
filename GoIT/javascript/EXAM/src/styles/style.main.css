@@ -594,11 +594,11 @@ h3 {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   width: auto;
   height: auto;
-  max-width: 90%;
-  top: 320%;
+  max-width: 60%;
+  /*top: 320%;*/
   left: 50%;
   padding: 0;
   -moz-transform: translateX(-50%);
@@ -613,7 +613,6 @@ h3 {
 }
 
 .modal--back {
-  display: table;
   position: fixed;
   top: 0;
   left: 0;
@@ -621,7 +620,7 @@ h3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
-  z-index: 998;
+  z-index: 3;
 }
 
 .holiday__question {

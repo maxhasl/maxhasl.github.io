@@ -72,13 +72,21 @@ $(function() {
 
    search(queryDefault);   
 //MODAL
-  function createModal(link) {
+    var oldIE;
+       if ($('html').is('.lt-ie7, .lt-ie8, .lt-ie9')) {
+          oldIE = true;
+       }
+
+       if (oldIE) {
+        return 0;
+       } else {
+        function createModal(link) {
     var $body = $('body');
-    var $modal = $('<img class="modal" src="'+link+'">');
-    var $backModal = $('<div class="modal--back"></div>');
-    $body.append($backModal);
+    var $modal = $('<div class="modal--back"><img class="modal" src="'+link+'"></div>');
+    // var $backModal = $('<div class="modal--back"></div>');
+    // $body.append($backModal);
     $body.append($modal);
-    $backModal.on('click', hideModal);
+    // $backModal.on('click', hideModal);
   };
 
   function hideModal(){
@@ -94,5 +102,8 @@ $(function() {
           createModal(link);
     })
   };
+       }
+
+  
 
 });
