@@ -380,6 +380,7 @@ h3 {
   z-index: 999; }
 
 .modal--back {
+  display: table;
   position: fixed;
   top: 0;
   left: 0;
