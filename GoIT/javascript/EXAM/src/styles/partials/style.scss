@@ -384,6 +384,7 @@ h3 {
   @include transition(opacity, 0.3s, 0.3s);
   &:hover{
     cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0;
   }
 }

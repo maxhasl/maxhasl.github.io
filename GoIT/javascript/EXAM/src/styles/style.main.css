@@ -651,6 +651,7 @@ h3 {
 
 .masonry__shadow:hover {
   cursor: pointer;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
 }
 

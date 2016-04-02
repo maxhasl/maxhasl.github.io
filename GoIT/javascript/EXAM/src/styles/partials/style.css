@@ -418,6 +418,7 @@ h3 {
   transition: opacity 0.3s ease-out 0.3s; }
   .masonry__shadow:hover {
     cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0; }
 
 .title--image {
