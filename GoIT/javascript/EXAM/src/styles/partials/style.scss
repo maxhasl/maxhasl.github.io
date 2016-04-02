@@ -1,5 +1,5 @@
-$montBold:     'Montserrat', 'Montserrat-Bold';
-$robLigt:      'Roboto', 'Roboto-Light';
+$montBold:     'Montserrat', 'Montserrat-Bold', sans-serif;
+$robLigt:      'Roboto', 'Roboto-Light', sans-serif;
 @mixin transition($e, $time-in, $time-out) {
     -webkit-transition: $e $time-in ease-out $time-out;
     -moz-transition: $e $time-in ease-out $time-out;

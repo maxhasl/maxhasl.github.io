@@ -224,7 +224,7 @@ header {
   margin-top: 20px;
   width: 75px;
   height: 32px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   text-decoration: none;
   font-size: 14px;
   color: white;
@@ -273,7 +273,7 @@ h1 {
   width: 180px;
   margin: 0 auto;
   margin-top: 118px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   color: white;
   font-size: 20px;
   letter-spacing: 1px;
@@ -285,7 +285,7 @@ h2 {
   line-height: 35px;
   letter-spacing: 1.5px;
   text-align: center;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   color: white;
 }
 
@@ -296,7 +296,7 @@ h3 {
   margin: 0 auto;
   margin-top: 10px;
   font-size: 18px;
-  font-family: "Roboto", "Roboto-Light";
+  font-family: "Roboto", "Roboto-Light", sans-serif;
   line-height: 20px;
 }
 
@@ -310,7 +310,7 @@ h3 {
   line-height: 40px;
   text-decoration: none;
   color: white;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   font-size: 13px;
   -moz-border-radius: 20px;
   /* Firefox */
@@ -351,7 +351,7 @@ h3 {
   width: 90%;
   margin: 0 auto;
   margin-top: 35px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -438,7 +438,7 @@ h3 {
   background-color: #ff4e50;
   color: white;
   text-align: center;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 22px;
@@ -472,7 +472,7 @@ h3 {
   margin-top: 16px;
   margin-left: 7%;
   font-size: 24px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   color: white;
   line-height: 28px;
 }
@@ -482,7 +482,7 @@ h3 {
   margin-top: 12px;
   margin-left: 7%;
   color: white;
-  font-family: "Roboto", "Roboto-Light";
+  font-family: "Roboto", "Roboto-Light", sans-serif;
   font-size: 14px;
   line-height: 17px;
 }
@@ -517,7 +517,7 @@ h3 {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
 }
 
 .parthner__feedback {
@@ -526,7 +526,7 @@ h3 {
   margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto", "Roboto-Light";
+  font-family: "Roboto", "Roboto-Light", sans-serif;
   text-align: center;
   color: #989898;
 }
@@ -568,7 +568,7 @@ h3 {
   border: 2px solid #ff4e50;
   border-radius: 20px;
   behavior: url("PIE/PIE.htc");
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   font-size: 14px;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -697,7 +697,7 @@ h3 {
   margin: 0 auto;
   margin-top: 12px;
   text-align: center;
-  font-family: "Roboto", "Roboto-Light";
+  font-family: "Roboto", "Roboto-Light", sans-serif;
   font-size: 18px;
 }
 
@@ -710,7 +710,7 @@ h3 {
   border-radius: 5px;
   border: 1px solid #dcdcdc;
   padding-left: 15px;
-  font-family: "Roboto", "Roboto-Light";
+  font-family: "Roboto", "Roboto-Light", sans-serif;
   font-size: 14px;
 }
 
@@ -729,7 +729,7 @@ footer {
   margin-top: 18px;
   text-align: center;
   font-size: 16px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   color: #ff4e50;
   letter-spacing: 1px;
 }
@@ -737,7 +737,7 @@ footer {
 .menu__caption {
   margin-top: 15px;
   text-align: center;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   font-size: 14px;
 }
 
@@ -758,7 +758,7 @@ footer {
 
 .menu__link {
   text-decoration: none;
-  font-family: "Roboto", "Roboto-Light";
+  font-family: "Roboto", "Roboto-Light", sans-serif;
   font-size: 14px;
   color: #989898;
 }
@@ -769,7 +769,7 @@ footer {
 
 .designed {
   margin-top: 16px;
-  font-family: "Montserrat", "Montserrat-Bold";
+  font-family: "Montserrat", "Montserrat-Bold", sans-serif;
   font-size: 10px;
   text-align: center;
   letter-spacing: 1px;
