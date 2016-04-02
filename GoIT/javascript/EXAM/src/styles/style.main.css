@@ -639,6 +639,7 @@ h3 {
   height: 100%;
   margin-top: -122px;
   border-radius: 5px;
+  behavior: url("PIE/PIE.htc");
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
   /*ie8+*/
   background-color: rgba(0, 0, 0, 0.5);
@@ -975,7 +976,7 @@ footer {
   }
 
   .masonry__shadow {
-    margin-top: -314px;
+    margin-top: -312px;
   }
 
   .title--image {
