@@ -378,13 +378,11 @@ h3 {
   height: 100%;
   margin-top: -122px;
   border-radius: 5px;
-  behavior: url(PIE/PIE.htc);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); /*ie8+*/
   background-color: rgba(0, 0, 0, 0.5);
   @include transition(opacity, 0.3s, 0.3s);
   &:hover{
     cursor: pointer;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0;
   }
 }
