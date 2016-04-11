@@ -34,7 +34,7 @@ $(function() {
     });
   };
 
-   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=1&size=s";
+   var queryDefault = "http://api.pixplorer.co.uk/image?&amount=1&size=tb";
    var parent;
    var linkArray = [];
    var objDefault = {
@@ -103,7 +103,7 @@ $(function() {
        oldItems.remove();
        var word = $('.holiday__input__text').val();
        $('.holiday__input__text').val("");
-       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=s"
+       var link = "http://api.pixplorer.co.uk/image?word="+word+"&amount=7&size=tb";
        search(link);
        setTimeout(take, 3000);
     });
