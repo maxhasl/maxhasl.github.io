@@ -1,0 +1,6 @@
+<board__title "Testboard">
+<board__status "Private">
+<show__menu "Show menu">
+<column value: "Column">
+<column__add "Add a card...">
+<list__add "Add list...">
