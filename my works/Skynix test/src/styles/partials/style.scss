@@ -1,0 +1,121 @@
+$RalewayEB:  'Raleway-ExtraBold', sans-serif;
+$RalewayR:  'Raleway-Regular', sans-serif;
+$RalewayL:  'Raleway-Light', sans-serif;
+
+/*CLEARFIX*/
+.clearfix{
+  *zoom: 1;
+  &:before{
+    content: '';
+    display: table;
+  }
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.form{
+  width: 100%;
+}
+.form__question{
+  width: 86%;
+  margin: 0 auto;
+  padding: 16px 0px;
+  text-align: center;
+  font-size: 26px;
+  font-family: $RalewayEB;
+  font-weight: bold;
+  line-height: 30px;
+  border-bottom: 1px solid #0098fc;
+}
+.form__description{
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: $RalewayR;
+  text-align: center;
+  line-height: 17px;
+  letter-spacing: 0.1px;
+}
+.form__radio{
+  display: none;
+}
+.form__label{
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 63px;
+  margin: 0 auto;
+  margin-top: 18px;
+  font-family: $RalewayR;
+  font-size: 14px;
+  line-height: 63px;
+  text-align: center;
+  border: 1px solid #2697f9;
+  cursor: pointer;
+  z-index: 1;
+}
+.form__label:hover{
+  background-color: #2697f9;
+}
+.form__hint__close{
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: $RalewayL;
+  line-height: 32px;
+  background-color: #2697f9;
+  border-radius: 50%;
+  z-index: 999;
+}
+.form__hint__open{
+  display: none;
+  position: absolute;
+  width: 60%;
+  min-height: 47px;
+  max-width: 400px;
+  margin-top: -43px;
+  margin-left: 70px;
+  padding: 5px;
+  padding-left: 12px;
+  font-family: $RalewayR;
+  font-size: 13px;
+  text-align: left;
+  line-height: 16px;
+  color: white;
+  background-color: rgba(0, 139, 242, 0.6);
+  border-radius: 10px;
+}
+.form__hint__open:before{
+  position: absolute;
+  margin-top: 2px;
+  margin-left: -36px;
+  content: url(../img/hint2.png);
+  cursor: pointer;
+}
+.form__submit{
+  display: block;
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 18px;
+  font-family: $RalewayR;
+  font-size: 18px;
+  color: #ff5d00; 
+  background-color: white;
+  border: 1px solid #ff5d00;
+}
