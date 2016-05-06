@@ -76,9 +76,8 @@ body {
     background-size: auto auto; }
   .wrapper {
     width: 100%;
-    height: 660px;
     max-width: none;
-    max-height: 1000px;
+    max-height: none;
     background-color: white;
     opacity: 0.9;
     background-image: none; }
@@ -94,7 +93,7 @@ body {
     max-width: 280px; }
   .link {
     margin-top: 50px;
-    margin-bottom: 91px; } }
+    margin-bottom: 70px; } }
 
 @media screen and (max-width: 320px) {
   .logo__image {
