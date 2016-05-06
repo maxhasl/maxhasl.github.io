@@ -18,7 +18,6 @@ body {
   position: absolute;
   width: 80%;
   max-width: 992px;
-  height: auto;
   max-height: 474px;
   margin: auto;
   top: 0;
@@ -77,12 +76,12 @@ body {
     background-size: auto auto; }
   .wrapper {
     width: 100%;
-    height: 100%;
+    height: 660px;
+    max-width: none;
+    max-height: 1000px;
     background-color: white;
     opacity: 0.9;
-    background-image: none;
-    max-width: none;
-    max-height: none; }
+    background-image: none; }
   .logo__image {
     width: 83px;
     height: 36px;
@@ -94,7 +93,8 @@ body {
   .description {
     max-width: 280px; }
   .link {
-    margin-top: 50px; } }
+    margin-top: 50px;
+    margin-bottom: 91px; } }
 
 @media screen and (max-width: 320px) {
   .logo__image {
