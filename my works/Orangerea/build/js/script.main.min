@@ -1,1 +1,0 @@
-"use strict";$(function(){function i(){$("#hei").css({height:$(window).height()+"px"})}i(),$(window).resize(i)});
