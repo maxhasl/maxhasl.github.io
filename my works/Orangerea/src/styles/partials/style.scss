@@ -17,7 +17,7 @@ $KelsonL: 'Kelson Sans Light', sans-serif;
   }
 }
 body{
-  background-image: url(../img/background.jpg);
+  background: url(../img/background.jpg) no-repeat center center fixed;
   background-color: rgba(255, 255, 255, 0.3);
   background-size: cover;
 }
@@ -83,13 +83,11 @@ body{
 }
 
 @media  screen and (max-width: 376px){
-  body{
-    background-position: center;
-    background-size: auto;
-  }
+
   .wrapper{
+
    width: 100%;
-   height: auto;
+   height: 100vh;
    max-width: none;
    max-height: none;
    background-image: none;
