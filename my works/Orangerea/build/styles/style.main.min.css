@@ -12,10 +12,10 @@ body{height:100%;background:url("../img/background.jpg") no-repeat center center
 .logo__title{width:90px;height:21px;margin:0 auto;margin-top:20px;color:#a46393;font-family:"Kelson Sans Bold",sans-serif;font-size:21px;line-height:21px;letter-spacing:1px}
 .title{margin-top:30px;text-align:center;color:#a46393;font-family:"Kelson Sans Bold",sans-serif;font-size:32px;font-weight:700;line-height:40px}
 .description{width:80%;max-width:736px;margin:0 auto;margin-top:25px;color:#4a4a4a;font-family:"Kelson Sans Light",sans-serif;font-size:18px;text-align:center;line-height:24px}
-.email{display:none;margin:0 auto;width:224px;height:30px}.link{display:block;width:224px;margin:0 auto;margin-top:20px;cursor:pointer}
+.email{display:none;margin:0 auto;margin-top:20px;width:224px;height:20px}.link{display:block;width:224px;margin:0 auto;margin-top:20px;cursor:pointer}
 .link__text{display:none}@media screen and (max-width:767px){.wrapper{position:relative;width:100%;height:auto;max-width:none;max-height:none;min-height:100vh;background-image:none;background-color:white;opacity:.9}
 .logo__image{width:83px;height:36px;margin-top:77px}.title{margin-top:50px;font-size:24px;line-height:32px}
-.description{max-width:280px}.email{display:block}.link{width:224px;height:56px;background-image:url("../img/link_t.svg");margin-top:50px;margin-bottom:20px;text-decoration:none}
+.description{max-width:280px}.email{display:block}.link{width:224px;height:56px;background-image:url("../img/link_t.svg");margin-top:10px;margin-bottom:20px;text-decoration:none}
 .link__object{display:none}.link__text{display:block;font-weight:bolder;font-family:'Kelson Sans Bold',sans-serif;font-size:18px;text-align:center;line-height:58px;letter-spacing:1.13px;color:white}
 }@media screen and (max-width:320px){.logo__image{margin-top:52px}.title{margin-top:35px}
-.description{margin-top:20px}.link{margin-top:20px}}
+.description{margin-top:20px}.link{margin-top:10px}}

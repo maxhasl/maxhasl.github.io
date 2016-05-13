@@ -244,8 +244,9 @@ body {
 .email {
   display: none;
   margin: 0 auto;
+  margin-top: 20px;
   width: 224px;
-  height: 30px;
+  height: 20px;
 }
 
 .link {
@@ -297,7 +298,7 @@ body {
     width: 224px;
     height: 56px;
     background-image: url("../img/link_t.svg");
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
     text-decoration: none;
   }
@@ -332,6 +333,6 @@ body {
   }
 
   .link {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
