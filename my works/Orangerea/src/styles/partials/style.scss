@@ -75,6 +75,12 @@ body{
   text-align: center;
   line-height: 24px;
 }
+.email{
+  display: none;
+  margin: 0 auto;
+  width: 224px;
+  height: 30px;
+}
 .link{
   display: block;
   width: 224px;
@@ -87,7 +93,6 @@ body{
 }
 
 @media  screen and (max-width: 767px){
-
   .wrapper{
    position: relative;
    width: 100%;
@@ -111,6 +116,9 @@ body{
   }
   .description{
     max-width: 280px;
+  }
+  .email{
+    display: block;
   }
   .link{
     width: 224px;
