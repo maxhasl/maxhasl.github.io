@@ -286,7 +286,8 @@ body {
     width: 224px;
     height: 56px;
     background-image: url("../img/link_t.svg");
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-decoration: none;
   }
 

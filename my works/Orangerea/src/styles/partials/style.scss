@@ -89,7 +89,7 @@ body{
 @media  screen and (max-width: 376px){
 
   .wrapper{
-    position: relative;
+   position: relative;
    width: 100%;
    height: auto;
    max-width: none;
@@ -116,7 +116,8 @@ body{
     width: 224px;
     height: 56px;
     background-image: url(../img/link_t.svg);
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-decoration: none;
   }
   .link__object{
