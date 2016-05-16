@@ -33,10 +33,10 @@ $robLigt:      'Roboto', 'Roboto-Light', sans-serif;
 header {
   position: relative;
   width: 100%;
-  height: 540px;  
+  height: 540px;
   margin: 0 auto;
-  background-image: url(../img/header_background.jpg);
-  background-position: center;   
+  background: url(../img/header_background.jpg) no-repeat top center;
+  background-size: cover;
 }
 .header__background {
   position: relative;
@@ -47,7 +47,7 @@ header {
 }
 .log{
   position: relative;
-  width: 190px ;
+  width: 190px;
   margin: 0 auto;
 }
 .log__button{
@@ -91,7 +91,7 @@ h1 {
   font-size: 20px;
   letter-spacing: 1px;
 }
-h2 {  
+h2 {
   margin-top: 30px;
   font-size: 28px;
   line-height: 35px;
@@ -101,13 +101,13 @@ h2 {
   color: white;
 }
 h3 {
-  text-align: center;  
-  color: white;    
+  text-align: center;
+  color: white;
   width: 70%;
   margin: 0 auto;
   margin-top: 10px;
   font-size: 18px;
-  font-family: $robLigt;  
+  font-family: $robLigt;
   line-height: 20px;
 }
 .find__link{
@@ -172,7 +172,7 @@ h3 {
     max-width: 300px;
     position: relative;
 }
-.jcarousel__wrap__1{    
+.jcarousel__wrap__1{
     margin-top: 15px;
 }
 .jcarousel__left{
@@ -189,13 +189,13 @@ h3 {
   background-position: center;
   border-radius: 5px;
 }
-.step--2{  
+.step--2{
   background-image: url(../img/step_2.jpg);
 }
 .step--3{
   background-image: url(../img/step_3.jpg);
 }
-.step__gradient{ 
+.step__gradient{
   position: relative;
   width: 300px;
   height: 240px;
@@ -215,7 +215,7 @@ h3 {
   height: 20px;
   margin-top: 70px;
   margin-left: 7%;
-  text-decoration: none; 
+  text-decoration: none;
   background-color: #ff4e50;
   color: white;
   text-align: center;
@@ -270,10 +270,10 @@ h3 {
   display: block;
   float: right;
   margin-right: -5px;
-  margin-top: 85px;  
+  margin-top: 85px;
   height: 41px;
   width: 41px;
-  background-image: url(../img/icon_1.png); 
+  background-image: url(../img/icon_1.png);
 }
 .parthner__name{
   display: block;
@@ -299,20 +299,20 @@ h3 {
   background-image: url(../img/parthner_2.jpg);
 }
 .parthner__icon--2{
-  background-image: url(../img/icon_2.png); 
+  background-image: url(../img/icon_2.png);
 }
 .parthner__photo--3{
   margin-top: 27px;
   background-image: url(../img/parthner_3.jpg);
 }
 .parthner__icon--3{
-  background-image: url(../img/icon_3.png); 
+  background-image: url(../img/icon_3.png);
 }.parthner__photo--4{
   margin-top: 27px;
   background-image: url(../img/parthner_4.jpg);
 }
 .parthner__icon--4{
-  background-image: url(../img/icon_4.png); 
+  background-image: url(../img/icon_4.png);
 }
 .parthners__link{
   clear: both;
@@ -420,13 +420,13 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); 
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
   z-index: 3;
 }
 .holiday__question{
   margin: 0 auto;
   margin-top: 12px;
-  text-align: center; 
+  text-align: center;
   font-family: $robLigt;
   font-size: 18px;
 }
@@ -438,7 +438,7 @@ h3 {
   height: 36px;
   border-radius: 5px;
 
-  border: 1px solid #dcdcdc; 
+  border: 1px solid #dcdcdc;
   padding-left: 15px;
   font-family: $robLigt;
   font-size: 14px;
@@ -505,7 +505,7 @@ footer{
 /*TABLET*/
 @media screen and (min-width: 768px){
 header {
-  height: 700px; 
+  height: 700px;
 }
 .header__background{
   height: 700px;
@@ -562,7 +562,7 @@ h3 {
     max-width: 235px;
 }
 .jcarousel__wrap__1{
-    margin-left: 1%;    
+    margin-left: 1%;
     margin-top: 34px;
 }
 .step{
@@ -572,13 +572,13 @@ h3 {
   background-position: center;
   border-radius: 5px;
 }
-.step--2{  
+.step--2{
   background-image: url(../img/step_2.jpg);
 }
 .step--3{
   background-image: url(../img/step_3.jpg);
 }
-.step__gradient{ 
+.step__gradient{
   width: 235px;
   height: 400px;
 }
@@ -644,7 +644,7 @@ h3 {
   margin-top: 35px;
   max-width: 750px;
 }
-.masonry__item { 
+.masonry__item {
   width: 31.5%;
   height: 310px;
   margin: 0;
@@ -740,7 +740,7 @@ address{
 /*DESKTOP*/
 @media  screen and (min-width: 960px){
 header {
-  height: 665px; 
+  height: 665px;
 }
 .header__background{
   height: 665px;
@@ -785,21 +785,21 @@ h3 {
     height: 380px;
     max-width: 285px;
 }
-.jcarousel__wrap{    
+.jcarousel__wrap{
     height: 380px;
     margin-left: 2%;
     margin-top: 32px;
     max-width: 285px;
 }
 .jcarousel__wrap__1{
-    margin-left: 2.5%;    
+    margin-left: 2.5%;
     margin-top: 32px;
 }
 .step{
   width: 285px;
   height: 380px;
 }
-.step__gradient{ 
+.step__gradient{
   width: 285px;
   height: 380px;
 }
@@ -861,7 +861,7 @@ h3 {
   width: 100%;
   max-width: 895px;
 }
-.masonry__item { 
+.masonry__item {
   width: 285px;
   height: 295px;
 }
@@ -876,7 +876,7 @@ h3 {
   margin-top: -13px;
 }
 .title--2 {
-  margin-top: 65px;  
+  margin-top: 65px;
 }
 .holiday__question{
   margin-top: 32px;
@@ -927,5 +927,3 @@ address{
   margin-right: 20px;
 }
 }
-
-

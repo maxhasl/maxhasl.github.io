@@ -200,8 +200,8 @@ header {
   width: 100%;
   height: 540px;
   margin: 0 auto;
-  background-image: url("../img/header_background.jpg");
-  background-position: center;
+  background: url("../img/header_background.jpg") no-repeat top center;
+  background-size: cover;
 }
 
 .header__background {
