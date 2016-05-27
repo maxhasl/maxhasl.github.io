@@ -11,6 +11,11 @@ gulp.task('php:build', function() {
         .pipe(gulp.dest('build/'))
 });
 
+gulp.task('html:build', function() {
+    gulp.src('src/*.html')
+        .pipe(gulp.dest('build/'))
+});
+
 gulp.task('fonts:build', function() {
     gulp.src('src/fonts/**/*.*')
         .pipe(gulp.dest('build/fonts/'))
@@ -64,7 +69,8 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default',
-        ['php:build',
+        ['html:build',
+         'php:build',
          'fonts:build',
          'image:build',
          'sass',
