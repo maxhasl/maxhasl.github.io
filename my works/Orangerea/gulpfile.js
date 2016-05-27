@@ -6,8 +6,8 @@ var uglifycss = require('gulp-uglifycss');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 
-gulp.task('html:build', function() {
-    gulp.src('src/*.html')
+gulp.task('php:build', function() {
+    gulp.src('src/*.php')
         .pipe(gulp.dest('build/'))
 });
 
@@ -26,7 +26,7 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('src/styles/partials/'));
 });
- 
+
 gulp.task('scripts', function() {
   return gulp.src(['src/js/partials/*.js'])
     .pipe(concat('script.main.js'))
@@ -63,21 +63,15 @@ gulp.task('watch', function () {
   gulp.watch('src/js/partials/script.js', ['scripts', 'compress__scripts']);
 });
 
-gulp.task('default', 
-        ['html:build',
+gulp.task('default',
+        ['php:build',
          'fonts:build',
          'image:build',
          'sass',
          'style',
-         'scripts',  
+         'scripts',
          'compress__scripts',
          'compress__css'
-         ], function () {  
+         ], function () {
 
 });
-
-
-
- 
-
-

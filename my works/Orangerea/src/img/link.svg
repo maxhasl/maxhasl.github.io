@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<?xml-stylesheet type="text/css" href="../styles/style.main.min.css"?>
 <svg height="56" width="224" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 56">
 
     <path id="link" fill="#a46393" fill-rule="evenodd" d="M 0 0 L 0 9.99 C 0 19.97 0 23.98 0 24.86 C 0 25.23 0 26.42 0 27.86 C 0 29.3 0 30.5 0 30.84 C 0 31.74 0 35.75 0 45.73 L 0 56 C 0 56 41.81 56 111.53 56 C 185.55 56 224 56 224 56 L 224 56 C 224 35.75 224 31.74 224 30.86 C 224 30.49 224 29.3 224 27.86 C 224 26.42 224 25.22 224 24.88 C 224 23.98 224 19.97 224 9.99 L 224 0 C 224 0 182.56 0 111.53 0 C 49.67 0 0 0 0 0 Z M 0 0" />
