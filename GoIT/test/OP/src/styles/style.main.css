@@ -1,0 +1,361 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Kelson Sans Bold';
+  src: url("../fonts/KelsonSansBold.eot");
+  src: url("../fonts/KelsonSansBold.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/KelsonSansBold.woff") format('woff'),
+         url("../fonts/KelsonSansBold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kelson Sans Regular';
+  src: url("../fonts/KelsonSansRegular.eot");
+  src: url("../fonts/KelsonSansRegular.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/KelsonSansRegular.woff") format('woff'),
+         url("../fonts/KelsonSansRegular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kelson Sans Light';
+  src: url("../fonts/KelsonSansLight.eot");
+  src: url("../fonts/KelsonSansLight.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/KelsonSansLight.woff") format('woff'),
+         url("../fonts/KelsonSansLight.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*CLEARFIX*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-size: cover;
+}
+
+.banner__wrapper {
+  position: absolute;
+  width: 80%;
+  max-width: 992px;
+  max-height: 474px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/banner_wrapper.png");
+}
+
+.banner__logo__image {
+  display: block;
+  width: 109px;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 63px;
+}
+
+.banner__logo__title {
+  width: 90px;
+  height: 21px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #a46393;
+  font-family: "Kelson Sans Bold", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 1px;
+}
+
+.banner__title {
+  margin-top: 36px;
+  text-align: center;
+  color: #a46393;
+  font-family: "Kelson Sans Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.banner__description {
+  width: 80%;
+  max-width: 736px;
+  margin: 0 auto;
+  margin-top: 24px;
+  color: #4a4a4a;
+  font-family: "Kelson Sans Light", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.banner__link {
+  display: block;
+  width: 224px;
+  margin: 0 auto;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.banner__link__bg {
+  width: 224px;
+  height: 56px;
+  fill: #a46393;
+  cursor: pointer;
+}
+
+.banner__link__text {
+  fill: #fff;
+  font-weight: 700;
+  font-family: "Kelson Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 58px;
+  letter-spacing: 1.13px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner__wrapper {
+    max-width: 800px;
+    max-height: 478px;
+  }
+
+  .banner__logo__image {
+    width: 96px;
+    height: 42px;
+    margin-top: 69px;
+  }
+
+  .banner__logo__title {
+    margin-top: 13px;
+  }
+
+  .banner__title {
+    margin-top: 40px;
+  }
+
+  .banner__description {
+    margin-top: 13px;
+  }
+
+  .banner__link {
+    margin-top: 42px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .banner__wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    min-height: 100vh;
+    background-image: none;
+    background-color: white;
+    opacity: 0.9;
+  }
+
+  .banner__logo__image {
+    width: 83px;
+    height: 36px;
+    margin-top: 77px;
+  }
+
+  .banner__logo__title {
+    margin-top: 14px;
+  }
+
+  .banner__title {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 62px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .banner__description {
+    margin: 0 auto;
+    margin-top: 22px;
+    width: 100%;
+    max-width: 270px;
+  }
+
+  .banner__link {
+    width: 216px;
+    margin-top: 56px;
+  }
+
+  .banner__link__bg {
+    width: 216px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo__image {
+    margin-top: 52px;
+  }
+
+  .title {
+    margin-top: 35px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .link {
+    margin-top: 10px;
+  }
+}
