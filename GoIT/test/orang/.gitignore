@@ -1,0 +1,50 @@
+_test
+coverage/
+
+*.iml
+TODO
+Full*
+*.log.*
+dump.*
+logs/
+build/
+.ssh/
+redis.log
+cex_dump.rdb
+*.log
+nohup.out
+
+#node files
+npm-debug.log
+node_modules
+
+#IDE's
+.idea
+.editorconfig
+.projects
+.netbeans
+.metadata
+.project
+.settings
+.svn
+
+#archives
+*.tar.gz
+*.tar.bz2
+*.zip
+*.bz2
+*.rar
+*.tar
+
+#databases
+dump.rdb
+
+# old files
+*.bak
+*.old
+
+# OS files
+.DS_Store
+
+##sass, less
+.sass-cache
