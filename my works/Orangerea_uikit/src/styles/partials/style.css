@@ -30,11 +30,11 @@ body {
 
 .input-text {
   display: block;
-  width: 480px;
-  height: 31px;
+  width: 465px;
+  height: 37px;
   margin: 0 auto;
-  padding-top: 25px;
-  padding-left: 18px;
+  padding-top: 19px;
+  padding-left: 15px;
   color: #524d5d;
   font-family: "Kelson Sans Light", sans-serif;
   font-size: 16px;
@@ -46,9 +46,14 @@ body {
 
 .input-text:focus {
   outline: none;
+  width: 462px;
+  height: 41px;
+  padding-left: 18px;
+  padding-top: 15px;
   font-family: "Kelson Sans Light", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   background-color: #f7f5f7;
+  letter-spacing: 1px;
   border-bottom: 1px solid white; }
 
 .checkbox {
@@ -133,7 +138,7 @@ input[type=submit] {
 .svg-background {
   fill: #a46393; }
 
-.svg {
+.svg-text {
   fill: white;
   font-family: "Kelson Sans Bold", sans-serif;
   font-size: 18px;
@@ -143,7 +148,8 @@ input[type=submit] {
   cursor: pointer;
   -moz-user-select: none;
   -khtml-user-select: none;
-  user-select: none; }
+  -ms-user-select: none;
+  -webkit-user-select: none; }
 
 .svg-background:hover {
   fill: #b977a8;
