@@ -1,0 +1,116 @@
+//NUMBERS DESKTOP HD
+.numbers__title{
+  margin-top: 54px;
+  text-align: center;
+  color: $mainColor;
+  font-family: $KelsonB;
+  font-size: 32px;
+  line-height: 40px;
+}
+.numbers__description{
+  margin-top: 5px;
+  text-align: center;
+  color: $textColor;
+  font-family: $KelsonL;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.costs{
+  width: 1224px;
+  height: 190px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+.costs__item{
+  float: left;
+  width: 200px;
+  height: 190px;
+  margin: 0 28px;
+}
+.costs__item:first-child{
+  margin-left: 0;
+}
+.costs__item:last-child{
+  margin-right: 0;
+}
+.costs__item__image{
+  width: 77px;
+  height: 77px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid $mainColor;
+}
+.costs__item__number{
+  margin-top: 25px;
+  text-align: center;
+  color: $mainColor;
+  font-family: $KelsonB;
+  font-size: 48px;
+  line-height: 45px;
+}
+.costs__item__title{
+  margin-top: 23px;
+  text-align: center;
+  color: $mainColor;
+  font-family: $KelsonR;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 10px;
+}
+//NUMBERS DESKTOP
+@media screen and (max-width: 1024px){
+  .numbers__description{
+    margin-top: 9px;
+  }
+  .costs{
+    width: 912px;
+    margin-top: 42px;
+  }
+  .costs__item{
+    float: left;
+    width: 180px;
+    margin: 0 1.5px;
+  }
+}
+//NUMBERS IPHONE 6
+@media screen and (max-width: 375px){
+  .numbers__title{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 49px;
+  }
+  .numbers__description{
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .costs{
+    width: 100%;
+    height: auto;
+    max-width: 375px;
+    margin-top: 35px;
+  }
+  .costs__item{
+    float: none;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 1.5px;
+    margin-top: 34px;
+  }
+  .costs__item:first-child{
+    margin-top: 0;
+  }
+}
+//NUMBERS IPHONE 5
+@media screen and (max-width: 320px){
+  .numbers__title{
+    width: 285px;
+    margin: 0 auto;
+    margin-top: 42px;
+  }
+  .numbers__description{
+    margin-top: 15px;
+  }
+}

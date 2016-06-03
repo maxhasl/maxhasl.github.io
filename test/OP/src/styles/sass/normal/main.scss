@@ -1,0 +1,20 @@
+$KelsonB: 'Kelson Sans Bold', sans-serif;
+$KelsonR: 'Kelson Sans Regular', sans-serif;
+$KelsonL: 'Kelson Sans Light', sans-serif;
+$mainColor: #a46393;
+$textColor: #4a4a4a;
+
+
+/*CLEARFIX*/
+.clearfix{
+  *zoom: 1;
+  &:before{
+    content: '';
+    display: table;
+  }
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

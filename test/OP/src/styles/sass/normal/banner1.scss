@@ -1,0 +1,113 @@
+//BANNER 1 DESKTOP HD
+.banner1__logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 85px;
+}
+.banner1__title{
+  margin-top: 32px;
+  color: $mainColor;
+  text-align: center;
+  font-family: $KelsonB;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+ &:before, &:after{
+  margin-right: 28px;
+  padding-bottom: 12px;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 34px;
+  background: url(../img/banner1_title_line.svg) no-repeat;
+}
+ &:after{
+  margin-left: 28px;
+  margin-right: 0;
+  }
+}
+.banner1__description{
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: $textColor;
+  text-align: center;
+  font-family: $KelsonL;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.banner1__link{
+  display: block;
+  width: 28px;
+  height: 15px;
+  margin: 0 auto;
+  margin-top: 83px;
+  background: url(../img/banner1_link.svg) no-repeat;
+}
+//BANNER 1 DESKTOP
+@media screen and (max-width: 1535px){
+.banner1__title{
+ &:before, &:after{
+  margin-right: 34px;
+}
+ &:after{
+  margin-left: 34px;
+  margin-right: 0;
+  }
+}
+.banner1__link{
+  margin-top: 78px;
+}
+}
+//BANNER IPHONE 6
+@media  screen and (max-width: 1023px){
+.banner1__logo{
+  margin-top: 141px;
+}
+.banner1__title{
+  width: 264px;
+  margin: 0 auto;
+  margin-top: 31px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+ &:before, &:after{
+   content: none;
+ }
+ &:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 18px;
+  }
+}
+.banner1__description{
+  margin-top: 12px;
+  width: 272px;
+}
+.banner1__description__mobile{
+  display: block;
+}
+.banner1__link{
+  margin-top: 111px;
+}
+}
+@media  screen and (max-width: 374px){
+  .banner1__logo{
+    margin-top: 85px;
+  }
+  .banner1__title{
+    margin-top: 38px;
+   &:after{
+    margin-top: 13px;
+    }
+  }
+  .banner1__description{
+    margin-top: 9px;
+    width: 250px;
+  }
+  .banner1__link{
+    margin-top: 90px;
+  }
+}
