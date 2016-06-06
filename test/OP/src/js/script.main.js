@@ -30,11 +30,11 @@ $(function() {
       };
   };
   window.addEventListener("resize", function() {
-    alert("blabla");
+    alert("eqwe");
     $('banner__link__svg').remove();
     $('banner__link').append('<svg class="banner__link__svg"><span class="banner__link__svg__text">FIND OUT MORE</span></svg>');
+    windowSize = $(window).width();
     changelink();
-    alert($(window).width());
   }, false);
     //end added banner link
   changelink();
