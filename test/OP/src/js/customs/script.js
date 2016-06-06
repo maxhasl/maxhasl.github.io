@@ -14,6 +14,7 @@ $(function() {
   };
   window.addEventListener("resize", function() {
   	changelink();
+    alert("alo");
   }, false);
   function changelink(){
       if(windowSize>375){
