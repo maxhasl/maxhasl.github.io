@@ -4,12 +4,13 @@ return f(a,"object")&&!f(a,"array")?b.attr(a):a&&b.attr({d:a}),b},a.group=a.g=fu
 
 $(function() {
   //added banner link
-  var bannerLink = Snap('.banner__link__svg');
   var windowSize = $(window).width();
   console.log(windowSize);
   function createLink(linkStart, linkFinish){
+    var bannerLink = Snap('.banner__link__svg');
     var linkD = linkStart;
-    var linkBg = bannerLink.path(linkD);
+    var linkBg = bannerLink.path().remove();
+    linkBg = bannerLink.path(linkD);
     $('.banner__link__svg').hover(function(){
       linkBg.animate({d: linkFinish}, 200);
     },function(){
