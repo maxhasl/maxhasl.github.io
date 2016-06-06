@@ -26,11 +26,12 @@ $(function() {
       };
   };
   window.addEventListener('orientationchange', function() {
-    alert($(window).width());
+    // alert($(window).width());
+    alert("lox");
     // $('banner__link__svg').remove();
     // $('banner__link').append('<svg class="banner__link__svg"><span class="banner__link__svg__text">FIND OUT MORE</span></svg>');
     changelink();
   }, false);
     //end added banner link
-  changelink();
+  // changelink();
 });
