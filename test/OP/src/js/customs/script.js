@@ -1,7 +1,5 @@
 $(function() {
   //added banner link
-  var windowSize = $(window).width();
-  console.log(windowSize);
   function createLink(linkStart, linkFinish){
     var bannerLink = Snap('.banner__link__svg');
     var linkD = linkStart;
@@ -14,6 +12,8 @@ $(function() {
     });
   };
   function changelink(){
+      var windowSize = $(window).width();
+      alert(windowSize);
       if($(window).width()>375){
         createLink("M 0 0 L 0 9.99 C 0 19.97 0 23.98 0 24.86 C 0 25.23 0 26.42 0 27.86 C 0 29.3 0 30.5 0 30.84 C 0 31.74 0 35.75 0 45.73 L 0 56 C 0 56 41.81 56 111.53 56 C 185.55 56 224 56 224 56 L 224 56 C 224 35.75 224 31.74 224 30.86 C 224 30.49 224 29.3 224 27.86 C 224 26.42 224 25.22 224 24.88 C 224 23.98 224 19.97 224 9.99 L 224 0 C 224 0 182.56 0 111.53 0 C 49.67 0 0 0 0 0 Z M 0 0",
                    "M 0 0 L 0 9.99 C 0 19.97 5.14 23.98 8.51 24.86 C 9.84 25.23 10.83 26.42 10.83 27.86 C 10.83 29.3 9.84 30.5 8.5 30.84 C 5.14 31.74 0 35.75 0 45.73 L 0 55.72 C 0 55.72 41.81 52.36 111.53 52.36 C 185.55 52.36 224 55.72 224 55.72 L 224 45.73 C 224 35.75 218.86 31.74 215.49 30.86 C 214.16 30.49 213.17 29.3 213.17 27.86 C 213.17 26.42 214.16 25.22 215.5 24.88 C 218.86 23.98 224 19.97 224 9.99 L 224 0 C 224 0 182.56 3.36 111.53 3.36 C 49.67 3.36 0 0 0 0 Z M 0 0");
@@ -27,7 +27,7 @@ $(function() {
   };
   window.addEventListener('orientationchange', function() {
     // alert($(window).width());
-    alert("lox2");
+    alert("lox3");
     $('banner__link__svg').remove();
     $('banner__link').append('<svg class="banner__link__svg"><span class="banner__link__svg__text">FIND OUT MORE</span></svg>');
     changelink();
