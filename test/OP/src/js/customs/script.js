@@ -14,7 +14,8 @@ $(function() {
     });
   };
   window.addEventListener("resize", function() {
-  	alert("alo");
+  	alert("123");
+    changelink();
   }, false);
   function changelink(){
       if(windowSize>375){
