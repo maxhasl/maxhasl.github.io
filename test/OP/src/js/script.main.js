@@ -29,8 +29,8 @@ $(function() {
                    "M 0 0 L 0 9.99 C 0 19.97 4.58 23.98 7.59 24.86 C 8.78 25.23 9.67 26.42 9.67 27.86 C 9.67 29.3 8.78 30.5 7.59 30.84 C 4.58 31.74 0 35.75 0 45.73 L 0 55.72 C 0 55.72 37.33 52.36 99.58 52.36 C 165.67 52.36 200 55.72 200 55.72 L 200 45.73 C 200 35.75 195.42 31.74 192.41 30.86 C 191.22 30.49 190.33 29.3 190.33 27.86 C 190.33 26.42 191.22 25.22 192.41 24.88 C 195.42 23.98 200 19.97 200 9.99 L 200 0 C 200 0 163 3.36 99.58 3.36 C 44.35 3.36 0 0 0 0 Z M 0 0");
       };
   };
-  window.addEventListener("resize", function() {
-    alert("123");
+  window.addEventListener('orientationchange', function() {
+    alert("qwe");
     // $('banner__link__svg').remove();
     // $('banner__link').append('<svg class="banner__link__svg"><span class="banner__link__svg__text">FIND OUT MORE</span></svg>');
     changelink();
