@@ -187,8 +187,8 @@ table {
   max-width: 992px;
   max-height: 474px;
   margin: 273px auto 0 auto;
-  padding-bottom: 76px;
-  background: url("../img/banner_wrapper.png") center center;
+  padding-bottom: 95px;
+  background: url("../img/banner_wrapper.png") center top;
   background-size: cover;
 }
 
@@ -236,22 +236,25 @@ table {
   width: 224px;
   margin: 25px auto 0 auto;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .banner__link__svg {
   height: 56px;
   width: 224px;
-  font-weight: 700;
-  font-family: "Kelson Sans Bold", sans-serif;
-  fill: white;
-  text-align: center;
-  letter-spacing: 1.13px;
-  font-size: 18px;
+  fill: #a46393;
 }
 
 .banner__link__svg__text {
-  position: absolute;
-  text-decoration: none;
+  display: block;
+  margin: -38px auto 0 auto;
+  font-family: "Kelson Sans Bold", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1.13px;
+  font-weight: 700px;
+  color: white;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -259,7 +262,7 @@ table {
     max-width: 800px;
     max-height: none;
     margin: 145px auto 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 
   .banner__logo__image {
@@ -376,26 +379,6 @@ table {
   .banner__link__svg {
     height: 56px;
     width: 216px;
-  }
-}
-
-@media screen and (max-width: 0px) {
-  .banner__logo__image {
-    margin-top: 52px;
-  }
-
-  .banner__title {
-    margin-top: 39px;
-  }
-
-  .banner__description {
-    margin-top: 17px;
-    max-width: 258px;
-  }
-
-  .banner__link {
-    width: 200px;
-    margin-top: 15px;
   }
 }
 

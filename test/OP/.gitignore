@@ -1,5 +1,4 @@
 node_modules/
 .idea
-build/
 src/styles/out/*.css
 src/styles/src/styles/style.main.css

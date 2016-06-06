@@ -158,10 +158,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-a {
-  display: block;
+.banner--touch {
+  height: auto;
 }
 
-a {
-  display: inline;
+.banner__wrapper--touch {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background-image: none;
+  background-color: white;
+  opacity: 0.9;
 }
