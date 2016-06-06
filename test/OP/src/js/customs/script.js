@@ -28,4 +28,5 @@ $(function() {
       };
   };
     //end added banner link
+  changelink();
 });
