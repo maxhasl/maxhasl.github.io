@@ -18,8 +18,9 @@ $(function() {
     });
   };
   window.addEventListener("resize", function() {
-  	alert("123");
+  	alert("1233312");
     changelink();
+    alert($(window).width());
   }, false);
   function changelink(){
       if(windowSize>375){
