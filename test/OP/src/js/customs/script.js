@@ -15,6 +15,7 @@ $(function() {
   window.addEventListener("orientationchange", function() {
     changelink();
     alert(window.orientation);
+    alert(window.width);
   }, false);
   function changelink(){
       if(windowSize>375){
