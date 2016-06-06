@@ -12,10 +12,8 @@ $(function() {
       linkBg.animate({d: linkStart}, 200);
     });
   };
-  window.addEventListener("orientationchange", function() {
-    changelink();
-    alert(window.orientation);
-    alert($(window).width());
+  window.addEventListener("resize", function() {
+  	changelink();
   }, false);
   function changelink(){
       if(windowSize>375){
