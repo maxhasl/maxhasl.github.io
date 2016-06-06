@@ -5,7 +5,7 @@ $(function() {
   function createLink(linkStart, linkFinish){
     var bannerLink = Snap('.banner__link__svg');
     var linkD = linkStart;
-    var linkBg = bannerLink.path("0");
+    var linkBg = bannerLink.path(null);
     linkBg = bannerLink.path(linkD);
     $('.banner__link__svg').hover(function(){
       linkBg.animate({d: linkFinish}, 200);
@@ -14,8 +14,7 @@ $(function() {
     });
   };
   window.addEventListener("resize", function() {
-  	changelink();
-    alert("alo");
+  	alert("alo");
   }, false);
   function changelink(){
       if(windowSize>375){
