@@ -18,7 +18,7 @@ $(function() {
     });
   };
   window.addEventListener("resize", function() {
-  	alert("1233312");
+  	alert("1dasd");
     $('banner__link__svg').remove();
     $('banner__link').append('<svg class="banner__link__svg"><span class="banner__link__svg__text">FIND OUT MORE</span></svg>');
     changelink();
