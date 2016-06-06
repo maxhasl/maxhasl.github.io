@@ -9,7 +9,7 @@ $(function() {
   function createLink(linkStart, linkFinish){
     var bannerLink = Snap('.banner__link__svg');
     var linkD = linkStart;
-    var linkBg = bannerLink.path().remove();
+    var linkBg = bannerLink.remove();
     linkBg = bannerLink.path(linkD);
     $('.banner__link__svg').hover(function(){
       linkBg.animate({d: linkFinish}, 200);
