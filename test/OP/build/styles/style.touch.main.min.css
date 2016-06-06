@@ -5,3 +5,5 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 table{border-collapse:collapse;border-spacing:0}.banner--touch{height:auto}.banner__wrapper--touch{width:100%;max-width:none;margin:0;background-image:none;background-color:white;opacity:.9}
+@media screen and (max-width:1024px){.banner--touch{height:auto}.banner__wrapper--touch{width:100%;max-width:none;margin:0;background-image:none;background-color:white;opacity:.9}
+}
