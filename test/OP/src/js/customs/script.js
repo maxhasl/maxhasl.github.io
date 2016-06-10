@@ -26,10 +26,8 @@ $(function() {
       };
   };
   window.addEventListener('orientationchange', function() {
-    // alert($(window).width());
-    alert("xz");
     changelink();
   }, false);
-    //end added banner link
   changelink();
+  //end added banner link
 });
