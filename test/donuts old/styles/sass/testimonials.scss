@@ -19,6 +19,7 @@ $textColor: #4a4a4a;
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 .testimonials{
+  width: 100%;
   max-width: 1536px;
   height: 300px;
   margin: 0 auto;
@@ -99,6 +100,7 @@ $textColor: #4a4a4a;
 }
 .tabs__control__item{
   float:left;
+  width: 25%;
   cursor: pointer;
 }
 .tabs-checked{
@@ -107,6 +109,10 @@ $textColor: #4a4a4a;
   width: 96px;
   height: 0px;
   background: url(../../img/tab_fill.png) no-repeat;
+  -webkit-transition: height 500ms;
+  -moz-transition: height 500ms;
+  -ms-transition: height 500ms;
+  -o-transition: height 500ms;
   transition: height 500ms;
 }
 .tabs-checked--active{
