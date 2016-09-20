@@ -1,0 +1,8 @@
+1. diff beatween deff and site files
+1.1 modules\trigger\trigger.module
+      'access callback' => 'trigger_access_check',
+<empty>
+1.2 misc\teaser.js
+    if ($(teaser).is(':disabled')) {
+    if ($(teaser).is('[@disabled]')) {
+1.3 sites\all\modules\languageicons\flags\*.pnh - some lang icons

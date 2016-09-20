@@ -1,0 +1,47 @@
+Index: modules/search/search.info
+===================================================================
+RCS file: /cvs/drupal/drupal/modules/search/search.info,v
+retrieving revision 1.4
+diff -u -p -r1.4 search.info
+--- modules/search/search.info	8 Jun 2007 05:50:55 -0000	1.4
++++ modules/search/search.info	1 Aug 2010 16:47:00 -0000
+@@ -4,3 +4,4 @@ description = Enables site-wide keyword 
+ package = Core - optional
+ version = VERSION
+ core = 6.x
++dependencies[] = rustemmer
+Index: modules/search/search.module
+===================================================================
+RCS file: /cvs/drupal/drupal/modules/search/search.module,v
+retrieving revision 1.250.2.10
+diff -u -p -r1.250.2.10 search.module
+--- modules/search/search.module	28 May 2010 15:20:35 -0000	1.250.2.10
++++ modules/search/search.module	1 Aug 2010 16:47:01 -0000
+@@ -1202,6 +1202,7 @@ function search_excerpt($keys, $text) {
+   $ranges = array();
+   $included = array();
+   $length = 0;
++  $stemmer = new RussianStemmer();
+   while ($length < 256 && count($workkeys)) {
+     foreach ($workkeys as $k => $key) {
+       if (strlen($key) == 0) {
+@@ -1219,7 +1220,9 @@ function search_excerpt($keys, $text) {
+       }
+       // Locate a keyword (position $p), then locate a space in front (position
+       // $q) and behind it (position $s)
+-      if (preg_match('/'. $boundary . $key . $boundary .'/iu', $text, $match, PREG_OFFSET_CAPTURE, $included[$key])) {
++      $key = $stemmer->stem_word($key);
++      $keys[$k] = $key;
++      if (preg_match('/'. $boundary . '[' . RUSTEMMER_CHARS . ']*' . $key . '[' . RUSTEMMER_CHARS . ']*' . $boundary .'/iu', $text, $match, PREG_OFFSET_CAPTURE, $included[$key])) {
+         $p = $match[0][1];
+         if (($q = strpos($text, ' ', max(0, $p - 60))) !== FALSE) {
+           $end = substr($text, $p, 80);
+@@ -1277,7 +1280,7 @@ function search_excerpt($keys, $text) {
+   $text = (isset($newranges[0]) ? '' : '... ') . implode(' ... ', $out) .' ...';
+ 
+   // Highlight keywords. Must be done at once to prevent conflicts ('strong' and '<strong>').
+-  $text = preg_replace('/'. $boundary .'('. implode('|', $keys) .')'. $boundary .'/iu', '<strong>\0</strong>', $text);
++  $text = preg_replace('/'. $boundary . '[' . RUSTEMMER_CHARS . ']*' .'('. implode('|', $keys) .')'. '[' . RUSTEMMER_CHARS . ']*' . $boundary .'/iu', '<strong>\0</strong>', $text);
+   return $text;
+ }
+ 

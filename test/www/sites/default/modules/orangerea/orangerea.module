@@ -1,0 +1,34 @@
+<?php
+// $Id$
+function snippet_block($file_name){
+    include("sites/default/snippets/block/$file_name.php");
+}
+
+
+function getLang(){
+    global $language;
+    return ($language) ? $language->language : 'ru';
+}
+
+/*add slash save to get query atribute*/
+function getUrlLang($safeSlashes = false){
+    global $language;
+    return ($language->language == 'ru') ? '' : $language->language.(($safeSlashes) ? '%2F' :'/');
+}
+
+function myGetPathAlias($path, $nid){
+    if (empty($path)) $path = drupal_get_path_alias('node/'.$nid, getLang());
+    return base_path().getUrlLang().$path;
+}
+
+function getSafeSlashesUrl(){
+    $url = $_SERVER["REQUEST_URI"];
+    $url = str_replace('/en/','/',$url);
+    $url = str_replace('/ru/','/',$url);
+    $url = str_replace('/uk/','/',$url);
+    $url = trim($url,'/');
+    $url = str_replace('/','%2F',$url);
+
+
+    return $url;
+}
