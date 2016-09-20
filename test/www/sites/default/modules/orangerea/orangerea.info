@@ -1,4 +1,0 @@
-name = Orangerea
-description = Default pre-module for orangerea sites
-package = "Orangerea modules"
-core = 6.x
