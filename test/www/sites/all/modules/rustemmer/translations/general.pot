@@ -1,0 +1,41 @@
+# $Id: general.pot,v 1.1 2010/08/01 17:52:03 andypost Exp $
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  rustemmer.module: n/a
+#  rustemmer.info,v 1.2 2010/08/01 17:07:42 andypost
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-08-01 21:35+0400\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: rustemmer.module:24
+msgid "Improves search of Russian words by using the stemming algorithm for Russian language."
+msgstr ""
+
+#: rustemmer.module:59
+msgid "Stem caching"
+msgstr ""
+
+#: rustemmer.module:61
+msgid "Apply stem caching while performing search phrase stemming."
+msgstr ""
+
+#: rustemmer.info:0
+msgid "RussianStemmer"
+msgstr ""
+
+#: rustemmer.info:0
+msgid "Implements the Russian stemming algorithm to improve Russian-language searching."
+msgstr ""
+

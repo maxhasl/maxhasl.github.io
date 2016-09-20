@@ -1,0 +1,9 @@
+ $(document).ready(function(){
+	globalPhpForm = '/<?= qtrans_getLanguage() ?>';
+	var formAttr = $('#wpcf7-f4-t1-o1 form').attr('action');
+	$('#wpcf7-f4-t1-o1 form').attr('action', globalPhpForm + formAttr);
+	globalPhpTranslationOk = '<?php _e("<!--:en-->Your message has been sent successfully. Thank you.<!--:--><!--:ru-->Ваше сообщение было отправлено успешно. Спасибо.<!--:--><!--:ua-->Дякуємо! Ваше повідомлення відправлено.<!--:-->"); ?>';
+	globalPhpTranslationError = '<?php _e("<!--:en-->Validation errors occurred. Please confirm the fields and submit it again.<!--:--><!--:ru-->Ошибка заполнения. Заполните все поля и отправьте снова.<!--:--><!--:ua-->Помилка при заповненні. Зверніть увагу на необхідні поля і відправте ще раз.<!--:-->") ?>';
+	$('.wpcf7-validation-errors').text(globalPhpTranslationError);
+	$('.wpcf7-mail-sent-ok').text(globalPhpTranslationOk);
+});

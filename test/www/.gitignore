@@ -1,0 +1,50 @@
+########################################################################### DRUPAL ###########################################################################
+# Ignore configuration files that may contain sensitive information.
+sites/*/*settings*.php
+
+# Ignore paths that contain generated content.
+cache/
+files/
+sites/*/files
+sites/*/private
+
+themes/garland_old/
+
+
+########################################################################### DEFAULTS ###########################################################################
+# IDE files
+nbproject/*
+.idea
+.projects
+.netbeans
+.metadata
+.project
+.settings
+.patch
+t3st?
+
+# OS generated files
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+#Temporary OS files
+*~
+
+#archives
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.gz
+*.zip
+*.bz2
+*.rar
+
+#Databases
+*.sql
+
+atlassian-ide-plugin.xml
+
+/_test
+!sites/all/modules/ckeditor/ckeditor_old.rar

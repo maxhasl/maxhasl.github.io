@@ -1,0 +1,27 @@
+// min-width extra small screen / phone
+.xs(@rules) {
+  @media screen and (max-width: @screen-xs){
+  @rules();
+  }
+}
+
+// min-width small screen / tablets
+.sm(@rules) {
+  @media screen and (max-width: @screen-sm){
+  @rules();
+  }
+}
+
+// min-width medium screen / desktop
+.md(@rules) {
+  @media screen and (max-width: @screen-md) {
+  @rules();
+  }
+}
+
+// min-width large screen / wide desktop
+.lg(@rules) {
+  @media screen and (max-width: @screen-lg){
+  @rules();
+  }
+}

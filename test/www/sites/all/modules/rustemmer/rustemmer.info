@@ -1,0 +1,11 @@
+; $Id: rustemmer.info,v 1.2 2010/08/01 17:07:42 andypost Exp $
+name = "RussianStemmer"
+description = "Implements the Russian stemming algorithm to improve Russian-language searching."
+core = 6.x
+
+; Information added by drupal.org packaging script on 2010-08-01
+version = "6.x-1.0-rc2"
+core = "6.x"
+project = "rustemmer"
+datestamp = "1280685675"
+
