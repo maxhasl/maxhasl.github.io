@@ -1,0 +1,15 @@
+.wrapper{
+    background-color: yellow;
+    width: 300px;
+    height: 156px;
+    margin: 100px auto 0;
+    padding-top: 100px;
+}
+.wrapper__svg{
+    display: block;
+    margin: 0 auto;
+    fill: purple;
+    width: 224px;
+    height: 56px;
+    cursor: pointer;
+}
