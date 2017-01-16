@@ -1,0 +1,33 @@
+//DESKTOP HD
+.link--statements{
+  display: block;
+  width: 224px;
+  margin: 45px auto 0 auto;
+}
+.banner1--statements{
+  background-color: $mainColor;
+}
+.banner1__title__text--white{
+  color: white;
+  &:before, &:after{
+    background: url(../../img/banner1_title_line_white.svg);
+  }
+}
+.banner1__description--white{
+  color: white;
+}
+.link__svg--statements-white{
+  fill: #ffffff;
+}
+.link__text--white{
+  color: $mainColor;
+}
+
+@media screen and (max-width:374px) {
+  .link--statements{
+   width: 224px;
+  }
+  .link__svg--statements{
+    width: 224px;
+  }
+}

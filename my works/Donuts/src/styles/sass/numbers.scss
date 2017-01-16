@@ -1,0 +1,110 @@
+//NUMBERS DESKTOP HD
+.numbers{
+  text-align: center;
+}
+.numbers__title{
+  width: 80%;
+  margin: 54px auto 0;
+  text-align: center;
+  color: $mainColor;
+  font-family: $KelsonB;
+  font-size: 32px;
+  line-height: 40px;
+}
+.numbers__description{
+  width: 90%;
+  margin: 5px auto 0;
+  text-align: center;
+  color: $textColor;
+  font-family: $KelsonL;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.costs{
+  margin: 46px auto 0;
+  max-width: 1200px;
+}
+.costs__item{
+  display: inline-block;
+  vertical-align: top;
+  width: 19%;
+  max-width: 250px;
+  height: auto;
+  margin: 0 0 46px;
+}
+.costs__item__image{
+  display: block;
+  margin: 0 auto;
+  width: 77px;
+  height: 77px;
+}
+.costs__item__number{
+  margin-top: 25px;
+  text-align: center;
+  color: $mainColor;
+  font-family: $KelsonB;
+  font-size: 48px;
+  line-height: 45px;
+}
+.costs__item__title{
+  width: 80%;
+  margin: 18px auto 0;
+  text-align: center;
+  color: $mainColor;
+  font-family: $KelsonR;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+}
+//NUMBERS DESKTOP
+@media screen and (max-width: 1023px){
+  .numbers__description{
+    margin-top: 9px;
+  }
+  .costs__item{
+    width: 31%;
+    margin: 42px 1.7%;
+  }
+}
+//NUMBERS IPHONE 6
+@media screen and (max-width: 768px){
+  .numbers__title{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 49px;
+  }
+  .numbers__description{
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .costs{
+    width: 100%;
+    height: auto;
+    margin: 35px auto;
+  }
+  .costs__item{
+    width: calc(100% - 30px);
+    max-width: none;
+    margin: 34px 15px 0;
+  }
+  .costs__item:first-child{
+    margin-top: 0;
+  }
+}
+//NUMBERS IPHONE 5
+@media screen and (max-width: 374px){
+  .numbers__title{
+    width: 90%;
+    margin: 42px auto 0;
+  }
+  .numbers__description{
+    margin-top: 13px;
+    font-size: 14px;
+  }
+  .costs{
+    margin-top: 36px;
+  }
+}

@@ -1,0 +1,123 @@
+//BANNER 1 DESKTOP HD
+.banner1{
+  padding-bottom: 120px;
+  text-align: center;
+}
+.banner1__logo {
+  height: 76px;
+  width: auto;
+  display: block;
+  margin: 85px auto 0 auto;
+}
+.banner1__title{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin: 32px auto 0 auto;
+  max-width: 60%;
+}
+.banner1__title__text{
+  display: inline-block;
+  margin: 0 auto 10px;
+  padding: 0 50px;
+  color: $mainColor;
+  text-align: center;
+  font-family: $KelsonB;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  &:before, &:after{
+    position: absolute;
+    top: 17px;
+    left: 0;
+    content: "";
+    background: url(../../img/banner1_title_line.svg);
+    height: 5px;
+    width: 34px;
+  }
+  &:after{
+    left: auto;
+    right: 0;
+  }
+}
+.banner1__description{
+  max-width: 60%;
+  margin: 0 auto;
+  color: $textColor;
+  text-align: center;
+  font-family: $KelsonL;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.banner1__link{
+  display: block;
+  width: 28px;
+  height: 15px;
+  margin: 83px auto 0 auto;
+}
+.banner1__link__svg{
+  width: 28px;
+  height: 15px;
+  stroke: $mainColor;
+  stroke-width: 2px;
+  fill: white;
+  fill-rule: nonzero;
+}
+//BANNER 1 DESKTOP
+@media screen and (max-width: 1024px){
+.banner1__link{
+  margin-top: 78px;
+}
+}
+//BANNER 1 IPHONE 6
+@media  screen and (max-width:768px){
+.banner1__logo{
+  margin-top: 141px;
+}
+.banner1__title{
+  max-width: 80%;
+  margin-top: 31px;
+}
+.banner1__title__text{
+  padding: 0 0 18px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  &:before{
+    content: none;
+  }
+  &:after{
+    top: auto;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+.banner1__description{
+  margin-top: 24px;
+}
+.banner1__description__mobile{
+  display: block;
+}
+.banner1__link{
+  margin-top: 111px;
+}
+}
+@media  screen and (max-width: 374px){
+  .banner1__logo{
+    margin-top: 85px;
+  }
+  .banner1__title{
+    margin-top: 38px;
+  }
+  .banner1__title__image:nth-child(3){
+    margin-top: 14px;
+  }
+  .banner1__description{
+    margin-top: 20px;
+  }
+  .banner1__link{
+    margin-top: 90px;
+  }
+}

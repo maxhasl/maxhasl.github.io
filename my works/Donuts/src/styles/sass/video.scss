@@ -1,0 +1,128 @@
+.title--video__single{
+  margin-top: 41px;
+}
+.description--video__single{
+  margin-top: 6px;
+}
+.video__single__item{
+  display: block;
+  width: 1024px;
+  margin: 40px auto 29px auto;
+}
+//LIST
+.video__list{
+  width: 100%;
+  margin-bottom: 47px;
+}
+.title--video__list{
+  margin-top: 60px;
+}
+.description--video__list{
+  margin-top: 6px;
+}
+.video__list__items{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1286px;
+  text-align: center;
+}
+.video-content{
+  display: inline-block;
+  vertical-align: top;
+  width: 510px;
+  margin: 47px 65px 0;
+}
+.video-content__video{
+  width: 100%;
+}
+.video-content__title{
+  margin-top: 22px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  font-size: 24px;
+  color: $mainColor;
+  font-family: $KelsonB;
+  line-height: 32px;
+}
+.description--video-content__description{
+  width: 100%;
+  margin-top: 13px;
+  text-align: left;
+}
+@media screen and (max-width: 1535px){
+  //LIST
+  .title--video__list{
+    margin-top: 57px;
+  }
+  .video__list__items{
+    margin-top: 50px;
+    max-width: 956px;
+  }
+  .video-content{
+    width: 385px;
+    margin: 47px 45px 0;
+  }
+  .video-content__title{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 1023px){
+  .video__single__item{
+    width: 100%;
+  }
+  .title--video__single{
+    width: 90%;
+    margin: 51px auto 0 auto;
+    font-size: 24px;
+  }
+  .description--video__single{
+    width: 95%;
+    margin: 3px auto 0;
+  }
+  .video__single__item{
+    margin-top: 50px;
+  }
+  //LIST
+  .title--video__list{
+    width: 90%;
+    margin: 25px auto 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .description--video__list{
+    width: 95%;
+    margin: 7px auto 0;
+  }
+  .video__list__items{
+    margin-top: 0;
+  }
+  .video-content{
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .video-content__title{
+    margin: 30px 15px 0;
+  }
+  .description--video-content__description{
+    margin: 5px 15px 0;
+  }
+}
+@media screen and (max-width: 374px){
+  //LIST
+  .title--video__list{
+    margin: 26px auto 0;
+  }
+  .description--video__list{
+    margin: 9px auto 0;
+  }
+  .video-content{
+    margin: 25px auto 0;
+  }
+  .video-content__title{
+    margin: 30px 15px 0;
+  }
+  .description--video-content__description{
+    margin: 5px 15px 0;
+  }
+}

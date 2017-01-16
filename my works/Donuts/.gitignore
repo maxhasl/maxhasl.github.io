@@ -1,0 +1,6 @@
+node_modules/
+build/
+src/styles/css/style.css
+src/styles/sass/style.scss
+src/styles/style.main.css
+src/js/script.main.js
