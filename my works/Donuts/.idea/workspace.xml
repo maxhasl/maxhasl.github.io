@@ -29,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="82" column="208" selection-start-line="82" selection-start-column="208" selection-end-line="82" selection-end-column="208" />
+            <state relative-caret-position="163">
+              <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -185,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1484403728853</updated>
       <workItem from="1484403730061" duration="671000" />
-      <workItem from="1484592832237" duration="7455000" />
+      <workItem from="1484592832237" duration="8100000" />
     </task>
     <task id="LOCAL-00001" summary="added debug strings">
       <created>1484598557607</created>
@@ -215,11 +215,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484599114042</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added client form block">
+      <created>1484600562078</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484600562078</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8126000" />
+    <option name="totallyTimeSpent" value="8771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -254,7 +261,8 @@
     <MESSAGE value="added .idea to gitignore" />
     <MESSAGE value="delete .idea from git" />
     <MESSAGE value="added banner1 block" />
-    <option name="LAST_COMMIT_MESSAGE" value="added banner1 block" />
+    <MESSAGE value="added client form block" />
+    <option name="LAST_COMMIT_MESSAGE" value="added client form block" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -396,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="82" column="208" selection-start-line="82" selection-start-column="208" selection-end-line="82" selection-end-column="208" />
+        <state relative-caret-position="163">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
