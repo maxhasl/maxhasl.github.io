@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Second React Task</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/babel">
+        var defaultValue = 'Stranger';
+        var Form = React.createClass({
+            getInitialState: function() {
+                return {
+                    displayedContacts: defaultValue
+                };
+            },
+            change: function () {
+                var searchQuery = event.target.value.toLowerCase();
+                var displayedName = searchQuery;
+
+                this.setState({
+                    displayedContacts: displayedName
+                });
+            },
+            render: function(){
+               return (
+                       <div>
+                           <input type="text" onChange={this.change} />
+                           <h1>Hello, {this.state.displayedContacts} !</h1>
+                       </div>
+               );
+           }
+        });
+
+        ReactDOM.render(
+                <Form/>,
+                document.getElementById('container')
+        );
+
+
+
+
+    </script>
+</body>
+</html>
