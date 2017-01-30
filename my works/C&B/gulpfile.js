@@ -11,6 +11,11 @@ gulp.task('html:build', function() {
     gulp.src('src/*.html')
         .pipe(gulp.dest('build/'));
 });
+//BUILD FONTS
+gulp.task('fonts:build', function() {
+    gulp.src('src/fonts/*.*')
+        .pipe(gulp.dest('build/fonts/'));
+});
 //BUILD IMAGES
 gulp.task('img:build', function() {
     gulp.src(['src/img/*.*'])
@@ -65,6 +70,7 @@ gulp.task('watch', function () {
 gulp.task('default',
         ['html:build',
          'img:build',
+         'fonts:build',
          'sass',
          'css:concat',
          'css:compress',

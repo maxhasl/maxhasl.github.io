@@ -1,4 +1,6 @@
 $Lato: 'Lato', sans-serif;
+$Play: 'Playfair Display', serif;
+$Didot: 'Didot', serif;
 $mainColor: #c5c5c5;
 
 /*CLEARFIX*/
@@ -42,12 +44,12 @@ header{
   float: right;
 }
 .nav-header__settings__item{
-  background-color: yellow;
+  cursor: pointer;
   float: left;
   margin-left: 21px;
   &:first-child{
     margin-left: 0;
-    border-right: 1px solid $mainColor;
+    border-right: 1px solid #ededed;
     padding-right: 19px;
     & i {
       margin-left: 8px;
@@ -58,4 +60,86 @@ header{
     font-size: 12px;
   }
   @extend .nav-header__list__item__link;
+}
+.nav-container{
+  height: 100px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  & nav {
+    width: 1140px;
+    height: 100px;
+    margin: 0 auto;
+  }
+}
+.logo{
+  float: left;
+  font-size: 52px;
+  font-family: $Didot;
+  color: #333333;
+  font-weight: 600;
+  line-height: 100px;
+  & span {
+    font-size: 30px;
+  }
+}
+.main-nav{
+  margin-top: 39px;
+  margin-left: 286px;
+}
+.main-nav__item{
+  float: left;
+  margin-left: 54px;
+  &:first-child{
+    margin-left: 0;
+  }
+  &:hover{
+    & a{
+      color: #333333;
+    }
+    & .border{
+      width: 100%;
+    }
+  }
+}
+.main-nav__item__link{
+  @extend .nav-header__list__item__link;
+  line-height: 23px;
+  font-size: 12px;
+}
+.sale{
+  color: #fc411d;
+}
+.border{
+  display: block;
+  margin: 0 auto;
+  background-color: #1a7fd7;
+  height: 2px;
+  width: 0;
+  transition: width 1s;
+}
+.active{
+  color: #333333;
+  & .border{
+    width: 100%;
+  }
+}
+.bag{
+  float: right;
+  margin-top: -15px;
+}
+.bag__title{
+  @extend .main-nav__item__link;
+  margin-right: 10px;
+}
+.bag__number{
+  margin-right: 13px;
+  display: inline-block;
+  color: #333333;
+  @extend .main-nav__item__link;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #1f86da;
+  border-radius: 50%;
+  line-height: 48px;
+  text-align: center;
 }
