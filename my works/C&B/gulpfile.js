@@ -17,9 +17,9 @@ gulp.task('img:build', function() {
         .pipe(gulp.dest('build/img/'));
 });
 
-//NORMAL .SCSS TO .CSS
+// .SCSS TO .CSS
 gulp.task('sass', function () {
-  return gulp.src('src/styles/scss/*.scss')
+  return gulp.src('src/styles/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('src/styles/css/'));
 });
