@@ -47,8 +47,7 @@ gulp.task('css:compress', ['css:concat'], function () {
 });
 //CONCAT JS
 gulp.task('js:concat', function() {
-  return gulp.src(['src/js/libraries/*.js',
-                   'src/js/*.js'])
+  return gulp.src(['src/js/script.js'])
     .pipe(concat('script.main.js'))
     .pipe(gulp.dest('src/js/'));
 });

@@ -186,6 +186,7 @@ main{
 }
 .content-nav__item__link{
   @extend .main-nav__item__link;
+  cursor: pointer;
 }
 .product{
   margin-top: 3px;

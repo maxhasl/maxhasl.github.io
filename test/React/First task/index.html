@@ -13,29 +13,43 @@
 
     <script type="text/babel">
 
-        var text = {
-              id: 1,
-              title: 'Article 1',
-              author: 'Max',
-              text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            };
-
-        var Article = React.createClass({
+        var Filters = React.createClass({
+            handleFilterChange: function(e) {
+                this.props.updateFilter(e.target.textContent);
+            },
             render: function() {
-                return (
-                        <div>
-                            <h1>{this.props.title}</h1>
-                            <p>{this.props.text}</p>
-                            <p>{this.props.author}</p>
-                        </div>
-                );
+                return <div>
+                            <a onClick={this.handleFilterChange}>NEW</a>;
+                            <a onClick={this.handleFilterChange}>SAN</a>;
+                       </div>
+
             }
         });
 
+        var List = React.createClass({
+
+            handleFilterUpdate: function(filterValue) {
+//                this.setState({
+//                    nameFilter: filterValue
+//                })
+                console.log(filterValue);
+            },
+            render: function() {
+
+                return (
+                        <div>
+                            <Filters updateFilter={this.handleFilterUpdate} />
+                            <h4>Результат</h4>
+                        </div>
+                )
+            }
+
+        })
+
         ReactDOM.render(
-                <Article title={text.title} author={text.author} text={text.text}/>,
+                <List />,
                 document.getElementById('container')
-        );
+        )
     </script>
 </body>
 </html>
