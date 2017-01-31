@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C&B</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="https://use.fontawesome.com/7a078ab604.js"></script>
+    <link rel="stylesheet" href="styles/style.main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-header clearfix">
+            <ul class="nav-header__list">
+                <li class="nav-header__list__item"><a href="#" class="nav-header__list__item__link">DELIVERY</a></li>
+                <li class="nav-header__list__item"><a href="#" class="nav-header__list__item__link">FAQ</a></li>
+                <li class="nav-header__list__item"><a href="#" class="nav-header__list__item__link">HELP</a></li>
+            </ul>
+            <ul class="nav-header__settings">
+                <li class="nav-header__settings__item">DOLLARS <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li class="nav-header__settings__item">EN <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="nav-container">
+        <nav class="clearfix">
+            <span class="logo">C<span>&</span>B</span>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="#" class="main-nav__item__link">HOME<span class="border"></span></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__item__link active">CATALOG<span class="border"></span></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__item__link">NEWS<span class="border"></span></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__item__link sale">SALE<span class="border"></span></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__item__link">ABOUT<span class="border"></span></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__item__link">CONTACT<span class="border"></span></a></li>
+            </ul>
+            <section class="bag">
+                <span class="bag__title">YOUR BAG</span>
+                <span class="bag__number">2</span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </section>
+        </nav>
+    </div>
+    <main id="main">
+        <h1>Catalog</h1>
+        <div id="react-container"></div>
+        <a href="#" class="load-more">LOAD MORE...</a>
+    </main>
+    <section class="subscribe clearfix">
+        <h2 class="subscribe__title">SUBSCRIBE</h2>
+        <h1 class="subscribe__description">Stay updated on news</h1>
+        <form class="subscribe__form" action="#">
+            <input name="email" class="subscribe__form__text" type="email" placeholder="YOUR EMAIL ADDRESS">
+            <input id="submit" class="subscribe__form__submit" type="submit">
+            <label class="subscribe__form__submit-label" for="submit"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+        </form>
+    </section>
+    <footer>
+        <div class="nav-container nav-container--footer">
+            <nav class="clearfix">
+                <span class="logo logo--footer">C<span>&</span>B</span>
+                <ul class="main-nav main-nav--footer">
+                    <li class="main-nav__item main-nav__item--footer"><a href="#" class="main-nav__item__link">HOME</span></a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#" class="main-nav__item__link">CATALOG</span></a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#" class="main-nav__item__link">NEWS</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#" class="main-nav__item__link">SALE</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#" class="main-nav__item__link">ABOUT</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#" class="main-nav__item__link">CONTACT</a></li>
+                </ul>
+                <span class="copyright">&copy2010 - 2016 All rights reserved</span>
+            </nav>
+        </div>
+    </footer>
+    <script type="text/babel">
+        var PRODUCTS = [
+            {
+                id: 1,
+                category: 'shorts',
+                name: 'Printed swimsuit',
+                price: '$23',
+                oldPrice: '',
+                image: 'img/product-1.jpg'
+            },
+            {
+                id: 2,
+                category: 'shorts',
+                name: 'Jogging bermuda shorts',
+                price: '$12',
+                oldPrice: '$36',
+                image: 'img/product-2.jpg'
+            },
+            {
+                id: 3,
+                category: 'accessoires',
+                name: 'Basic beach flip flops',
+                price: '$9',
+                oldPrice: '',
+                image: 'img/product-3.jpg'
+            },
+            {
+                id: 4,
+                category: 'accessoires',
+                name: 'Black sunglasses',
+                price: '$29',
+                oldPrice: '',
+                image: 'img/product-4.jpg'
+            },
+            {
+                id: 5,
+                category: 'jackets',
+                name: 'Long sleeved twill shirt',
+                price: '$20',
+                oldPrice: '',
+                image: 'img/product-5.jpg'
+            },
+            {
+                id: 6,
+                category: 'shorts',
+                name: 'Basic swimsuit',
+                price: '$36',
+                oldPrice: '',
+                image: 'img/product-6.jpg'
+            },
+            {
+                id: 7,
+                category: 'shorts',
+                name: 'Bleached shorts',
+                price: '$12',
+                oldPrice: '',
+                image: 'img/product-7.jpg'
+            },
+            {
+                id: 8,
+                category: 't-shirts',
+                name: 'T-shirt with lower panel',
+                price: '$12',
+                oldPrice: '$32',
+                image: 'img/product-8.jpg'
+            }
+        ];
+        var CATEGORY = [
+            {
+                id: 1,
+                name: 'ALL'
+            },
+            {
+                id: 2,
+                name: 'T-SHIRTS'
+            },
+            {
+                id: 3,
+                name: 'SWEATERS'
+            },
+            {
+                id: 4,
+                name: 'SHORTS'
+            },
+            {
+                id: 5,
+                name: 'JACKETS'
+            },
+            {
+                id: 6,
+                name: 'ACCESSOIRES'
+            }
+        ];
+
+        var Product = React.createClass({
+           render: function () {
+               if (this.props.oldPrice) {
+                   var price = (
+                   <span className="product__item__price sale">
+                       <span className="old-price">{this.props.oldPrice}</span>{this.props.price}
+                   </span>
+                   )
+               } else {
+                   var price = (
+                    <span className="product__item__price">{this.props.price}</span>
+                   )
+               }
+               return (
+                       <li className="product__item">
+                            <img src={this.props.image} alt="" className="product__item__image" />
+                            <h2 className="product__item__title">{this.props.name}</h2>
+                           {price}
+                      </li>
+                      );
+           }
+        });
+
+
+        var Category = React.createClass({
+            handleFilterChange: function(e) {
+                this.props.updateFilter(e.target.textContent);
+            },
+            render: function () {
+                return (
+                        <li className="content-nav__item">
+                            <a onClick={this.handleFilterChange} className="content-nav__item__link">{this.props.name}<span className="border"></span></a>
+                        </li>
+                )
+            }
+        });
+
+        var ProductList = React.createClass({
+            getInitialState: function () {
+              return{
+                  displayProducts: PRODUCTS
+              }
+            },
+            handleFilterUpdate: function(filterValue) {
+                if(filterValue == 'ALL') {
+                    this.setState({
+                        displayProducts : PRODUCTS
+                    });
+                } else {
+                    var searchQuery = filterValue.toLowerCase();
+                    var displayProducts = PRODUCTS.filter(function (el) {
+                        var searchValue = el.category.toLowerCase();
+                        return searchValue.indexOf(searchQuery) !==-1;
+                    });
+
+                    this.setState({
+                        displayProducts : displayProducts
+                    });
+                }
+
+            },
+            render: function() {
+                var localThis = this;
+                return (
+                        <div>
+                            <ul className="content-nav">
+                                {
+                                    CATEGORY.map(function (el) {
+                                        return <Category key={el.id} name={el.name} updateFilter={localThis.handleFilterUpdate}  />
+                                    })
+                                }
+                            </ul>
+                            <ul className="product">
+                                {
+                                    this.state.displayProducts.map(function (el) {
+                                        return <Product key={el.id}
+                                                        name={el.name}
+                                                        image={el.image}
+                                                        price={el.price}
+                                                        oldPrice={el.oldPrice}
+                                        />;
+                                    })
+                                }
+                            </ul>
+                        </div>
+
+                );
+            }
+        });
+
+
+
+
+        ReactDOM.render(
+                <ProductList />,
+                document.getElementById('react-container')
+        );
+
+    </script>
+</body>
+</html>
