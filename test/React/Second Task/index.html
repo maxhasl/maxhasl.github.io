@@ -11,39 +11,39 @@
     <div id="container"></div>
 
     <script type="text/babel">
-        var defaultValue = 'Stranger';
-        var Form = React.createClass({
-            getInitialState: function() {
+        var defaultText = 'stranger';
+        var LiveText = React.createClass({
+           getInitialState: function () {
                 return {
-                    displayedContacts: defaultValue
-                };
-            },
-            change: function () {
-                var searchQuery = event.target.value.toLowerCase();
-                var displayedName = searchQuery;
+                    textvalue: defaultText
+                }
+           },
 
-                this.setState({
-                    displayedContacts: displayedName
-                });
-            },
-            render: function(){
-               return (
-                       <div>
-                           <input type="text" onChange={this.change} />
-                           <h1>Hello, {this.state.displayedContacts} !</h1>
-                       </div>
-               );
+           handleNameChange: function(event){
+               var newValue = event.target.value;
+               if(newValue.length > 0){
+                   this.setState({
+                       textvalue: newValue
+                   })
+               } else {
+                   this.setState({
+                       textvalue: defaultText
+
+                   })
+               }
+           },
+           render: function () {
+               return <section>
+                        <input type="text" onChange={this.handleNameChange}/>
+                        <p>Hello, {this.state.textvalue}</p>
+                      </section>
            }
         });
 
         ReactDOM.render(
-                <Form/>,
+                <LiveText />,
                 document.getElementById('container')
-        );
-
-
-
-
+        )
     </script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/babel">
+        var CONTACTS = [
+            {
+                id: 1,
+                name: 'Darth Vader',
+                number: '+250966666666',
+                email: 'darth.vader@gmail.com',
+                planet: 'Tatooine',
+                img: 'img/Vader.gif'
+            },
+            {
+                id: 2,
+                name: 'Princess Leia',
+                number: '+250966344466',
+                email: 'princess.leia@gmail.com',
+                planet: 'Dantooine',
+                img: 'img/Leia.gif'
+            },
+            {
+                id: 3,
+                name: 'Luke Skywalker',
+                number: '+250976654433',
+                email: 'luke.skywalker@gmail.com',
+                planet: 'Tatooine',
+                img: 'img/Luke.gif'
+            },
+            {
+                id: 4,
+                name: 'Chewbacca',
+                number: '+250456784935',
+                email: 'chewbacca@gmail.com',
+                planet: 'Kashyyyk',
+                img: 'img/Chewbacca.gif'
+            }
+        ];
+
+        var Contact = React.createClass({
+            getInitialState: function () {
+              return {
+                  isOpened: 0
+              }
+            },
+            handleCheck: function () {
+                var isOpenedState = this.state.isOpened;
+                isOpenedState ^= 1;
+                this.setState({
+                    isOpened: isOpenedState
+                })
+            },
+           render: function () {
+               if(this.state.isOpened == 1) {
+                   return <li className="contact" onClick={this.handleCheck}>
+                            <img className="contact-image" src={this.props.img} width="60px" height="60px" />
+                            <section className="contact-info">
+                                <p className="contact-name">{this.props.name}</p>
+                                <p className="contact-number">{this.props.number}</p>
+                                <p className="contact-number">{this.props.email}</p>
+                                <p className="contact-number">{this.props.planet}</p>
+                            </section>
+                         </li>
+               } else {
+                   return <li className="contact" onClick={this.handleCheck}>
+                            <img className="contact-image" src={this.props.img} width="60px" height="60px" />
+                            <section className="contact-info">
+                                <p className="contact-name">{this.props.name}</p>
+                                <p className="contact-number">{this.props.number}</p>
+                            </section>
+                         </li>
+               }
+
+           }
+        });
+
+        var ContactsList = React.createClass({
+            getInitialState: function () {
+                return{
+                    displayContacts: CONTACTS
+                }
+            },
+
+            handleSearch: function (event) {
+                var query = event.target.value.toLowerCase();
+                var queryContacts = CONTACTS.filter(function (el) {
+                    var searchValue = el.name.toLowerCase();
+                    return searchValue.indexOf(query) !== -1;
+                });
+                this.setState({
+                   displayContacts:queryContacts
+                })
+            },
+            render: function () {
+                return <div className="contacts">
+                            <input type="text" className="search-field" onChange={this.handleSearch}/>
+                            <ul className="contacts-list">
+                                {
+                                    this.state.displayContacts.map(function(el) {
+                                        return <Contact
+                                                key={el.id}
+                                                name={el.name}
+                                                number={el.number}
+                                                img={el.img}
+                                                planet={el.planet}
+                                                email={el.email}
+                                        />;
+                                    })
+                                }
+                            </ul>
+                       </div>
+            }
+        });
+
+        ReactDOM.render(
+           <ContactsList />,
+           document.getElementById('container')
+        )
+
+    </script>
+</body>
+</html>

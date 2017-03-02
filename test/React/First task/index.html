@@ -12,42 +12,17 @@
     <div id="container"></div>
 
     <script type="text/babel">
-
-        var Filters = React.createClass({
-            handleFilterChange: function(e) {
-                this.props.updateFilter(e.target.textContent);
-            },
-            render: function() {
-                return <div>
-                            <a onClick={this.handleFilterChange}>NEW</a>;
-                            <a onClick={this.handleFilterChange}>SAN</a>;
-                       </div>
-
-            }
+        var Article = React.createClass({
+           render: function(){
+               return <section>
+                        <h1>{this.props.title}</h1>
+                        <p>{this.props.body}</p>
+                        <h2>{this.props.author}</h2>
+                      </section>
+           }
         });
-
-        var List = React.createClass({
-
-            handleFilterUpdate: function(filterValue) {
-//                this.setState({
-//                    nameFilter: filterValue
-//                })
-                console.log(filterValue);
-            },
-            render: function() {
-
-                return (
-                        <div>
-                            <Filters updateFilter={this.handleFilterUpdate} />
-                            <h4>Результат</h4>
-                        </div>
-                )
-            }
-
-        })
-
         ReactDOM.render(
-                <List />,
+                <Article title="ARTICLE" body="Lorem ipsum" author="Max Bullo" />,
                 document.getElementById('container')
         )
     </script>
