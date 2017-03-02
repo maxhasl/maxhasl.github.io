@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7a6c73-0d32-42cf-bd1d-6f3131b07836" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my works/C&amp;B/src/index.html" afterPath="$PROJECT_DIR$/my works/C&amp;B/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.gitignore" afterPath="$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/React/.idea/workspace.xml" afterPath="$PROJECT_DIR$/test/React/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/React/First task/.idea/workspace.xml" afterPath="$PROJECT_DIR$/test/React/First task/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/React/First task/index.html" afterPath="$PROJECT_DIR$/test/React/First task/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/React/Second Task/index.html" afterPath="$PROJECT_DIR$/test/React/Second Task/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Gallery/.idea/workspace.xml" afterPath="$PROJECT_DIR$/test/Gallery/.idea/workspace.xml" />
     </list>
     <ignored path="maxhasl.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -221,12 +216,12 @@
       <option name="presentableId" value="Default" />
       <updated>1484400948844</updated>
       <workItem from="1484400950044" duration="2344000" />
-      <workItem from="1488491287713" duration="422000" />
+      <workItem from="1488491287713" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2766000" />
+    <option name="totallyTimeSpent" value="3175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -236,9 +231,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50980395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -272,7 +267,7 @@
     <entry file="file://$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding />
         </state>
       </provider>
