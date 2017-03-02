@@ -1,23 +1,26 @@
-
+//arrays for static save images (key+url)
 var images = [];
 var myImages = [];
-
+//component for images uploaded after search
 var SearchItems = React.createClass({
+    //method for add image to custom gallery
     handleAdd: function(e) {
         this.props.addImage(e.target.attributes.src.nodeValue);
     },
     render: function () {
         return <li className="search__list__item" onClick={this.handleAdd}>
-        <img src={this.props.path} className="search__list__item__image"/>
-            </li>
+                    <img src={this.props.path} className="search__list__item__image"/>
+               </li>
     }
 });
-
+//component for added images to custom gallery
 var MyImage = React.createClass({
+    //method for display image in carousel
     activePhoto: function (e) {
         if(e.target.attributes.src.nodeValue == 'img/delete.png') return;
         this.props.activePhoto(e.target.attributes.src.nodeValue);
     },
+    //delete image from custom gallery
     deleteImage: function (e){
         this.props.deleteImage(e.target.parentElement.children[0].src);
     },
@@ -28,7 +31,7 @@ var MyImage = React.createClass({
         </li>
     }
 });
-
+//main component in app
 var Gallery = React.createClass({
     getInitialState: function () {
         return{
@@ -40,6 +43,7 @@ var Gallery = React.createClass({
             imageAlreadyAdded: 0
         }
     },
+    //method for search 20 images by tag from input
     handleSearch: function () {
         var localThis = this;
         var queryTag = document.getElementsByClassName('search__input')[0].value.toLowerCase();
@@ -67,7 +71,7 @@ var Gallery = React.createClass({
             }
         });
     },
-
+    //use Masonry for displaed images
     componentDidUpdate: function (prevProps) {
         var searchList = this.refs.searchList;
         var msnry = new Masonry( searchList, {
@@ -87,6 +91,7 @@ var Gallery = React.createClass({
 
 
     },
+    //add image to custom gallery
     updateGallery: function (e) {
         var count = 0;
         myImages.filter(function (item) {
@@ -109,6 +114,7 @@ var Gallery = React.createClass({
             });
         }
     },
+    //display image in carousel
     activePhoto: function (e) {
         var activeUrl = e;
         var activeId;
@@ -120,6 +126,7 @@ var Gallery = React.createClass({
             activeCarousel: 1
         })
     },
+    //functional for link 'prev' in carousel
     prevImage: function () {
         var activeImageUrl = this.state.galleryImage;
         var activeId;
@@ -138,6 +145,7 @@ var Gallery = React.createClass({
             })
         }
     },
+    //functional for link 'next' in carousel
     nextImage: function () {
         var activeImageUrl = this.state.galleryImage;
         var activeId;
@@ -157,6 +165,7 @@ var Gallery = React.createClass({
         }
 
     },
+    //delete image from custom gallery
     deleteImage: function (e) {
         var imageUrl = e;
         if(this.state.galleryImage == imageUrl) {
@@ -251,4 +260,4 @@ var Gallery = React.createClass({
 ReactDOM.render(
 <Gallery />,
     document.getElementById('react-container')
-)
+);
