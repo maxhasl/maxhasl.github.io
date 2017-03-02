@@ -8,9 +8,9 @@ var SearchItems = React.createClass({
         this.props.addImage(e.target.attributes.src.nodeValue);
     },
     render: function () {
-        return <li className="search__list__item" onClick={this.handleAdd}>
+        return  <li className="search__list__item" onClick={this.handleAdd}>
                     <img src={this.props.path} className="search__list__item__image"/>
-               </li>
+                </li>
     }
 });
 //component for added images to custom gallery
@@ -25,10 +25,10 @@ var MyImage = React.createClass({
         this.props.deleteImage(e.target.parentElement.children[0].src);
     },
     render: function () {
-        return <li className="my-gallery__list__item" onClick={this.activePhoto}>
-        <img className="my-gallery__list__item__image" src={this.props.path} alt="" />
-            <img className="my-gallery__list__item__delete" src="img/delete.png" onClick={this.deleteImage}/>
-        </li>
+        return  <li className="my-gallery__list__item" onClick={this.activePhoto}>
+                    <img className="my-gallery__list__item__image" src={this.props.path} alt="" />
+                    <img className="my-gallery__list__item__delete" src="img/delete.png" onClick={this.deleteImage}/>
+                </li>
     }
 });
 //main component in app
@@ -37,6 +37,7 @@ var Gallery = React.createClass({
         return{
             displayImages: [],
             myImages: [],
+            searchTag: 0,
             galleryImage: '',
             activeGallery: 0,
             activeCarousel: 0,
@@ -47,6 +48,12 @@ var Gallery = React.createClass({
     handleSearch: function () {
         var localThis = this;
         var queryTag = document.getElementsByClassName('search__input')[0].value.toLowerCase();
+               if(queryTag == '') {
+            this.setState({
+                searchTag: 1
+            });
+            return;
+        }
         var queryApi= 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b54580f369a7eeebecb2004dc429d08f&tags='+queryTag+'&page=1&per_page=20&format=json&nojsoncallback=1';
         $.ajax({
             type: 'GET',
@@ -65,7 +72,8 @@ var Gallery = React.createClass({
                 });
                 images = searchImages;
                 localThis.setState({
-                    displayImages: images
+                    displayImages: images,
+                    searchTag: 0
                 })
 
             }
@@ -88,8 +96,6 @@ var Gallery = React.createClass({
             itemSelector: '.my-gallery__list__item',
             gutter: 10
         })
-
-
     },
     //add image to custom gallery
     updateGallery: function (e) {
@@ -131,12 +137,12 @@ var Gallery = React.createClass({
         var activeImageUrl = this.state.galleryImage;
         var activeId;
         var prevImageUrl;
-        myImages.filter(function (e) {
+        myImages.map(function (e) {
             if(e.url == activeImageUrl) {
                 activeId =  e.id;
             }
         });
-        myImages.filter(function (e) {
+        myImages.map(function (e) {
             if(e.id == activeId - 1 ) prevImageUrl = e.url;
         });
         if(prevImageUrl != undefined) {
@@ -150,12 +156,12 @@ var Gallery = React.createClass({
         var activeImageUrl = this.state.galleryImage;
         var activeId;
         var nextImageUrl;
-        myImages.filter(function (e) {
+        myImages.map(function (e) {
             if(e.url == activeImageUrl) {
                 activeId =  e.id;
             }
         });
-        myImages.filter(function (e) {
+        myImages.map(function (e) {
             if(e.id == activeId + 1 ) nextImageUrl = e.url;
         });
         if(nextImageUrl != undefined) {
@@ -163,7 +169,6 @@ var Gallery = React.createClass({
                 galleryImage: nextImageUrl
             })
         }
-
     },
     //delete image from custom gallery
     deleteImage: function (e) {
@@ -202,6 +207,12 @@ var Gallery = React.createClass({
         var myGalleryClass;
         var carouselClass;
         var errorClass;
+        var errorInputClass;
+        if(this.state.searchTag == 0) {
+            errorInputClass = 'error';
+        } else {
+            errorInputClass = 'error error--active';
+        }
         if(this.state.imageAlreadyAdded == 0) {
             errorClass = 'error';
         } else {
@@ -217,47 +228,48 @@ var Gallery = React.createClass({
         } else {
             carouselClass = 'carousel--visible';
         }
-        return <main className="clearfix">
-            <section className="search">
-            <input type="text" className="search__input" />
-            <button className="search__submit" onClick={this.handleSearch}>SEARCH</button>
-        <span className={errorClass}>This image already added!</span>
-        </section>
-        <ul className="search__list" ref="searchList">
-            {
-                this.state.displayImages.map(function(el) {
-                return <SearchItems
-                key={el.id}
-                path={el.url}
-                addImage={localThis.updateGallery}
-                />;
-            })
-    }
-        </ul>
-        <section className={myGalleryClass}>
-            <h1 className="my-gallery__title">Your gallery</h1>
-        <ul className="my-gallery__list" ref="myGalleryList">
-            {
-                this.state.myImages.map(function (el) {
-                return <MyImage
-                key={el.id}
-                path={el.url}
-                activePhoto={localThis.activePhoto}
-                deleteImage={localThis.deleteImage}/>
-            })
-    }
-        </ul>
-        </section>
-        <section className={carouselClass}>
-            <img src="img/arrow.png" className="carousel__arrow carousel__arrow--left" onClick={this.prevImage}></img>
-        <img className="carousel__image" src={this.state.galleryImage} alt=""/>
-            <img src="img/arrow.png" className="carousel__arrow carousel__arrow" onClick={this.nextImage}></img>
-        </section>
-        </main>
+        return  <main className="clearfix">
+                    <section className="search">
+                        <input type="text" className="search__input" />
+                        <button className="search__submit" onClick={this.handleSearch}>SEARCH</button>
+                        <span className={errorClass}>This image already added!</span>
+                        <span className={errorInputClass}>Please enter some tags for search!</span>
+                    </section>
+                    <ul className="search__list" ref="searchList">
+                        {
+                            this.state.displayImages.map(function(el) {
+                            return  <SearchItems
+                                        key={el.id}
+                                        path={el.url}
+                                        addImage={localThis.updateGallery}
+                                    />;
+                            })
+                        }
+                    </ul>
+                    <section className={myGalleryClass}>
+                        <h1 className="my-gallery__title">Your gallery</h1>
+                        <ul className="my-gallery__list" ref="myGalleryList">
+                            {
+                                this.state.myImages.map(function (el) {
+                                return  <MyImage
+                                            key={el.id}
+                                            path={el.url}
+                                            activePhoto={localThis.activePhoto}
+                                            deleteImage={localThis.deleteImage}/>
+                                })
+                            }
+                        </ul>
+                    </section>
+                    <section className={carouselClass}>
+                        <img src="img/arrow.png" className="carousel__arrow carousel__arrow--left" onClick={this.prevImage}></img>
+                        <img className="carousel__image" src={this.state.galleryImage} alt=""/>
+                        <img src="img/arrow.png" className="carousel__arrow carousel__arrow" onClick={this.nextImage}></img>
+                    </section>
+                </main>
     }
 });
 
 ReactDOM.render(
-<Gallery />,
+    <Gallery />,
     document.getElementById('react-container')
 );
