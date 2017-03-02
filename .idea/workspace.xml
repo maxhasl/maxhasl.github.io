@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a7a6c73-0d32-42cf-bd1d-6f3131b07836" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.gitignore" afterPath="$PROJECT_DIR$/my works/URLAUBSGLÜCK (responsive, ie8+, ajax, gulp)/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Gallery/.idea/workspace.xml" afterPath="$PROJECT_DIR$/test/Gallery/.idea/workspace.xml" />
     </list>
     <ignored path="maxhasl.github.io.iws" />
@@ -216,12 +215,12 @@
       <option name="presentableId" value="Default" />
       <updated>1484400948844</updated>
       <workItem from="1484400950044" duration="2344000" />
-      <workItem from="1488491287713" duration="935000" />
+      <workItem from="1488491287713" duration="976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3279000" />
+    <option name="totallyTimeSpent" value="3320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
