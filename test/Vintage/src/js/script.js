@@ -161,6 +161,16 @@ $(function () {
         }
     );
 
+    $('.menu-link').on('click', function () {
+        // $(this).preventDefault();
+        var tlMenuClick = new TimelineMax();
+        tlMenuClick.to(menuLinkImage[0], 1, {attr:{d: 'M0.6,21L21.7,0.6C22.3,0,23.3-0.2,24,0.2l0,0c1.2,0.6,1.4,2.3,0.4,3.3L3.4,24c-0.6,0.6-1.6,0.7-2.3,0.4l0,0C-0.1,23.7-0.4,22,0.6,21z'}}, 'first')
+                     .to(menuLinkImage[2], 1, {attr:{d: 'M3.6,0.8C10.3,7.6,17,14.5,23.7,21.3c0.6,0.6,0.7,1.5,0.4,2.3l0,0c-0.6,1.2-2.2,1.4-3.2,0.4C14.2,17.1,7.5,10.3,0.8,3.5C0.2,2.9,0.1,1.9,0.5,1.2l0,0C1.1,0,2.7-0.2,3.6,0.8z'}}, 'first')
+                        .to(menuLinkImage[1], 1, {display: 'none'}, 'first');
+
+
+    });
+
 
 
 
