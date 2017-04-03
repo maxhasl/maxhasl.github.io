@@ -144,7 +144,22 @@ $(function () {
                                 .to(scrollDownDot, 0, {y:0, opacity: 1}, 'top')
                                     .to(scrollDownDot, 0.5, {y: -6 }, 'top');
 
+    //set menu animation
+    var menuLinkImageSvg = $('.menu-link__image');
+    $('.menu-link').hover(
+        function() {
+            var tlMenu = new TimelineMax();
+            tlMenu.to(menuLinkImage[0], 0.7, {y:-10}, 'first')
+                    .to(menuLinkImage[2], 0.7, {y: 10}, 'first')
+                        .to(menuLinkImageSvg, 0, {marginTop: -12, height: 40}, 'first');
+        }, function() {
+            var tlMenu = new TimelineMax();
 
+            tlMenu.to(menuLinkImage[0], 0.7, {y:0}, 'two')
+                .to(menuLinkImage[2], 0.7, {y:0}, 'two')
+                .to(menuLinkImageSvg, 0.3, {marginTop: 0, height: 18}, 'two');
+        }
+    );
 
 
 

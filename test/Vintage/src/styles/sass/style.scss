@@ -90,7 +90,7 @@ header{
 }
 .menu-link__image{
   width: 23px;
-  height: 16px;
+  height: 18px;
   fill: #A86280;
   stroke: #A86280;
   margin: 0 0 0 10px;
@@ -138,6 +138,7 @@ header{
   clear: both;
   position: relative;
   width: 60%;
+  max-width: 768px;
   margin: 223px auto 0;
   color: #A86280;
   font-family: $TNR;
