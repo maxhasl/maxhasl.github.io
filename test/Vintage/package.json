@@ -17,5 +17,8 @@
     "gulp-uglify": "^2.1.2",
     "gulp-uglifycss": "^1.0.8",
     "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "textsplitr": "^0.1.1"
   }
 }
