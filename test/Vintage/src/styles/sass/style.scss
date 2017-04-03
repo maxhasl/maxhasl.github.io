@@ -15,8 +15,19 @@ $TNRI: 'Times New Roman Italic', serif;
   }
 }
 .test{
-  height: 300px;
+  height: 100px;
+  width: 400px;
   background-color: yellow;
+  border: 1px solid black;
+  margin-top: 40px;
+}
+.test__child{
+  margin-top: 10px;
+  height: 53px;
+  width: 200px;
+  background-color: green;
+  border: 1px solid red;
+  overflow: hidden;
 }
 .home{
   width: 100vw;
@@ -73,6 +84,9 @@ header{
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+  & span{
+    display: inline-block;
+  }
 }
 .menu-link__image{
   width: 23px;
@@ -80,7 +94,7 @@ header{
   fill: #A86280;
   stroke: #A86280;
   margin: 0 0 0 10px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .languages{
   float: right;
@@ -141,6 +155,10 @@ header{
     left: calc(50% - 1px);
     top: -46px;
     background-color: white;
+  }
+  & p{
+    position: relative;
+    overflow: hidden;
   }
 }
 .play{
