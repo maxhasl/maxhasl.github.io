@@ -205,9 +205,14 @@ header{
 }
 .mouse-down__border{
   fill:none;
-  stroke:#000000;
+  stroke:white;
   stroke-width:2;
 }
+.mouse-down__border--pink{
+  stroke: #A86280;
+  stroke-dasharray: 55;
+  stroke-dashoffset: 55;
+}
 .mouse-down__dot{
-  fill:#050505;
+  fill:#A86280;
 }

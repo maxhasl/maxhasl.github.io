@@ -44,6 +44,14 @@ $(function () {
     var menuLinkImage = $('.menu-link__image path');
     var menuLinkTitle = $('.menu-link__title');
 
+    var play = $('.play');
+    var playTitle = $('.play__title');
+    var playTitleMarginTop =  parseInt(playTitle.css('margin-top'), 10);
+
+    var scrollDown = $('.scroll-down');
+    var scrollDownBorder = $('.mouse-down__border--pink');
+    var scrollDownDot = $('.mouse-down__dot');
+
 
 
     //set styles
@@ -92,9 +100,22 @@ $(function () {
         opacity: 0
     });
 
+    play.css({
+        transform: 'rotate(180deg) scale(0.5)',
+        opacity: 0
+    });
+
+    playTitle.css({
+        marginTop: playTitleMarginTop - 10,
+        opacity: 0
+    });
+
+    // scrollDown.css({
+    //     opacity: 0
+    // });
 
     
-    //set animations
+    //set header animations
     tl.to(logoImage[0], 1, {y:0, opacity: 1})
         .to(logoImage[1], 1, {x:0, opacity: 1}, '-=0.3')
             .to(logoTitle, 1, {y:0, opacity: 1}, '-=1')
@@ -104,13 +125,28 @@ $(function () {
                             .to(menuLinkImage[1], 0.5, {opacity: 1}, '-=0.3')
                                 .to(menuLinkImage[0], 0.5, {opacity: 1}, '-=0.3');
 
+    //set main animations
+    tl.to(mainTitle, 0.8, {marginTop: mainTitleMarginTop, opacity: 1})
+        .to(mainTitleLine[0], 0.8, {marginTop: 0, height: mainTitleLineHeight, opacity: 1}, '-=1')
+            .to(mainTitleLine[1], 0.8, {marginTop: 0, height: mainTitleLineHeight, opacity: 1}, '-=0.7')
+                .to(mainTitleLine[2], 0.8, {marginTop: 0, height: mainTitleLineHeight, opacity: 1}, '-=0.7')
+                    .to(play, 0.7, {rotation: 0, scale: 1, opacity: 1})
+                        .to(playTitle, 0.7, {marginTop: playTitleMarginTop, opacity: 1})
+                            .to(scrollDown, 1, {opacity: 1});
+    //set mouse-down animation
+    var tlScroll = new TimelineMax({repeat: -1, delay: 0.5});
+
+    tlScroll.to(scrollDown, 0.7, {bottom: 20}, 'bottom')
+                .to(scrollDown, 0.7, {bottom: 40}, 'top')
+                    .to(scrollDownBorder, 0.7, {strokeDashoffset: 0}, 'bottom')
+                        .to(scrollDownBorder, 0, {strokeDashoffset: 55}, 'top')
+                            .to(scrollDownDot, 0.7, {y:18, opacity: 0}, 'bottom')
+                                .to(scrollDownDot, 0, {y:0, opacity: 1}, 'top')
+                                    .to(scrollDownDot, 0.5, {y: -6 }, 'top');
 
 
 
-    tl.to(mainTitle, 1, {marginTop: mainTitleMarginTop, opacity: 1})
-        .to(mainTitleLine[0], 1, {marginTop: 0, height: mainTitleLineHeight, opacity: 1}, '-=1')
-            .to(mainTitleLine[1], 1, {marginTop: 0, height: mainTitleLineHeight, opacity: 1}, '-=0.7')
-                .to(mainTitleLine[2], 1, {marginTop: 0, height: mainTitleLineHeight, opacity: 1}, '-=0.7');
+
 
 
     $(window).resize(function () {
