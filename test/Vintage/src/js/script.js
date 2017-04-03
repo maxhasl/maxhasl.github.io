@@ -110,9 +110,9 @@ $(function () {
         opacity: 0
     });
 
-    // scrollDown.css({
-    //     opacity: 0
-    // });
+    scrollDown.css({
+        opacity: 0
+    });
 
     
     //set header animations
@@ -134,7 +134,7 @@ $(function () {
                         .to(playTitle, 0.7, {marginTop: playTitleMarginTop, opacity: 1})
                             .to(scrollDown, 1, {opacity: 1});
     //set mouse-down animation
-    var tlScroll = new TimelineMax({repeat: -1, delay: 0.5});
+    var tlScroll = new TimelineMax({repeat: -1, delay: 4.5});
 
     tlScroll.to(scrollDown, 0.7, {bottom: 20}, 'bottom')
                 .to(scrollDown, 0.7, {bottom: 40}, 'top')
