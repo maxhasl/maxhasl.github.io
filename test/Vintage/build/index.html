@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vintage</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="styles/style.main.min.css">
+    <script src="https://use.fontawesome.com/f9ccda9b6b.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="http://www.greensock.com/js/src/utils/SplitText.min.js"></script>
+    <script src="js/script.main.min.js"></script>
+</head>
+<body>
+    <section class="home clearfix">
+        <video class="home__video"  playsinline autoplay muted loop>
+            <source src="https://r13---sn-nv47lnee.googlevideo.com/videoplayback?dur=308.569&mn=sn-nv47lnee&mm=31&ratebypass=yes&initcwndbps=937500&requiressl=yes&lmt=1478664525533068&signature=771B462D23AFA398FB1AA98ABB834A5F19618F73.A828010342CDFA295E96900E1DAE95961FEF2348&ms=au&key=yt6&mv=m&pl=24&mt=1491310109&source=youtube&ipbits=0&ip=151.250.38.114&mime=video%2Fmp4&expire=1491331824&itag=22&upn=3LzM-khqzFU&id=o-ACw0iJ6RLMMvAJvTEs8wN43uXTUT_1f_7leyWwjiPhvA&sparams=dur%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&title=COSTA+RICA+IN+4K+60fps+%28ULTRA+HD%29+w-+Freefly+Movi" type="video/mp4">
+        </video>
+        <header class="clearfix">
+            <svg class="logo" viewBox="0 0 191.2 26">
+                <g>
+                    <polygon class="logo__image" points="25,0.1 12.5,26 19.6,26 32.2,0.1"/>
+                    <polygon class="logo__image" points="14.2,15 12.2,11 16.2,11 18.2,7 10.2,7 9.2,4 19.2,4 21.2,0 0,0 10.6,22.3 	"/>
+                </g>
+                <path class="logo__title" d="M58,21h3.1v-4.9h6.2v-3.7h-6.2V10h7.2V6.3L58,6.4V21z M78.5,6.3L73.3,21h3.1l1-2.5h5.2l1,2.5h3.1L81.6,6.3H78.5
+	                z M78.5,14.9l1-3.7h1l1,3.7H78.5z M166.6,6.3L161.4,21h3.1l1-2.5h5.2l1,2.5h3.1l-5.2-14.7H166.6z M166.6,14.9l1-3.7h1l1,3.7H166.6z
+	                 M97.5,12.4l-3.6-6.1h-3.1l5.2,8.6V21H99v-6.1l5.2-8.6h-3.1L97.5,12.4z M118.5,13.6l-5.2-7.4h-3.1V21h3.1v-8.6l5.5,8.6h2.8V6.3h-3.1
+	                V13.6z M137.5,13.3c1.2-0.6,1.9-1.7,1.9-3.3c0-1-0.3-1.7-0.8-2.3c-0.7-0.9-1.9-1.3-3.3-1.3h-5.7V21h5.7c1.4,0,2.6-0.4,3.4-1.1
+	                c0.8-0.7,1.2-1.7,1.2-2.9c0-1-0.2-1.7-0.6-2.3C139,14.1,138.3,13.6,137.5,13.3z M132.4,9.6h2.2c0.5,0,0.9,0.1,1.1,0.4
+	                c0.3,0.2,0.4,0.5,0.4,1c0,0.9-0.5,1.3-1.7,1.3h-2.2V9.6H132.4z M136.2,17.4c-0.3,0.2-0.7,0.4-1.2,0.4h-2.6v-2.7h2.6
+	                c0.5,0,0.9,0.1,1.2,0.4s0.4,0.6,0.4,1C136.6,16.8,136.5,17.2,136.2,17.4z M149.2,6.3h-3.1V21h9.3v-3.7h-6.2V6.3z M179.9,6.3V10h4.1
+	                v11h3.1V10h4.1V6.3H179.9z"/>
+            </svg>
+            <a href="#" class="menu-link clearfix">
+                <span class="menu-link__title">Меню</span>
+                <span class="menu-link__title hidden">Закрыть</span>
+                <svg class="menu-link__image" viewBox="0 0 33.4 24.5">
+                    <path d="M0.1,22.5L7.3,1.1C7.5,0.4,8.1,0,8.8,0h0c1.1,0,1.8,1,1.5,2.1L3,23.5c-0.2,0.6-0.8,1.1-1.5,1.1h0C0.5,24.5-0.3,23.5,0.1,22.5z"/>
+                    <path d="M21.8,2.1l-7.2,21.4c-0.2,0.6-0.8,1.1-1.5,1.1h0c-1.1,0-1.8-1-1.5-2.1c2.4-7.1,4.8-14.3,7.2-21.4C19,0.4,19.6,0,20.3,0h0C21.4,0,22.1,1,21.8,2.1z"/>
+                    <path d="M33.3,2.1c-2.4,7.1-4.8,14.3-7.2,21.4c-0.2,0.6-0.8,1.1-1.5,1.1h0c-1.1,0-1.8-1-1.5-2.1c2.4-7.1,4.8-14.3,7.2-21.4C30.6,0.4,31.2,0,31.8,0h0C32.9,0,33.7,1,33.3,2.1z"/>
+                </svg>
+            </a>
+            <ul class="languages">
+                <li class="languages__item"><a href="#" class="languages__link active">РУС</a></li>
+                <li class="languages__item"><a href="#" class="languages__link">УКР</a></li>
+                <li class="languages__item"><a href="#" class="languages__link">ENG</a></li>
+            </ul>
+        </header>
+        <section class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">О Виктории</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Пресса</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="#" class="sicial__link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="sicial__link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="sicial__link">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <h1 class="home__title clearfix">С нами ваши мечты превращаются в пространство для жизни</h1>
+        <section class="play">
+            <a class="play__link" href="#"><img src="img/play_icon.svg" alt="play"></a>
+            <span class="play__title">Showreel</span>
+        </section>
+        <a href="#" class="scroll-down">
+            <svg class="mouse-down" viewBox="0 0 28 41">
+                <path class="mouse-down__border" d="M13.8,1C21.1,1,27,6.8,27,14v13c0,7.2-5.9,13-13.2,13"/>
+                <path class="mouse-down__border mouse-down__border--pink" d="M13.8,1C21.1,1,27,6.8,27,14v13c0,7.2-5.9,13-13.2,13"/>
+                <circle class="mouse-down__dot" cx="14" cy="16" r="2"/>
+                <path class="mouse-down__border" d="M14,1C6.8,1,1,6.8,1,14v13c0,7.2,5.8,13,13,13"/>
+                <path class="mouse-down__border mouse-down__border--pink" d="M14,1C6.8,1,1,6.8,1,14v13c0,7.2,5.8,13,13,13"/>
+            </svg>
+        </a>
+    </section>
+</body>
+</html>
