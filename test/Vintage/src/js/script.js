@@ -47,7 +47,8 @@ $(function () {
 
     var languages = $('.languages');
     var languagesMarginTop = parseInt(languages.css('margin-top'), 10);
-
+    
+    var menuLink = $('.menu-link');
     var menuLinkImage = $('.menu-link__image path');
     var menuLinkTitle = $('.menu-link__title');
 
@@ -162,17 +163,16 @@ $(function () {
 
     tlMenu.reversed(true);
 
-    $('.menu-link').hover(function(){
-        tlMenu.play()
+    menuLink.hover(function(){
+        if(!tlMenu.paused()) tlMenu.play();
     }, function () {
-        tlMenu.reverse()
+        if(!tlMenu.paused()) tlMenu.reverse();
     });
 
     function createMarginForMenu() {
         var contentHeight = $('.menu__list').height();
         $('.menu__list').css({marginTop: ($(window).height() - contentHeight)/2-47});
     }
-
     createMarginForMenu();
 
     var tlMenuClick = new TimelineMax();
@@ -180,15 +180,14 @@ $(function () {
     var menu = $('.menu');
     var menuListItem = $('.menu__item');
     var menuListItemHeight = menuListItem.height();
-    var menuButton = $('.menu-link');
     var socialList = $('.social__list');
 
     tlMenuClick.to($('.languages'), 0.5, {x: -40, opacity: 0, delay: 0.10}, 'first')
                 .to(menuLinkTitle[0], 0, {className: '+=hidden'})
                 .to(menuLinkTitle[1], 0, {className: 'menu-link__title'})
                 .to(menu, 0.5, {left: 0}, 'first')
-                .to(menuLinkImage[0], 0.5, {rotation:120, transformOrigin:"bottom", x:0, y: -20}, 'first')
-                .to(menuLinkImage[1], 0.5, {rotation: 20, transformOrigin:"bottom", x:-5, y: -3}, 'first')
+                .to(menuLinkImage[0], 0.5, {rotation:120, transformOrigin:"bottom", x:0, y: -20, delay: 0.1}, 'first')
+                .to(menuLinkImage[1], 0.5, {rotation: 20, transformOrigin:"bottom", x:-5, y: -3, delay: 0.1}, 'first')
                 .to(menuLinkImage[2], 0.5, {opacity: 0, delay: 0.1}, 'first')
                 .set(languages,{className:'+=languages--open-menu'})
                 .set($('.languages__item'),{className:'+=languages__item--open-menu'})
@@ -204,14 +203,28 @@ $(function () {
 
     function toggleDirection() {
         tlMenuClick.reversed() ? tlMenuClick.play() : tlMenuClick.reverse();
+            if(!tlMenu.paused()) {
+                tlMenu.pause();
+            } else {
+                tlMenuClick.eventCallback("onReverseComplete", function () {
+                    if ($('.menu-link:hover').length != 0) {
+                        tlMenu.resume();
+                    } else {
+                        tlMenu.reverse();
+                    }
+
+                });
+            }
     }
 
-    menuButton.click(function(){
+    menuLink.click(function(){
         toggleDirection();
+
     });
 
 
     $(window).resize(function () {
         createMarginForContent();
+        createMarginForMenu();
     })
 });
