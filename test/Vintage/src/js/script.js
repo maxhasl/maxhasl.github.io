@@ -157,21 +157,44 @@ $(function () {
 
             tlMenu.to(menuLinkImage[0], 0.7, {y:0}, 'two')
                 .to(menuLinkImage[2], 0.7, {y:0}, 'two')
-                .to(menuLinkImageSvg, 0.3, {marginTop: 0, height: 18}, 'two');
+                .to(menuLinkImageSvg, 0.3, {marginTop: -2, height: 18}, 'two');
         }
     );
 
-    $('.menu-link').on('click', function () {
-        // $(this).preventDefault();
-        var tlMenuClick = new TimelineMax();
-        tlMenuClick.to(menuLinkImage[0], 1, {attr:{d: 'M0.6,21L21.7,0.6C22.3,0,23.3-0.2,24,0.2l0,0c1.2,0.6,1.4,2.3,0.4,3.3L3.4,24c-0.6,0.6-1.6,0.7-2.3,0.4l0,0C-0.1,23.7-0.4,22,0.6,21z'}}, 'first')
-                     .to(menuLinkImage[2], 1, {attr:{d: 'M3.6,0.8C10.3,7.6,17,14.5,23.7,21.3c0.6,0.6,0.7,1.5,0.4,2.3l0,0c-0.6,1.2-2.2,1.4-3.2,0.4C14.2,17.1,7.5,10.3,0.8,3.5C0.2,2.9,0.1,1.9,0.5,1.2l0,0C1.1,0,2.7-0.2,3.6,0.8z'}}, 'first')
-                        .to(menuLinkImage[1], 1, {display: 'none'}, 'first');
+
+    var tlMenuClick = new TimelineMax();
+
+    var menu = $('.menu');
+    var menuListItem = $('.menu__item');
+    var menuListItemHeight = menuListItem.height();
+    var menuButton = $('.menu-link');
+    var socialList = $('.social__list');
+
+    tlMenuClick.to($('.languages'), 0.5, {x: -40, opacity: 0, delay: 0.1})
+                .to(menu, 0.5, {left: 0}, 'first')
+                .to(menuLinkImage[0], 0.5, {attr:{d: 'M0.6,21L21.7,0.6C22.3,0,23.3-0.2,24,0.2l0,0c1.2,0.6,1.4,2.3,0.4,3.3L3.4,24c-0.6,0.6-1.6,0.7-2.3,0.4l0,0C-0.1,23.7-0.4,22,0.6,21z'}}, 'first')
+                .to(menuLinkImage[2], 0.5, {attr:{d: 'M3.6,0.8C10.3,7.6,17,14.5,23.7,21.3c0.6,0.6,0.7,1.5,0.4,2.3l0,0c-0.6,1.2-2.2,1.4-3.2,0.4C14.2,17.1,7.5,10.3,0.8,3.5C0.2,2.9,0.1,1.9,0.5,1.2l0,0C1.1,0,2.7-0.2,3.6,0.8z'}}, 'first')
+                .to(menuLinkImage[1], 0.5, {display: 'none'}, 'first')
+                .set(languages,{className:'+=languages--open-menu'})
+                .set($('.languages__item'),{className:'+=languages__item--open-menu'})
+                .set(languages, {x: -40})
+                .to(languages, 0.5, {x: 0, opacity: 1})
+                .set(menuListItem, {height: menuListItemHeight - 40, opacity: 0}, 'first')
+                .staggerTo(menuListItem, 0.5, {height: menuListItemHeight, opacity: 1}, 0.2)
+                .set(socialList, {x: -40, opacity: 0}, 'first')
+                .to(socialList, 0.5, {x: 0, opacity: 1});
 
 
+
+    tlMenuClick.reversed(true);
+
+    function toggleDirection() {
+        tlMenuClick.reversed() ? tlMenuClick.play() : tlMenuClick.reverse();
+    }
+
+    menuButton.click(function(){
+        toggleDirection();
     });
-
-
 
 
     $(window).resize(function () {

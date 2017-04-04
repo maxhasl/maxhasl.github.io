@@ -101,7 +101,7 @@ header{
   height: 18px;
   fill: #A86280;
   stroke: #A86280;
-  margin: 0 0 0 10px;
+  margin: -2px 0 0 10px;
   vertical-align: top;
 }
 .languages{
@@ -109,6 +109,7 @@ header{
   margin: 32px 102px 0 0;
   position: relative;
   cursor: pointer;
+  opacity: 0;
   &:after{
     position: absolute;
     top: 1px;
@@ -129,7 +130,6 @@ header{
   }
 }
 .languages__item{
-  @extend .menu-link;
   display: none;
   float: none;
   width: 30px;
@@ -139,8 +139,14 @@ header{
     display: block;
   }
   &:hover{
-    color: #a86280;
+    & .languages__link{
+      color: #a86280;
+    }
   }
+}
+.languages__link{
+  @extend .menu-link;
+  margin: 0;
 }
 .home__title{
   clear: both;
@@ -232,14 +238,14 @@ header{
   height: 100vh;
   width: 100vw;
   position: absolute;
-  left: 0;
+  left: 100vw;
   background-color: white;
   z-index: 100;
 }
 .menu__list{
   width: 470px;
   margin: 142px auto 0;
-  //background-color: yellow;
+  overflow: hidden;
 }
 .menu__item{
   border-top: 2px solid #eeeeee;
@@ -272,4 +278,30 @@ header{
 }
 .fa {
   color: #343332;
+}
+.languages--open-menu{
+  float: none;
+  position: absolute;
+  width: 140px;
+  top: 5px;
+  left: calc(50% - 70px);
+  margin: 32px auto 0;
+  &:after{
+    content: none;
+  }
+  &:hover{
+    & .languages__item--open-menu{
+      display: inline-block;
+    }
+  }
+}
+.languages__item--open-menu{
+  display: inline-block;
+  margin: 0 7px;
+  &:first-child{
+    display: inline-block;
+  }
+  & .active{
+    color: #a86280;
+  }
 }
