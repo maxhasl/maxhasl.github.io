@@ -217,7 +217,8 @@ $(function () {
             }
     }
 
-    menuLink.click(function(){
+    menuLink.click(function(e){
+        e.preventDefault();
         toggleDirection();
 
     });
