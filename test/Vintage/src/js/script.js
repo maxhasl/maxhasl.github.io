@@ -6,6 +6,13 @@ $(function () {
         $('.home__title').css({marginTop: ($(window).height() - contentHeight)/2+19});
     }
     createMarginForContent();
+    //create margin for menu list
+    function createMarginForMenu() {
+        var contentHeight = $('.menu__list').height();
+        $('.menu__list').css({marginTop: ($(window).height() - contentHeight)/2-47});
+    }
+
+    createMarginForMenu();
     // create main title split text
     var mainTitle = $('.home__title');
     var quantity = Math.floor(mainTitle.width()/28);
@@ -146,21 +153,27 @@ $(function () {
 
     //set menu animation
     var menuLinkImageSvg = $('.menu-link__image');
-    $('.menu-link').hover(
-        function() {
-            var tlMenu = new TimelineMax();
-            tlMenu.to(menuLinkImage[0], 0.7, {y:-10}, 'first')
-                    .to(menuLinkImage[2], 0.7, {y: 10}, 'first')
-                        .to(menuLinkImageSvg, 0, {marginTop: -12, height: 40}, 'first');
-        }, function() {
-            var tlMenu = new TimelineMax();
 
-            tlMenu.to(menuLinkImage[0], 0.7, {y:0}, 'two')
-                .to(menuLinkImage[2], 0.7, {y:0}, 'two')
-                .to(menuLinkImageSvg, 0.3, {marginTop: -2, height: 18}, 'two');
-        }
-    );
 
+    var tlMenu = new TimelineMax();
+    tlMenu.to(menuLinkImage[0], 0.7, {y:-10, delay: 0.1}, 'first')
+                    .to(menuLinkImage[2], 0.7, {y: 10, delay: 0.1}, 'first')
+                        .to(menuLinkImageSvg, 0, {y: -11, height: 40}, 'first');
+
+    tlMenu.reversed(true);
+
+    $('.menu-link').hover(function(){
+        tlMenu.play()
+    }, function () {
+        tlMenu.reverse()
+    });
+
+    function createMarginForMenu() {
+        var contentHeight = $('.menu__list').height();
+        $('.menu__list').css({marginTop: ($(window).height() - contentHeight)/2-47});
+    }
+
+    createMarginForMenu();
 
     var tlMenuClick = new TimelineMax();
 
@@ -170,11 +183,13 @@ $(function () {
     var menuButton = $('.menu-link');
     var socialList = $('.social__list');
 
-    tlMenuClick.to($('.languages'), 0.5, {x: -40, opacity: 0, delay: 0.1})
+    tlMenuClick.to($('.languages'), 0.5, {x: -40, opacity: 0, delay: 0.10}, 'first')
+                .to(menuLinkTitle[0], 0, {className: '+=hidden'})
+                .to(menuLinkTitle[1], 0, {className: 'menu-link__title'})
                 .to(menu, 0.5, {left: 0}, 'first')
-                .to(menuLinkImage[0], 0.5, {attr:{d: 'M0.6,21L21.7,0.6C22.3,0,23.3-0.2,24,0.2l0,0c1.2,0.6,1.4,2.3,0.4,3.3L3.4,24c-0.6,0.6-1.6,0.7-2.3,0.4l0,0C-0.1,23.7-0.4,22,0.6,21z'}}, 'first')
-                .to(menuLinkImage[2], 0.5, {attr:{d: 'M3.6,0.8C10.3,7.6,17,14.5,23.7,21.3c0.6,0.6,0.7,1.5,0.4,2.3l0,0c-0.6,1.2-2.2,1.4-3.2,0.4C14.2,17.1,7.5,10.3,0.8,3.5C0.2,2.9,0.1,1.9,0.5,1.2l0,0C1.1,0,2.7-0.2,3.6,0.8z'}}, 'first')
-                .to(menuLinkImage[1], 0.5, {display: 'none'}, 'first')
+                .to(menuLinkImage[0], 0.5, {rotation:120, transformOrigin:"bottom", x:0, y: -20}, 'first')
+                .to(menuLinkImage[1], 0.5, {rotation: 20, transformOrigin:"bottom", x:-5, y: -3}, 'first')
+                .to(menuLinkImage[2], 0.5, {opacity: 0, delay: 0.1}, 'first')
                 .set(languages,{className:'+=languages--open-menu'})
                 .set($('.languages__item'),{className:'+=languages__item--open-menu'})
                 .set(languages, {x: -40})
@@ -183,7 +198,6 @@ $(function () {
                 .staggerTo(menuListItem, 0.5, {height: menuListItemHeight, opacity: 1}, 0.2)
                 .set(socialList, {x: -40, opacity: 0}, 'first')
                 .to(socialList, 0.5, {x: 0, opacity: 1});
-
 
 
     tlMenuClick.reversed(true);
