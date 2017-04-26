@@ -24,15 +24,20 @@ gulp.task('img:build', function() {
 
 // .SCSS TO .CSS
 gulp.task('sass', function () {
-  return gulp.src('src/*/*.scss')
+  return gulp.src('src/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('src/'));
 });
+
 //CONCAT .CSS
 gulp.task('css:concat', ['sass'], function () {
-  return gulp.src('src/*/*.css')
-  .pipe(concatCss('style.main.css'))
-  .pipe(gulp.dest('src/styles/'));
+    return gulp.src(['src/main/reset.css',
+                    'src/main/fonts.css',
+                    'src/main/main.css',
+                    'src/**/*.css',
+                    '!src/styles/style.main.css'])
+        .pipe(concatCss('style.main.css'))
+        .pipe(gulp.dest('src/styles'));
 });
 //MIN AND BUILD .CSS
 gulp.task('css:compress', ['css:concat'], function () {
@@ -60,8 +65,8 @@ gulp.task('js:compress', ['js:concat'], function() {
 
 //WATCH
 gulp.task('watch', function () {
-  gulp.watch('src/*/*.scss', ['sass', 'css:concat', 'css:compress']);
-  gulp.watch('src/*/*.js', ['js:concat', 'js:compress']);
+  gulp.watch('src/**/*.scss', ['sass', 'css:concat', 'css:compress']);
+  gulp.watch('src/**/*.js', ['js:concat', 'js:compress']);
   gulp.watch('src/*.html', ['html:build']);
 });
 
