@@ -1,4 +1,5 @@
 jQuery(document).ready(function() {
+    
     $('.flexslider').flexslider({
         animation: "slide",
         animationLoop: true,
@@ -8,9 +9,10 @@ jQuery(document).ready(function() {
         directionNav: true,
         prevText: '',
         nextText: '',
-        // start: function(slider){
-        //     flexslider = slider;
-        // }
+        start: function(slider){
+            flexslider = slider;
+        }
     });
-    // $('.flex-direction-nav a').text().remove();
+
+
 });

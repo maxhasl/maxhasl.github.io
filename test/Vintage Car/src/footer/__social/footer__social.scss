@@ -1,4 +1,14 @@
 .footer__social{
-  float: left;
-  margin-left: 95px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 91px;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer__social{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-left: 10px;
+  }
 }

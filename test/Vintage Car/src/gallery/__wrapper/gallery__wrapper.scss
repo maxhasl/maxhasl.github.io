@@ -2,3 +2,11 @@
   height: 168px;
   margin: 72px auto 0;
 }
+
+@media screen and (max-width: 1279px){
+  .gallery__wrapper{
+    height: 168px;
+    width: 874px;
+    margin: 72px auto 0;
+  }
+}

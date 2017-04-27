@@ -4,3 +4,11 @@
   border-bottom: 1px solid white;
   background: url(../img/footer-background.png);
 }
+
+@media screen and (max-width: 1279px) {
+  .footer__info{
+    height: auto;
+    background: url(../img/footer-background.png) center center;
+    background-size: cover;
+  }
+}
