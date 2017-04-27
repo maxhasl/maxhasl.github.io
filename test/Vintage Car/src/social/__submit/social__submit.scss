@@ -1,0 +1,15 @@
+.social__submit{
+  vertical-align: middle;
+  margin: 0 0 0 -56px;
+  width: 47px;
+  height: 36px;
+  background-color: rgb(178, 162, 148);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  &:hover .social__submit-image{
+    margin-left: 10px;
+    transition: margin 0.3s;
+  }
+}
