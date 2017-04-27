@@ -74,7 +74,7 @@ gulp.task('js:compress', ['js:concat'], function() {
 
 //WATCH
 gulp.task('watch', function () {
-  gulp.watch('src/**/*.scss', ['sass', 'css:concat', 'css:compress']);
+  gulp.watch('src/**/*.scss', ['sass:concat','sass', 'css:concat', 'css:compress']);
   gulp.watch('src/**/*.js', ['js:concat', 'js:compress']);
   gulp.watch('src/*.html', ['html:build']);
 });
