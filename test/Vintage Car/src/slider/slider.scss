@@ -1,5 +1,9 @@
 .slider {
   clear: both;
+  position: relative;
+  &:hover .slider__link{
+    opacity: 1;
+  }
 }
 .slider__item{
     width: 100%;
