@@ -18,3 +18,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px){
+  .menu__item{
+    float: none;
+    margin: 0;
+    &:nth-child(even){
+      margin: 0;
+      float: none;
+    }
+    //display: none;
+  }
+}

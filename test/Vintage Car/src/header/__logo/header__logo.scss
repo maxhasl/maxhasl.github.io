@@ -3,4 +3,11 @@
   top: 2px;
   left: calc(50% - 175px);
   z-index: 999;
+  transition: left 0.3s;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__logo{
+    left: 16px;
+  }
 }
