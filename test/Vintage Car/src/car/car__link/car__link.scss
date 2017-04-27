@@ -7,4 +7,8 @@
   font-weight: 600;
   line-height: 21px;
   text-decoration: none;
+  transition: transform 0.5s;
+  &:hover{
+    transform: scale(1.3);
+  }
 }
