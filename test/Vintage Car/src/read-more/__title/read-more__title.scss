@@ -13,3 +13,20 @@
     margin: 145px 0 0 182px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .read-more__title{
+    float: none;
+    display: inline-block;
+    width: auto;
+    margin: 50px 0 0 10px;
+    vertical-align: middle;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .read-more__title{
+    font-size: 24px;
+  }
+}

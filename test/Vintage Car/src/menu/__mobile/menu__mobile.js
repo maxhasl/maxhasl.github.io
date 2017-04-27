@@ -6,10 +6,18 @@ $(function () {
         console.log('calc(50% - '+ logo.width()/2+')');
         if(list.is(':visible')){
             list.hide('slow');
-            logo.css({left: 16});
+            if($(window).width()< 479){
+                logo.css({left: 16, opacity: 1});
+            } else {
+                logo.css({left: 16});
+            }
         } else {
             list.show('slow');
-            logo.css({left: 'calc(50% - '+ logo.width()/2+'px)'});
+            if($(window).width()< 479){
+                logo.css({left: 'calc(50% - '+ logo.width()/2+'px)', opacity: 0});
+            } else {
+                logo.css({left: 'calc(50% - '+ logo.width()/2+'px)'});
+            }
         }
     });
 

@@ -10,3 +10,10 @@
     background: url(../img/read-more-background.png) 40% center;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .read-more__description{
+    height: auto;
+    background: none;
+  }
+}

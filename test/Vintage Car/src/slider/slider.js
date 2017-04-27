@@ -4,10 +4,7 @@ $(function () {
     sliderImage.css({
         height: $(window).width()* 0.371
     });
-
-    // $('#nav-arrows').css({
-    //     ma
-    // });
+    
     var Page = (function() {
         var navArrows = jQuery( '#nav-arrows' ).hide(),
             shadow = jQuery( '#shadow' ).hide(),

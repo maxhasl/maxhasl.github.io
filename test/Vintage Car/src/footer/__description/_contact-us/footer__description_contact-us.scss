@@ -13,3 +13,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer__description_contact-us{
+    width: 100%;
+  }
+}

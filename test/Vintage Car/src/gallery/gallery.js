@@ -13,6 +13,5 @@ jQuery(document).ready(function() {
             flexslider = slider;
         }
     });
-
-
+    
 });

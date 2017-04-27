@@ -18,3 +18,9 @@
     width: calc(100% - 450px);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer__description_about{
+    width: 100%;
+  }
+}

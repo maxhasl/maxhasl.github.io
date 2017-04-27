@@ -4,3 +4,9 @@
   font-size: 0;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .read-more__list{
+    margin-top: 20px;
+  }
+}
