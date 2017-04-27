@@ -22,20 +22,27 @@ gulp.task('img:build', function() {
         .pipe(gulp.dest('build/img/'));
 });
 
+// CONCAT .SCSS
+gulp.task('sass:concat', function () {
+    return gulp.src(['src/main/main.scss',
+                    'src/**/*.scss',
+                    '!src/styles/*.scss'])
+        .pipe(concat('style.scss'))
+        .pipe(gulp.dest('src/styles'));
+});
+
 // .SCSS TO .CSS
-gulp.task('sass', function () {
-  return gulp.src('src/**/*.scss')
+gulp.task('sass',['sass:concat'], function () {
+  return gulp.src('src/styles/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('src/'));
+    .pipe(gulp.dest('src/styles'));
 });
 
 //CONCAT .CSS
 gulp.task('css:concat', ['sass'], function () {
     return gulp.src(['src/main/reset.css',
-                    'src/main/fonts.css',
-                    'src/main/main.css',
-                    'src/**/*.css',
-                    '!src/styles/style.main.css'])
+                    'src/main/*.css',
+                    'src/styles/style.css'])
         .pipe(concatCss('style.main.css'))
         .pipe(gulp.dest('src/styles'));
 });
@@ -76,6 +83,7 @@ gulp.task('default',
         ['html:build',
          'img:build',
          'fonts:build',
+         'sass:concat',
          'sass',
          'css:concat',
          'css:compress',
