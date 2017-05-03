@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 //CAROUSEL
 $(function() {
   $('.jcarousel').jcarousel({
@@ -32,7 +32,7 @@ $(function() {
                  gutter: 20
                 }
     });
-  };
+  }
 
    var queryDefault = "http://api.pixplorer.co.uk/image?&amount=1&size=tb";
    var parent;
@@ -59,14 +59,14 @@ $(function() {
                                 if(linkArray.length == 7) {
                                    objDefault.data.images = linkArray;
                                    renderList(objDefault);
-                                };
+                                }
                                 
                                }
        });
 
       
-    };//for
-  };
+    }//for
+  }
   
 
 
@@ -84,7 +84,7 @@ $(function() {
                                 renderList(obj);
                                }
     })
-  };
+  }
   
   function renderList(obj) {
     $('#start__container').after('<section id="masonry-container" class="clearfix"></section>');
@@ -94,7 +94,7 @@ $(function() {
     $('#masonry-container').append(content);
     masonry();
     }, 300);
-  };
+  }
 
   
    $('.find__link--2').on('click', function (e){
@@ -139,7 +139,7 @@ $(function() {
           var link = image[0].currentSrc;
           createModal(link);
     })
-  };
+  }
   
   searchDefault(queryDefault); 
   setTimeout(take, 3000);
