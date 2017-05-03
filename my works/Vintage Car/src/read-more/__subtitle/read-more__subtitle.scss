@@ -1,0 +1,13 @@
+.read-more__subtitle{
+  @extend .read-more__title;
+  font-size: 17px !important;
+  margin-top: 32px !important;
+  letter-spacing: 0.1px;
+}
+
+@media screen and (max-width: 767px) {
+  .read-more__subtitle{
+    margin: 32px 0 0 0 !important;
+    width: 100%;
+  }
+}

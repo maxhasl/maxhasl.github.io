@@ -1,0 +1,22 @@
+.gallery__wrapper{
+  height: 168px;
+  margin: 72px auto 0;
+}
+
+@media screen and (max-width: 1279px){
+  .gallery__wrapper{
+    width: 874px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .gallery__wrapper{
+    width: 577px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__wrapper{
+    width: 276px;
+  }
+}

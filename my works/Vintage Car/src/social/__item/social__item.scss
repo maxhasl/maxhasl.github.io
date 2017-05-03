@@ -1,0 +1,11 @@
+.social__item{
+  vertical-align: top;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .social__item{
+    margin-right: 10px;
+  }
+}

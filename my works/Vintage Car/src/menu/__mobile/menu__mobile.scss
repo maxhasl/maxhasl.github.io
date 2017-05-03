@@ -1,0 +1,12 @@
+.menu__mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu__mobile{
+    display: block;
+    float: right;
+    margin-top: 23px;
+    cursor: pointer;
+  }
+}

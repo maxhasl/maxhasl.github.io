@@ -1,0 +1,16 @@
+.read-more__logo{
+  display: block;
+  float: left;
+  width: 147px;
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  .read-more__logo{
+    float: none;
+    display: inline-block;
+    width: 50px;
+    margin-top: 50px;
+    vertical-align: middle;
+  }
+}

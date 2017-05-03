@@ -1,0 +1,20 @@
+.header__logo{
+  position: absolute;
+  top: 2px;
+  left: calc(50% - 175px);
+  z-index: 999;
+  transition: opacity, left 0.3s;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__logo{
+    left: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo{
+    top: 10px;
+    width: 130px;
+  }
+}

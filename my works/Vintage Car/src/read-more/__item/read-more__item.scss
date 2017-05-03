@@ -1,0 +1,16 @@
+.read-more__item{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 18px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .read-more__item {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+  }
+}
