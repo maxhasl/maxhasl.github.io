@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  position: relative;
+  height: 100vh;
+  background: #0400fe;
+  padding: 2%;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheel {
+  position: relative;
+  background: white;
+  width: 96%;
+  max-width: calc(100vh - 4%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wheel::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.wheel::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  display: block;
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border: 5px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.wheel__section {
+  position: absolute;
+  background: white;
+  height: 50%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  font-size: 6vmin;
+}
+
+.wheel__section:nth-child(even) {
+  background: black;
+  color: white;
+}
+
+.wheel__section:nth-child(1) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+}
+
+.wheel__section:nth-child(2) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(45deg);
+}
+
+.wheel__section:nth-child(3) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(90deg);
+}
+
+.wheel__section:nth-child(4) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(135deg);
+}
+
+.wheel__section:nth-child(5) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(180deg);
+}
+
+.wheel__section:nth-child(6) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(225deg);
+}
+
+.wheel__section:nth-child(7) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(270deg);
+}
+
+.wheel__section:nth-child(8) {
+  top: 25%;
+  left: -10%;
+  transform-origin: 100% 50%;
+  transform: rotate(315deg);
+}
+
+.selector {
+  position: absolute;
+  bottom: -8%;
+  width: 12vmin;
+  height: 12vmin;
+  background-color: red;
+  border: 5px solid black;
+  z-index: 2;
+  transform: rotate(45deg);
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.selector__line {
+  position: absolute;
+  bottom: -6px;
+  left: -5px;
+  height: 7px;
+  width: 200px;
+  background-color: black;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+}
